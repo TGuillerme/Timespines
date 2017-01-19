@@ -1,0 +1,27 @@
+Species name,Group,Age (in Mya),Environement (terrestrial/aquatic),Body length (m),Body mass (kg),"Diet (herbivore, omnivore, carnivore, small stuff eater)",Head presence (yes/no),Head projections (yes/no),Head surface (yes/no),Head function (nothing/foraging/sexual/other),Body presence (yes/no),Body projections (yes/no),Body surface (yes/no),Body function (nothing/foraging/sexual/other),Tail presence (yes/no),Tail projections (yes/no),Tail surface (yes/no),Tail function (nothing/foraging/sexual/other),Notes
+Heliobatis radians,Dasyatidae,53.5-48.5,freshwater,0.38,1.32644,NA,1,0,0,NA,1,0,0,NA,1,1,0,NA,stin ray
+Crossopholis magnicaudatus,Polyodontidae,53.5-48.5,freshwater,0.384,0.54254,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Lepisosteus cuneatus,Lepisosteidae,53.5-48.5,freshwater,0.35,63.16579,NA,1,0,0,NA,1,0,1,NA,1,0,0,NA,ganoid scales? - Doubtfull regression
+Atractosteus simplex,Lepisosteidae,53.5-48.5,freshwater,0.674,58.2436131,NA,1,0,0,NA,1,0,1,NA,1,0,0,NA,ganoid scales? - Doubtfull regression
+Atractosteus atrox,Lepisosteidae,53.5-48.5,freshwater,0.735,78.12775,NA,1,0,0,NA,1,0,1,NA,1,0,0,NA,ganoid scales? - Doubtfull regression
+Amia pattersoni,Amiidae,53.5-48.5,freshwater,1.092,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Cyclurus gurleyi,Amiidae,53.5-48.5,freshwater,0.683,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Eohiodon falcatus,Hiodontidae,53.5-48.5,freshwater,0.197,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Phareodus encaustus,Osteoglossidae,53.5-48.5,freshwater,0.57,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Phareodus testis,Osteoglossidae,53.5-48.5,freshwater,0.177,NA,NA,1,0,0,NA,1,1,1,Spnie might not be a spine!,1,0,0,NA,thick looking scales
+Diplomystus dentatus,Paraclupeidae,53.5-48.5,freshwater,0.531,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Knightia eocaena,Clupeidae,53.5-48.5,freshwater,0.081,0.00478,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Knightia alta,Clupeidae,53.5-48.5,freshwater,0.124,0.01752,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Gosiutichthys parvus,Clupeidae,53.5-48.5,freshwater,0.046,0.00085,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Notogoneus osculus,Gonorynchidae,53.5-48.5,freshwater,0.527,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Amyzon gosiutensis,Catostomidae,53.5-48.5,freshwater,0.255,0.24089,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Hypsidoris farsonensis,Hypsidoridae,53.5-48.5,freshwater,0.171,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Astephus antiquus,Ictaluridae,53.5-48.5,freshwater,0.19,0.07681,NA,1,0,0,NA,1,1,0,NA,1,0,0,NA,pectoral spines
+Esox kronneri,Esocidae,53.5-48.5,freshwater,0.118,NA,carnivore,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Amphiplaga brachyptera,Percopsidae,53.5-48.5,freshwater,0.061,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Erismatopterus levatus,Percopsidae,53.5-48.5,freshwater,0.073,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Asineops squamifrons,Asineopidae,53.5-48.5,freshwater,0.102,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Mioplosus labracoides,Percoidei,53.5-48.5,freshwater,0.225,NA,NA,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA
+Priscacara serrata,Percoidei,53.5-48.5,freshwater,0.23,NA,NA,1,0,0,NA,1,1,0,NA,1,0,0,NA,NA
+Priscacara liops,Percoidei,53.5-48.5,freshwater,0.13,NA,NA,1,0,0,NA,1,1,0,NA,1,0,0,NA,NA
+Priscacara hypsacantha,Percoidei,53.5-48.5,freshwater,0.061,NA,NA,1,0,0,NA,1,1,0,NA,1,0,0,NA,NA
