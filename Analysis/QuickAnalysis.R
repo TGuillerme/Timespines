@@ -8,7 +8,7 @@ one_site <- read.csv("../Data/GreenBassin.csv")
 predator <- max(one_site[,5])
 
 ## Correct for the predator's size
-#Body_length <- one_site[,5]/predator
+Body_length <- one_site[,5]/predator
 
 ## Get the spiny-ness (if the score is > 0, it means at least one part of the body has armour)
 get.armour <- function(species, data) {
@@ -62,8 +62,32 @@ for(one_BL in 1:length(Body_length[which(armours == 1)])) {
 
 ## Testing the differences
 testing <- t.test(Body_length[which(armours == 1)], Body_length[which(armours == 0)])
-par(bty = "n")
+
 boxplot(Body_length[which(armours == 1)], Body_length[which(armours == 0)], ylab = "Body Length", xaxt = "n", main = "
     Difference between groups")
 text(1.5, 1, paste("p value:", round(testing$p.value, digit = 3)))
 axis(1, at = 1:2, labels = c("Armour", "No armour"))
+
+####Kevin Extra analysis based on the distance a body mass is from the entire mean body mass
+###as we expect spines to be intermediate than non-armoured species should show higher 
+###distances from the overall mean body size.
+
+##get the mean and standard deviation of the entire group
+mean_bl <- mean(Body_length)
+SD_bl <- sd(Body_length)
+
+#get the distance from the mean in terms of SD units
+z_dif_arm <- (((mean_bl - Body_length[which(armours == 1)])/SD_bl)^2)^0.5
+z_dif_noarm <-  (((mean_bl - Body_length[which(armours == 0)])/SD_bl)^2)^0.5
+
+Ztesting <- t.test(z_dif_arm, z_dif_noarm)
+
+#plots
+boxplot(z_dif_arm, z_dif_noarm, ylab = "Body Length", xaxt = "n", main = "
+        Difference between groups")
+text(1.5, 1, paste("p value:", round(testing$p.value, digit = 3)))
+axis(1, at = 1:2, labels = c("Armour", "No armour"))
+
+
+
+
