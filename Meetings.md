@@ -1,3 +1,15 @@
+## 2017/01/20
+
+### Data collection protocol:
+ * Don't worry about the type of size measurement per sites (length vs mass). We well be measuring things in units of standard deviation so the only important thing is to be consistent per sites.
+ * Start pushing any good-ish data on GitHub (everybody has push access).
+
+### Analysis protocol
+ * We can use the data from the "Danger zone" paper as our baseline for extant ecosystems. We will do some sensitivity analysis (rarefaction) on it.
+ * We can use any good fish lagerstatten as our base expectation: fishes are easy to deal with (they all predate-ish, they are all tube-like-ish, they are all blue and swim-in-the-water-ish)
+
+Next meeting/deadline on the 20th of February.
+
 ## 2016/11/28
 
 ### Data collection protocol refinement:
