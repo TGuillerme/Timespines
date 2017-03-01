@@ -1,5 +1,6 @@
 
 | Species name | Group | Oldest Age (in Mya) | Youngest Age (in Mya) | Environement (terrestrial/aquatic) | Source | Body length (m) | Body mass (kg) | BM (source) | Diet (herbivore, omnivore, carnivore, small stuff eater) | Head presence (yes/no) | Head projections (yes/no) | Head surface (yes/no) | Head function (nothing/foraging/sexual/other) | Body presence (yes/no) | Body projections (yes/no) | Body surface (yes/no) | Body function (nothing/foraging/sexual/other) | Tail presence (yes/no) | Tail projections (yes/no) | Tail surface (yes/no) | Tail function (nothing/foraging/sexual/other) | Notes |
+
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Stegosaurus_stenops | Dinosauria | 155–150 | terrestrial | wikipedia(too change) | some length | some mass | none | herbivore | 1 | 0 | 0 | nothing | 1 | 1 | 0 | other | 1 | 1 | 0 | nothing | Maybe the plates are for sexual thing as well|
 
