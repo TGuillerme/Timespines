@@ -1,21 +1,21 @@
 Species name,Group,Age (in Mya),Environement (terrestrial/aquatic),Body length (m),Body mass (kg),"Diet (herbivore, omnivore, carnivore, small stuff eater)",Head presence (1/0),Head projections (1/0),Head surface (1/0),Head function (NA/foraging/sexual/other),Body presence (1/0),Body projections (1/0),Body surface (1/0),Body function (NA/foraging/sexual/other),Tail presence (1/0),Tail projections (1/0),Tail surface (1/0),Tail function (NA/foraging/sexual/other),Notes,Source,BM (source)
 Hulettia_hawesi,Actinopterygii,167.7 - 164.7,aquatic,,<1,Invert/Carnivore,1,0,0,NA,1,0,1,NA,1,0,0,NA,thick interlocking scales on body,Kirkland_1998,Foster2003_Table_5
 Morrolepis_schaefferi,Actinopterygii,,aquatic,,<1,Invert/Carnivore,1,0,0,NA,1,0,0,NA,1,0,0,NA,,Kirkland_1998,Foster2003_Table_5
-Amiiformes,Actinopterygii,,aquatic,,1.10,Carnivore,0,0,0,,1,0,0,NA,0,0,0,NA,only vertabrate are present,Kirkland_1998,Foster2003_Table_5
+Amiiformes,Actinopterygii,,aquatic,,1.1,Carnivore,0,0,0,,1,0,0,NA,0,0,0,NA,only vertabrate are present,Kirkland_1998,Foster2003_Table_5
 Pycnodontoidea,Actinopterygii,,aquatic,,<1,Invertivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,broken tooth,Kirkland_1998,Foster2003_Table_5
 cf_Leptolepis,Actinopterygii,,aquatic,120,<1,Invert/Carnivore,0,0,0,NA,1,0,0,NA,1,0,0,NA,lacking dorsal portion of skull,Kirkland_1998,Foster2003_Table_5
-Ceratodus_guentheri,Osteichthyes,,aquatic,,3.00,Invert/Carnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only_tooth_plate_present,Kirkland_1998,Foster2003_Table_5
-Ceratodus_robustus,Osteichthyes,,aquatic,,24.00,Invert/Carnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only_tooth_plate_present,Kirkland_1998,Foster2003_Table_5
+Ceratodus_guentheri,Osteichthyes,,aquatic,,3,Invert/Carnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only_tooth_plate_present,Kirkland_1998,Foster2003_Table_5
+Ceratodus_robustus,Osteichthyes,,aquatic,,24,Invert/Carnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only_tooth_plate_present,Kirkland_1998,Foster2003_Table_5
 Enneabatrachus,,,semiaquatic,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Rhadinosteus,,,semiaquatic,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Pelobatidae,,,semiaquatic,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Anura_indet,,,semiaquatic,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Caudata,,,semiaquatic,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Glyptops,,,semiaquatic,,5.00,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Dinochelys,,,semiaquatic,,5.00,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Uluops,,,semiaquatic,,5.00,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Dorsetochelys,,,semiaquatic,,5.00,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Chelonia_indet,,,semiaquatic,,5.00,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Glyptops,,,semiaquatic,,5,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Dinochelys,,,semiaquatic,,5,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Uluops,,,semiaquatic,,5,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Dorsetochelys,,,semiaquatic,,5,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Chelonia_indet,,,semiaquatic,,5,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Opisthias,rhynchocephalian,150.8 to 140.2,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Theretairus,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Eilenodon,,,Specialized_terrestrial,,<1,herbivore,,,,,,,,,,,,,,,Foster2003_Table_5
@@ -26,7 +26,7 @@ Paramacellodus,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,Foster200
 Saurillodon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Schilleria,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Squamata_indet,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Boide,,,Specialized_terrestrial,,<1,carnivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Boide,,,Specialized_terrestrial,,<1,carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only jawbone is present,,Foster2003_Table_5
 Cteniogenys,,,semiaquatic,,<1,Invert/Carnivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Hallopus,,,terrestrial,,5,carnivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Fruitachampsa,,,terrestrial,,5,carnivore,,,,,,,,,,,,,,,
@@ -75,35 +75,36 @@ Drinker_nisti,Ornithopoda,,terrestrial,,5,herbivore,1,NA,NA,NA,0,NA,NA,NA,1,0,0,
 Dryosaurus_altus,Ornithopoda,,terrestrial,,114,herbivore,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA,,
 Camptosaurus_dispar,Ornithopoda,,terrestrial,,830,herbivore,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA,,
 Ornithopoda_indet,Ornithopoda,,terrestrial,,450,herbivore,,,,,,,,,,,,,,,
-Docodon,,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
-Ctenacodon,,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
-Psalodom,,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
-Glirodon,,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
-Zofiabaatar,,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
-Multituberculata_indet,,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
-Triconolestes,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Aploconodon,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Phascolotheridium,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Priacodon,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Trioracodon,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Triconodonta_indet,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Amphidon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Tinodon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Symmetrodonta_indet,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Araeodon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Archaeotrigon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Euthlastus,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Foxraptor,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Paurodon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Comotherium,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Pelicopsis,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Tathiodon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Paurodontidae_indet,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Amblotherium,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Dryolestes,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Kepolestes,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Laolestes,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Melanodon,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Miccylotyrans,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Dryolestidae_indet,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Mammalia_indet,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Docodon,Mammalia,,Specialized_terrestrial,,140.7,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
+Ctenacodon,Mammalia,,Specialized_terrestrial,,20.5,omnivore,,,,,,,,,,,,,,,
+Psalodon,Mammalia,,Specialized_terrestrial,,58.3,omnivore,,,,,,,,,,,,,,,
+Glirodon,Mammalia,,Specialized_terrestrial,,16.8,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,
+Zofiabaatar,Mammalia,,Specialized_terrestrial,,35,omnivore,,,,,,,,,,,,,,,
+Multituberculata_indet,Mammalia,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
+Triconolestes,Mammalia,,Specialized_terrestrial,,100.9,Invert/Carnivore,,,,,,,,,,,,,,,
+Aploconodon,Mammalia,,Specialized_terrestrial,,18,Invert/Carnivore,,,,,,,,,,,,,,,
+Phascolotheridium,Mammalia,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
+Priacodon,Mammalia,,Specialized_terrestrial,,110.5,Invert/Carnivore,,,,,,,,,,,,,,,
+Trioracodon,Mammalia,,Specialized_terrestrial,,100.9,Invert/Carnivore,,,,,,,,,,,,,,,
+Triconodonta_indet,Mammalia,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
+Amphidon,Mammalia,,Specialized_terrestrial,,15.2,Invertivore,,,,,,,,,,,,,,,
+Tinodon,Mammalia,,Specialized_terrestrial,,72.3,Invertivore,,,,,,,,,,,,,,,
+Symmetrodonta_indet,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Araeodon,Mammalia,,Specialized_terrestrial,,16.5,Invertivore,,,,,,,,,,,,,,,
+Archaeotrigon,Mammalia,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,
+Euthlastus,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Foxraptor,Mammalia,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,
+Paurodon,Mammalia,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,
+Comotherium,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Pelicopsis,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Tathiodon,Mammalia,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,
+Paurodontidae_indet,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Amblotherium,Mammalia,,Specialized_terrestrial,,19.2,Invertivore,,,,,,,,,,,,,,,
+Dryolestes,Mammalia,,Specialized_terrestrial,,103.7,Invertivore,,,,,,,,,,,,,,,
+Kepolestes,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Laolestes,Mammalia,,Specialized_terrestrial,,63,Invertivore,,,,,,,,,,,,,,,
+Melanodon,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Miccylotyrans,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Dryolestidae_indet,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Mammalia_indet,Mammalia,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Fruitafossor,Mammalia,,Specialized_terrestrial,,6.2,Invertivore,1,0,0,NA,1,0,0,NA,1,0,0,0,,,Foster_2009_using_ME1_from_table3
