@@ -1,3 +1,11 @@
+## 2017/03/01
+
+### Fish time!
+ * Data collection continues
+ * Richard will focus on collecting and formating the data from Sallan and Galimberti 2015 Nature (http://science.sciencemag.org/content/350/6262/812.full)
+ * Marco will focus on collecting and formating the data from Clarke et al 2016 PNAS (http://www.pnas.org/content/113/41/11531.abstract)	
+ * Thomas will focus on collecting and formating the data from Price et al 2015 Proc B (http://rspb.royalsocietypublishing.org/content/282/1819/20151428)
+
 ## 2017/01/20
 
 ### Data collection protocol:
