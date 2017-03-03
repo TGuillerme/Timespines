@@ -81,30 +81,30 @@ Psalodon,Mammalia,,,Specialized_terrestrial,,58.3,omnivore,0,NA,NA,NA,0,NA,NA,NA
 Glirodon,Mammalia,,,Specialized_terrestrial,,16.8,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
 Zofiabaatar,Mammalia,,,Specialized_terrestrial,,35,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
 Multituberculata_indet,Mammalia,,,Specialized_terrestrial,,<1,omnivore,,,,,,,,,,,,,,,
-Triconolestes,Mammalia,155.7,150.8,Specialized_terrestrial,,100.9,Invert/Carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
-Aploconodon_comoensis,Mammalia,155.7,145.5,Specialized_terrestrial,,18,Invert/Carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
-Phascolotheridium,Mammalia,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Priacodon,Mammalia,,,Specialized_terrestrial,,110.5,Invert/Carnivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Trioracodon,Mammalia,,,Specialized_terrestrial,,100.9,Invert/Carnivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
+Triconolestes,Mammalia,155.7,150.8,Specialized_terrestrial,,100.9,Invert/Carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Aploconodon_comoensis,Mammalia,155.7,145.5,Specialized_terrestrial,,18,Invert/Carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Phascolotheridium,Mammalia,,,Specialized_terrestrial,,<1,Invert/Carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs may be synonom with Comodon,
+Priacodon,Mammalia,,,Specialized_terrestrial,,110.5,Invert/Carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Trioracodon,Mammalia,,,Specialized_terrestrial,,100.9,Invert/Carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
 Triconodonta_indet,Mammalia,,,Specialized_terrestrial,,<1,Invert/Carnivore,,,,,,,,,,,,,,,
-Amphidon,Mammalia,,,Specialized_terrestrial,,15.2,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Tinodon,Mammalia,,,Specialized_terrestrial,,72.3,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
+Amphidon,Mammalia,,,Specialized_terrestrial,,15.2,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Tinodon,Mammalia,,,Specialized_terrestrial,,72.3,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
 Symmetrodonta_indet,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Araeodon,Mammalia,,,Specialized_terrestrial,,16.5,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Archaeotrigon,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Euthlastus,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Foxraptor,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Paurodon,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Comotherium,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Pelicopsis,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Tathiodon,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
+Araeodon,Mammalia,,,Specialized_terrestrial,,16.5,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Archaeotrigon,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Euthlastus,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,
+Foxraptor,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Paurodon,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Comotherium,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,
+Pelicopsis,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,
+Tathiodon,Mammalia,,,Specialized_terrestrial,,31.8,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
 Paurodontidae_indet,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Amblotherium,Mammalia,,,Specialized_terrestrial,,19.2,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Dryolestes,Mammalia,,,Specialized_terrestrial,,103.7,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Kepolestes,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Laolestes,Mammalia,,,Specialized_terrestrial,,63,Invertivore,,,,,,,,,,,,,,,Foster_2009_using_ME1_from_table3
-Melanodon,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
-Miccylotyrans,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
+Amblotherium,Mammalia,,,Specialized_terrestrial,,19.2,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Dryolestes,Mammalia,,,Specialized_terrestrial,,103.7,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Kepolestes,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,synonym with Amblotherium,,
+Laolestes,Mammalia,,,Specialized_terrestrial,,63,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
+Melanodon,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,synonym with Laolestes,,
+Miccylotyrans,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth might be synonym with Amblothherium,checked fossil state in Mammals from the age of Dinosaurs,
 Dryolestidae_indet,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
 Mammalia_indet,Mammalia,,,Specialized_terrestrial,,<1,Invertivore,,,,,,,,,,,,,,,
 Fruitafossor,Mammalia,,,Specialized_terrestrial,,6.2,Invertivore,1,0,0,NA,1,0,0,NA,1,0,0,0,,"Luo, Zhe-Xi, and John R. Wible. ""A Late Jurassic digging mammal and early mammalian diversification."" Science 308.5718 (2005): 103-107.",Foster_2009_using_ME1_from_table3
