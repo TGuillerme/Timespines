@@ -1,3 +1,9 @@
+## 2017/04/20
+
+ * Rafael is joining the team!
+ * We keep collecting data from last meeting
+ * Thomas will get some analysis done for the BES Macro meeting
+ 
 ## 2017/03/01
 
 ### Fish time!
