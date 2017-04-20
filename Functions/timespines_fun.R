@@ -11,12 +11,9 @@ source("sanitizing.R")
 #' @details
 #' To get projection AND surfaces for head AND tail, use \code{get.armour(data, body.part = c(1,3), armour.type = c(1,2))}.
 #' 
-#' @return
-#' 
 #' @examples
 #' 
 #' @author Thomas Guillerme
-#' 
 #' 
 
 get.armour <- function(data, body.part = 0, armour.type = 0) {
@@ -80,4 +77,28 @@ get.armour <- function(data, body.part = 0, armour.type = 0) {
 
     return(output)
 
+}
+
+#' @title Narrow down x
+#'
+#' @description Getting the most precise value of x to trace a line under a density curve.
+#'
+#' @param x The position on the x axis
+#' @param density The density curve
+#' 
+#' @examples
+#' 
+#' @author Thomas Guillerme
+#' 
+
+narrow.down.x <- function(x, density) {
+    ## Start from rounding = 0
+    rounding <- 0
+    ## Check if any matching with lower rounding
+    while(length(which(round(x, digit = rounding) == round(density, digit = rounding))) != 0) {
+        rounding <- rounding + 1
+    }
+    ## Return the before last rounding
+    narrow <- which(round(x, digit = rounding-1) == round(density, digit = rounding-1))
+    return(narrow[ceiling(length(narrow)/2)])
 }
