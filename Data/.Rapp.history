@@ -1,0 +1,351 @@
+#####as the NA row is placed first in the matrix we only want the first column of Liab as the rest are fixed.#
+	tef_Liabs <- list()#
+for(i in 1:(length(names(tef_Liabs_rawtef_Liabs_raw)))){#
+#
+tef_Liabs[[i]] <-	(tef_Liabs_raw[[i]][,1])#
+}#
+tef_global  <- as.mcmc(unlist(tef_Liabs))
+#####as the NA row is placed first in the matrix we only want the first column of Liab as the rest are fixed.#
+	tef_Liabs <- list()#
+for(i in 1:(length(names(tef_Liabs_raw)))){#
+#
+tef_Liabs[[i]] <-	(tef_Liabs_raw[[i]][,1])#
+}#
+tef_global  <- as.mcmc(unlist(tef_Liabs))
+tef_Liabs_raw
+tef_Liabs_raw[[1]][1]
+tef_Liabs_raw[[]][1]
+tef_Liabs_raw[][1]
+tef_Liabs_raw[][,1]
+tef_Liabs_raw[[1]][,1]
+names(tef_Liabs_raw)
+tef_Liabs_raw$Liab
+tef_Liabs_raw[Liab]
+names(tef_Liabs_raw)
+tef_Liabs_raw$Liab
+tef_Liabs_raw $Liab
+tef_Liabs_raw
+tef_Liabs_raw$Tune
+?MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree[[1]], prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin )
+MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree[[1]], prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin, Liab = TRUE )
+MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree[[1]], prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin, Liabs = TRUE )
+MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree[[1]], prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin, liabs = TRUE )
+MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree[[1]], prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin, liab = TRUE )
+?MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree[[1]], prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin, liab = TRUE )
+tef_Liabs_raw <- MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree, prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin, pl = TRUE)
+tef_Liabs_raw <- MCMCglmm(fixed = formula, random = random.term, data = mulTree.data$data, pedigree = mulTree.data$tree[[1]], prior = prior_tef, nitt = nitt, thin  = thin, burnin = burnin, pl = TRUE)
+tef_Liabs_raw$Liabs
+tef_Liabs_raw$Liab
+tef_Liabs_raw <- 	tef_Liabs_raw$Liab
+tef_Liabs <- list()#
+for(i in 1:(length(names(tef_Liabs_raw)))){#
+#
+tef_Liabs[[i]] <-	(tef_Liabs_raw[[i]][,1])#
+}#
+tef_global  <- as.mcmc(unlist(tef_Liabs))
+tef_Liabs_raw
+tef_Liabs_raw[[i]][,1]
+tef_Liabs_raw[[1]][,1]
+names(tef_Liabs_raw)
+tef_Liabs_raw <- 	tef_Liabs_raw$Liab
+tef_Liabs_raw
+tef_global  <- as.mcmc(unlist(tef_Liabs_raw[,1]))
+tef_global
+tef_estimates  <- as.mcmc(unlist(tef_Liabs_raw[,1]))
+plot(tef_estimates)
+if(xx==TRUE) {#
+        data_cleaned<-clean.data(species, data, trees)#
+        trees<-data_cleaned$tree#
+        data_tmp<-data_cleaned$data#
+        cat("Dropped the following taxa:\n", data_cleaned$dropped.taxon)#
+    } else {#
+        data_tmp<-data#
+    }
+data_tmp
+data
+mydata
+if(TRUE==TRUE) {#
+        data_cleaned<-clean.data("species", mydata, trees)#
+        trees<-data_cleaned$tree#
+        data_tmp<-data_cleaned$data#
+        cat("Dropped the following taxa:\n", data_cleaned$dropped.taxon)#
+    } else {#
+        data_tmp<-data#
+    }
+if(TRUE==TRUE) {#
+        data_cleaned<-clean.data("species", mydata, combined_trees)#
+        trees<-data_cleaned$tree#
+        data_tmp<-data_cleaned$data#
+        cat("Dropped the following taxa:\n", data_cleaned$dropped.taxon)#
+    } else {#
+        data_tmp<-data#
+    }
+data_tmp
+clean.data("species", mydata, combined_trees)
+if(TRUE==TRUE) {#
+        data_cleaned<-clean.data("species", mydata, combined_trees)#
+        trees<-data_cleaned$tree#
+        data_tmp<-data_cleaned$data#
+        cat("Dropped the following taxa:\n", data_cleaned$dropped.taxon)#
+    } else {#
+        data_tmp<-data#
+    }
+data_cleaned
+data_cleaned$tree
+data_cleaned$data
+names(data_cleaned)
+install.packages("devtools")library(devtools)install_github("TGuillerme/dispRity", ref = "release")library(dispRity)
+install.package("Biostrings")
+install.packages("Biostrings")
+38000*2
+library(MulTree)
+library(MulTre)
+library("MulTree")
+library("MulTre")
+if(!require(devtools)) install.packages("devtools")#
+library(devtools)#
+install_github("TGuillerme/mulTree", ref = "release")#
+library(mulTree)
+mulTree
+?mulTree
+data(lifespan)
+combined_trees <- tree.bind(x = trees_mammalia, y = trees_aves, sample = 2, root.age = 250)
+combined_trees
+combined_trees <- tree.bind(x = trees_mammalia, y = trees_aves, sample = 3, root.age = 250)
+data
+lifespan
+data(lifespan)
+lifespan_volant
+diff(plot_delta, 3.5)
+Y
+yes
+16
+c(16,169.98,6.4,90,4)
+sum(16,169.98,6.4,90,4)
+load("/Users/kevinhealy/Desktop/Max-mean lifespan/max plant list/COMPADRE_v.3.2.1(1).RData")
+0.018(10^3)
+0.018*(10^3)
+40*52
+38000/2080
+(3100*12)/2080
+(2500*12)/2080
+25.8
+0.01175*(25.8^3)
+0.06*(6.5^3.24)
+(20*10^(-5))
+(20*10^(-5))*(191^2.92)
+(20*10^(-5))*(100^2.92)
+10
+0.00589*(10^3.09)
+0.00800*(25^3.165)
+citation()
+0.01000*(11^3.04)
+ref()
+citation()
+library("phytools")
+citation("phytools")
+20*14
+20*14*3
+20*14*4
+20*14*4*2
+20*13*4*2
+13*10
+20*13*4
+20*14*4
+20*15*4
+14*13
+20*15*4
+20*14*4
+20*14*2
+20*14*3
+20*14
+13,481/6583545
+13481/6583545
+13*2*20
+2700+540
+800+400+350
+350+300+300
+1550 + 950
+3240+1000 + 3000 +1000
+52/7
+(52/7)*5
+((52/7)*5)/100
+((52/7)*5)/100*5
+((52/7)*5)/100*13
+((52/7)*5)/100*13*5
+na.dataset
+singel_bites <- c(42,14,18,22,5,6,14,6,15,15,54,1.7,11,13,3.6)
+venom_vol <- c(63, 40.75, 53, 138, 17, 13, 123, NA, 87.5, 62, 115, 190, 124, 212.5)
+glm(singel_bites ~ venom_vol)
+singel_bites <- c(42,14,18,22,5,6,14,15,15,54,1.7,11,13,3.6)
+venom_vol <- c(63, 40.75, 53, 138, 17, 13, 123, 87.5, 62, 115, 190, 124, 212.5)
+glm(singel_bites ~ venom_vol)
+venom_vol
+length(venom_vol)
+length(singel_bites)
+venom_vol <- c(63, 40.75, 53, 138, 17, 13, 123, 87.5, 62, 115, 190, 124, 212.5, 7.89)
+glm(singel_bites ~ venom_vol)
+ff <- glm(singel_bites ~ venom_vol)
+plot(singel_bites ~ venom_vol)
+plot(log10(singel_bites) ~ log10(venom_vol))
+ff <- glm(log10(singel_bites) ~ log10(venom_vol))
+summary(ff)
+0.5*12012
+0.05*12012
+12012
+12012*0.5
+12012*0.05
+12012*0.10
+12012*0.05
+18772-12012
+(18772-12012)*0.025
+12012*0.005
+0.005
+37750-18772
+(37750-18772)*0.05
+948.9 + 60.06 + 169
+(948.9 + 60.06 + 169)/12
+(948.9 + 60.06 + 169)/6
+100^1/12
+0.9^(1/12)
+0.9^(12)
+100^(12)
+100^(12)/12
+100^(12)
+10^(12)
+10/34
+30/4
+getwd()
+one_site <- read.csv("Morrison_Foster.csv")
+head(one_site)
+predator <- one_site[,]predator <- max(one_site[one_site$Diet..herbivore..omnivore..carnivore..small.stuff.eater. == "carnivore"], "Body.mass..kg.")
+max(one_site[one_site$Diet..herbivore..omnivore..carnivore..small.stuff.eater. == "carnivore"], "Body.mass..kg.")
+max(one_site[one_site$Diet..herbivore..omnivore..carnivore..small.stuff.eater. == "carnivore", "Body.mass..kg."])
+one_site[one_site$Diet..herbivore..omnivore..carnivore..small.stuff.eater. == "carnivore", "Body.mass..kg."]
+predator  <- 2720
+Body_length <- one_site[,5]/predator
+one_site[,5]
+one_site[,6]
+one_site[,7]
+one_site[one_site$Body.mass.(kg) ! = "<1",7]
+one_site[one_site$Body.mass.(kg) != "<1",7]
+one_site[one_site$Body.mass.(kg),7]
+one_site[one_site$Body.mass.(kg) != "1",]
+head(one_site)
+one_site[one_site$Body.mass..kg. != "1",]
+one_site[,7]
+one_site  <- one_site[one_site$Body.mass..kg. != "<1",]
+one_site  <- one_site[one_site$Body.mass..kg. != "I need to calulate this",]
+one_site[,7]
+Body_length <- as.numeric(as.vector(one_site[,7]))/predator
+as.numeric(as.vector(one_site[,7]))
+ifelse(data[species, 8] == 1, sum(data[species, 9:10]), NA)
+one_site[,8]
+one_site[,9]
+## Get the spiny-ness (if the score is > 0, it means at least one part of the body has armour)#
+get.armour <- function(species, data) {#
+    ## Get the "armourness" of the body parts#
+    head <- ifelse(data[species, 9] == 1, sum(data[species, 10:11]), NA)#
+    body <- ifelse(data[species, 13] == 1, sum(data[species, 14:15]), NA)#
+    tail <- ifelse(data[species, 17] == 1, sum(data[species, 18:19]), NA)#
+    ## Get the average "armourness score"#
+    return(mean(c(head, body, tail), na.rm = TRUE))#
+}
+armours <- unlist(lapply(as.list(seq(1:ncol(one_site))), get.armour, data = one_site))
+armours <- ifelse(armours != 0, 1, 0)
+## Calculating the histogram#
+hist_BL <- hist(Body_length, plot = FALSE)#
+## Calculating the#
+density_BL <- density(Body_length)#
+## Scaling the density to match with the histogram#
+density_BL$y <- density_BL$y * hist_BL$counts[1] / hist_BL$density[1]
+plot(hist_BL, xlab = "Body Length (m)", ylab = "Density", main = "Occurrences of armoured fishes", border = "grey") ; lines(density_BL)
+Body_length <- log10(as.numeric(as.vector(one_site[,7])))/log10(predator)
+## Calculating the histogram#
+hist_BL <- hist(Body_length, plot = FALSE)#
+## Calculating the#
+density_BL <- density(Body_length)#
+## Scaling the density to match with the histogram#
+density_BL$y <- density_BL$y * hist_BL$counts[1] / hist_BL$density[1]#
+#
+## Plotting the histogram and the density curve#
+plot(hist_BL, xlab = "Body Length (m)", ylab = "Density", main = "Occurrences of armoured fishes", border = "grey") ; lines(density_BL)
+## Function for narrowing down the value of BL under the curve#
+narrow.down.x <- function(x, density) {#
+    ## Start from rounding = 0#
+    rounding <- 0#
+    ## Check if any matching with lower rounding#
+    while(length(which(round(x, digit = rounding) == round(density, digit = rounding))) != 0) {#
+        rounding <- rounding + 1#
+    }#
+    ## Return the before last rounding#
+    narrow <- which(round(x, digit = rounding-1) == round(density, digit = rounding-1))#
+    return(narrow[ceiling(length(narrow)/2)])#
+}
+## Adding the lines under the curve#
+for(one_BL in 1:length(Body_length[which(armours == 1)])) {#
+    x_value <- narrow.down.x(Body_length[which(armours == 1)][one_BL], density_BL$x)#
+    segments(x0 = density_BL$x[x_value], y0 = 0, y1 = density_BL$y[x_value], lwd = 2)#
+}
+## Testing the differences#
+testing <- t.test(Body_length[which(armours == 1)], Body_length[which(armours == 0)])#
+#
+boxplot(Body_length[which(armours == 1)], Body_length[which(armours == 0)], ylab = "Body Length", xaxt = "n", main = "#
+    Difference between groups")#
+text(1.5, 1, paste("p value:", round(testing$p.value, digit = 3)))#
+axis(1, at = 1:2, labels = c("Armour", "No armour"))
+Body_length
+armours
+mean_bl <- mean(Body_length)#
+SD_bl <- sd(Body_length)
+armours <- unlist(lapply(as.list(seq(1:ncol(one_site))), get.armour, data = one_site))
+armours
+Body_length
+ifelse(data[species, 9] == 1, sum(data[species, 10:11]), NA)
+one_site[,9]
+ifelse(one_site[, 9] == 1, sum(data[species, 10:11]), NA)
+ifelse(one_site[1, 9] == 1, sum(one_site[1, 10:11]), NA)
+one_site[1, 9]
+ifelse(one_site[16, 9] == 1, sum(one_site[1, 10:11]), NA)
+ifelse(one_site[16, 9] == 1, sum(one_site[16, 10:11]), NA)
+one_site
+ifelse(one_site[70, 9] == 1, sum(one_site[70, 10:11]), NA)
+one_site[70, 9]
+one_site[70, 13]
+one_site[70, 17]
+one_site[71, 17]
+one_site[71, 17]
+2
+one_site[72, 17]
+one_site[69, 17]
+one_site[66, 17]
+one_site[66,]
+one_site[50,]
+one_site[35,]
+expect_equal
+?expect_equal
+expect_equal()
+c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799))
+c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799))
+c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)
+c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)
+abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799))
+abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799))
+abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)) <= 0.1
+all.true(abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)) <= 0.1)
+any.false(abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)) <= 0.1)
+any(abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)) <= 0.1)
+?any(abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)) <= 0.1)
+all(abs(c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799) - c(0.3469607, 5.5769455, 3.7154270, 1.5595104, 2.1872155, 5.5714799)) <= 0.1)
+#Probability of survival to first reprod event#
+Uprime = matU#
+Uprime[,which(repLifeStages==1)] = 0#
+Mprime = matrix(0,2,uDim)#
+for (p in 1:uDim[1]) {#
+if (repLifeStages[p]==1) Mprime[2,p] = 1 else#
+Mprime[1,p] = 1-surv[p]#
+}#
+#
+Bprime = Mprime%*%(ginv(diag(uDim)-Uprime))#
+pRep = Bprime[2,startLife]
+load("/Users/kevinhealy/Desktop/keyfitz_Agam_100x100.RData")
