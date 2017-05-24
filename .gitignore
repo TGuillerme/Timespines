@@ -1,2 +1,4 @@
 *.fls
 *.pdf
+*.xlsx
+.Rapp.history
