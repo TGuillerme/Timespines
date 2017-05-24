@@ -1,5 +1,3 @@
-source("sanitizing.R")
-
 #' @title Get armour data
 #'
 #' @description Get the taxa with the different type of armour
@@ -37,18 +35,18 @@ get.armour <- function(data, body.part = 0, armour.type = 0) {
         rows <- rep(TRUE, nrow(data))
     } else {
         ## Select only the data with the present body parts
-        rows <- data[,4+(body.part[[1]]*4)] == 1
+        rows <- data[,7+(body.part[[1]]*4)] == 1
         if(length(body.part) > 1) {
             for(part in 2:length(body.part)) {
-                rows <- rows & data[,4+(body.part[[part]]*4)] == 1
+                rows <- rows & data[,7+(body.part[[part]]*4)] == 1
             }
         }
     }
 
     ## Replacing the body parts by the column number
-    body.part <- as.numeric(gsub(1, 8, body.part))
-    body.part <- as.numeric(gsub(2, 12, body.part))
-    body.part <- as.numeric(gsub(3, 16, body.part))
+    body.part <- as.numeric(gsub(1, 11, body.part))
+    body.part <- as.numeric(gsub(2, 15, body.part))
+    body.part <- as.numeric(gsub(3, 19, body.part))
 
     ## Initialising the results list
     results <- list(logical())
@@ -76,7 +74,68 @@ get.armour <- function(data, body.part = 0, armour.type = 0) {
     output <- output & rows
 
     return(output)
+}
 
+
+
+#' @title Timespine data
+#'
+#' @description Getting the right body measurement and armours occurences
+#'
+#' @param one_site One site in the proper format
+#' @param measure The column where the body measurement is (length or mass) (default = length (\code{7}))
+#' @param standardise Whether to get the measurements in terms of standard deviations (\code{TRUE}) or node (\code{FALSE}, default)
+#' 
+#' @examples
+#' 
+#' @author Thomas Guillerme
+#' 
+data.timespine <- function(one_site, measure = 7, standardise = FALSE) {
+    ## Selecting the predators
+    carnivores <- which(as.character(one_site[, 10]) == "carnivore")
+
+    ## Selecting the biggest predator
+    predator <- max(one_site[carnivores,measure], na.rm = TRUE)
+
+    ## Correcting for the predator's size
+    Body_measure <- one_site[,measure]/predator
+
+    if(standardise) {
+        ## Get the mean and sd
+        mean <- mean(Body_measure)
+        sd <- sd(Body_measure)
+
+        ## Correct the values in terms of units of sd
+        Body_measure <- sqrt(((mean - Body_measure)/sd)^2)
+    }
+
+    ## Get the spiny-ness
+    armours <- get.armour(one_site)
+
+    return(list("measure" = Body_measure, "armours" = armours))
+}
+
+
+
+#' @title Timespine density
+#'
+#' @description Calculating the data density
+#'
+#' @param timespine_data A list containing "measure" and "armour"
+#' 
+#' @examples
+#' 
+#' @author Thomas Guillerme
+#' 
+density.timespine <- function(timespsine_data) {
+    ## Calculating the histogram
+    hist <- hist(timespsine_data$measure, plot = FALSE)
+    ## Calculating the
+    density <- density(timespsine_data$measure, na.rm = TRUE)
+    ## Scaling the density to match with the histogram
+    density$y <- density$y * hist$counts[1] / hist$density[1]
+
+    return(list("histogram" = hist, "density" = density))
 }
 
 #' @title Narrow down x
@@ -101,4 +160,44 @@ narrow.down.x <- function(x, density) {
     ## Return the before last rounding
     narrow <- which(round(x, digit = rounding-1) == round(density, digit = rounding-1))
     return(narrow[ceiling(length(narrow)/2)])
+}
+
+
+
+#' @title plots the results
+#'
+#' @description Plots the results
+#'
+#' @param site_measurement Measurements for on site in timespines format
+#' @param display_armour Whether to display the armours
+#' @param xlab x label (default = "Body Length (m)")
+#' @param ... arguments to be passed to plot
+#' 
+#' @examples
+#' 
+#' @author Thomas Guillerme
+#' 
+
+plot.timespine <- function(site_measurements, display_armour = FALSE, xlab = "Body Length (m)", ...) {
+    ## Calculating the density
+    density <- density.timespine(site_measurements)
+
+    ## Plotting the histogram and the density curve
+    plot(density$histogram, xlab = xlab, ylab = "Density", border = "grey", ...)
+    lines(density$density)
+
+    if(display_armour) {
+        ## Adding the lines under the curve
+        for(one_BL in 1:length(site_measurements$measure[which(site_measurements$armours)])) {
+            ## Get the measurement of the armoured thing
+            measure <- site_measurements$measure[which(site_measurements$armours)][one_BL]
+            if(!is.na(measure)) {
+                ## Find the closest x
+                x_value <- narrow.down.x(measure, density$density$x)
+                ## Plot the segment
+                segments(x0 = density$density$x[x_value], y0 = 0, y1 = density$density$y[x_value], lwd = 2)
+            }
+        }
+    }
+    return(invisible())
 }
