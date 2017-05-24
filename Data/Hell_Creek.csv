@@ -61,19 +61,19 @@ Gypsonictops_illuminatus,Mammalia,body size from Wilson et al 2013,70.6-66.043,t
 Cimolestes_magnus,Mammalia,body size from Wilson et al 2013,,terrestrial,,0.57,carnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,maybe a synonom with Altacreodus magnus
 Didelphodon_vorax,Mammalia,body size from Wilson et al 2016. A large carnivorous mammal from the Late Cretaceous and the North American origin of marsupials,70.6-66.043,terrestrial,,5.2_,carnivore,1,0,0,NA,0,0,0,NA,0,0,0,NA,Some speculation that it may have been semi-aquatic but only speculation. see Wilson et al 2016. A large carnivorous mammal from the Late Cretaceous and the North American origin of marsupials
 Didelphodon_sp.,Mammalia,,,,,,,,,,,,,,,,,,,
-Pediomys_elegans,Mammalia,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Pediomys_florencae,Mammalia,,70.6-66.043,,,,,0,0,0,NA,0,0,0,NA,0,0,0,NA,only from teeth and skull fragments
+Pediomys_elegans,Mammalia,body size from Wilson et al 2016. A large carnivorous mammal from the Late Cretaceous and the North American origin of marsupials,70.6-66.043,terrestrial,,0.05,insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Pediomys_florencae,Mammalia,,70.6-66.043,terrestrial,,,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only from teeth and skull fragments
 Pediomys_cf._P_florencae,Mammalia,,,,,,,,,,,,,,,,,,,
-Alphadon_marshi,Mammalia,body size from Wilson et al 2013,,,,0.087,,0,0,0,NA,0,0,0,NA,0,0,0,NA,only from teeth and skull fragments
-Leptalestes_krejcii,Mammalia,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Protolambda_hatcheri,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Protolambda_florencae,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Protalphadon_foxi,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Nortedelphys_jasoni,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Glasbius_twitchelli,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Cimolestes_stirtoni,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Cimolestes_magnus,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Cimolestes_cerberoides,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Cimolestes_propalaeorcytes,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Cimolestes_incisus,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
-Batodon_tenuis,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Alphadon_marshi,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.087,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only from teeth and skull fragments
+Leptalestes_krejcii,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.023,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Protolambda_hatcheri,Mammalia,body size from Wilson et al 2013,83.5-66.043,terrestrial,,0.24,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Protolambda_florencae,Mammalia,body size from Wilson et al 2013,,,,0.33,,,,,,,,,,,,,,synonom of Protolambda hatcheri species added to list from Wilson et al 2013
+Protalphadon_foxi,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.03,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Nortedelphys_jasoni,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.054,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Glasbius_twitchelli,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.054,herbivore-frugivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Cimolestes_stirtoni,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.31,carnivore-insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Cimolestes_magnus,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.57,carnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Cimolestes_cerberoides,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.13,insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Cimolestes_propalaeorcytes,Mammalia,body size from Wilson et al 2013,70.6-55.8,terrestrial,,0.049,carnivore-insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Cimolestes_incisus,Mammalia,body size from Wilson et al 2013,66.043-55.8,terrestrial,,0.15,insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+Batodon_tenuis,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.005,insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
