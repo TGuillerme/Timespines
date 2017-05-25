@@ -16,17 +16,17 @@ Dinochelys_whitei,Testudines,,,semiaquatic,,,5,,Omnivore,1,0,0,NA,1,0,1,NA,1,0,0
 Uluops_uluops,Testudines,,,semiaquatic,,,5,,Omnivore,1,0,0,NA,1,0,1,NA,1,0,0,NA,Turtle_so_only_body_is_cover_however_not_sure_if_head_and_tail_can_be_retracted,,Foster2003_Table_5
 Dorsetochelys_buzzops,Testudines,,,semiaquatic,,,5,,Omnivore,1,0,0,NA,1,0,1,NA,1,0,0,NA,Turtle_so_only_body_is_cover_however_not_sure_if_head_and_tail_can_be_retracted,,Foster2003_Table_5
 Chelonia_indet,Testudines,,,semiaquatic,,,5,,Omnivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Opisthias_rarus,Rhynchocephalian,150.8,140.2,Specialized_terrestrial,,,<1,,Invertivore,1,0,0,NA,0,NA,NA,NA,0,NA,NA,NA,skull is approximatly 2cm long,fossil_image available_from_https://www.nps.gov/dino/learn/nature/opisthias-rarus.htm,Foster2003_Table_5
-Theretairus_antiquus,Rhynchocephalian,,,Specialized_terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,While I cant get access to the ref http://www.ajsonline.org/content/s5-12/67/12.extract I don't see any evidance of fossils apart from jawbones etc,Foster2003_Table_5
-Eilenodon,Rhynchocephalian,,,Specialized_terrestrial,,,<1,,herbivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,"Rasmussen, T.E. and Callison, G., 1981. A new herbivorous sphenodontid (Rhynchocephalia: Reptilia) from the Jurassic of Colorado. Journal of Paleontology, pp.1109-1116.",Foster2003_Table_5
-Sphenodontia_indet,Rhynchocephalian,,,Specialized_terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Dorsetisaurus,,,,Specialized_terrestrial,,20mm,<1,,Invertivore,1,0,0,NA,0,NA,NA,NA,0,NA,NA,NA,"Evans, S.E., Raia, P. and Barbera, C., 2006. The lower Cretaceous lizard genus Chometokadmon from Italy. Cretaceous Research, 27(5), pp.673-683.",20mm skull length,Foster2003_Table_5
-Parviraptor,,,,Specialized_terrestrial,,,<1,,Invertivore,1,0,0,NA,0,NA,NA,NA,0,NA,NA,NA,"Evans, S.E., Raia, P. and Barbera, C., 2006. The lower Cretaceous lizard genus Chometokadmon from Italy. Cretaceous Research, 27(5), pp.673-683.",,Foster2003_Table_5
-Paramacellodus,,,,Specialized_terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,http://fossilworks.org/bridge.pl?a=taxonInfo&taxon_no=172363&is_real_user=1,,Foster2003_Table_5
-Saurillodon,,,,Specialized_terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,,Foster2003_Table_5
-Schilleria,,,,Specialized_terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,,Foster2003_Table_5
-Squamata_indet,,,,Specialized_terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
-Boide,,,,Specialized_terrestrial,,,<1,,carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only jawbone is present,,Foster2003_Table_5
+Opisthias_rarus,Rhynchocephalian,150.8,140.2,terrestrial,,,<1,,Invertivore,1,0,0,NA,0,NA,NA,NA,0,NA,NA,NA,skull is approximatly 2cm long,fossil_image available_from_https://www.nps.gov/dino/learn/nature/opisthias-rarus.htm,Foster2003_Table_5
+Theretairus_antiquus,Rhynchocephalian,,,terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,While I cant get access to the ref http://www.ajsonline.org/content/s5-12/67/12.extract I don't see any evidance of fossils apart from jawbones etc,Foster2003_Table_5
+Eilenodon,Rhynchocephalian,,,terrestrial,,,<1,,herbivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,"Rasmussen, T.E. and Callison, G., 1981. A new herbivorous sphenodontid (Rhynchocephalia: Reptilia) from the Jurassic of Colorado. Journal of Paleontology, pp.1109-1116.",Foster2003_Table_5
+Sphenodontia_indet,Rhynchocephalian,,,terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Dorsetisaurus,,,,terrestrial,,0.002,<1,,Invertivore,1,0,0,NA,0,NA,NA,NA,0,NA,NA,NA,"Evans, S.E., Raia, P. and Barbera, C., 2006. The lower Cretaceous lizard genus Chometokadmon from Italy. Cretaceous Research, 27(5), pp.673-683.",20mm skull length,Foster2003_Table_5
+Parviraptor,,,,terrestrial,,,<1,,Invertivore,1,0,0,NA,0,NA,NA,NA,0,NA,NA,NA,"Evans, S.E., Raia, P. and Barbera, C., 2006. The lower Cretaceous lizard genus Chometokadmon from Italy. Cretaceous Research, 27(5), pp.673-683.",,Foster2003_Table_5
+Paramacellodus,,,,terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,http://fossilworks.org/bridge.pl?a=taxonInfo&taxon_no=172363&is_real_user=1,,Foster2003_Table_5
+Saurillodon,,,,terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,,Foster2003_Table_5
+Schilleria,,,,terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,,NA,NA,0,NA,NA,NA,,,Foster2003_Table_5
+Squamata_indet,,,,terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,,,Foster2003_Table_5
+Boide,,,,terrestrial,,,<1,,carnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only jawbone is present,,Foster2003_Table_5
 Cteniogenys,,,,semiaquatic,,,<1,,Invert/Carnivore,,,,,,,,,,,,,,,Foster2003_Table_5
 Hallopus,,,,terrestrial,,,5,,carnivore,1,0,0,NA,1,0,0,NA,0,NA,NA,NA,only partial skull and no spine may have had osteoderms on its back as it's a crocodilimorph,,Foster2003_Table_5
 Fruitachampsa,,,,terrestrial,,,5,,carnivore,1,0,0,NA,1,0,1,NA,1,NA,NA,NA,A new shartegosuchid crocodyliform from the Upper Jurassic Morrison Formation of western Colorado,,
@@ -76,7 +76,7 @@ Dryosaurus_altus,Ornithopoda,,,terrestrial,,,114,,herbivore,1,0,0,NA,1,0,0,NA,1,
 Camptosaurus_dispar,Ornithopoda,,,terrestrial,,,830,,herbivore,1,0,0,NA,1,0,0,NA,1,0,0,NA,NA,,
 Ornithopoda_indet,Ornithopoda,,,terrestrial,,,450,,herbivore,,,,,,,,,,,,,,,
 Docodon,Mammalia,,,Specialized_terrestrial,,,140.7,,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
-Ctenacodon,Mammalia,,,Specialized_terrestrial,,,20.5,,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,"Marsh, O. C. (1887). I.Ü American Jurassic Mammals. Geological Magazine (Decade III), 4(07), 289-299.",Foster_2009_using_ME1_from_table3
+Ctenacodon,Mammalia,,,Specialized_terrestrial,,,20.5,,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,"Marsh, O. C. (1887). I.† American Jurassic Mammals. Geological Magazine (Decade III), 4(07), 289-299.",Foster_2009_using_ME1_from_table3
 Psalodon,Mammalia,,,Specialized_terrestrial,,,58.3,,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
 Glirodon,Mammalia,,,Specialized_terrestrial,,,16.8,,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
 Zofiabaatar,Mammalia,,,Specialized_terrestrial,,,35,,omnivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,,Foster_2009_using_ME1_from_table3
@@ -105,6 +105,6 @@ Kepolestes,Mammalia,,,Specialized_terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,syno
 Laolestes,Mammalia,,,Specialized_terrestrial,,,63,,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth,checked fossil state in Mammals from the age of Dinosaurs,Foster_2009_using_ME1_from_table3
 Melanodon,Mammalia,,,Specialized_terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,synonym with Laolestes,,
 Miccylotyrans,Mammalia,,,Specialized_terrestrial,,,<1,,Invertivore,0,NA,NA,NA,0,NA,NA,NA,0,NA,NA,NA,only_known_from_jaw_teeth might be synonym with Amblothherium,checked fossil state in Mammals from the age of Dinosaurs,
-Dryolestidae_indet,Mammalia,,,Specialized_terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,,,
-Mammalia_indet,Mammalia,,,Specialized_terrestrial,,,<1,,Invertivore,,,,,,,,,,,,,,,
-Fruitafossor,Mammalia,,,Specialized_terrestrial,,,6.2,,Invertivore,1,0,0,NA,1,0,0,NA,1,0,0,0,,"Luo, Zhe-Xi, and John R. Wible. ""A Late Jurassic digging mammal and early mammalian diversification."" Science 308.5718 (2005): 103-107.",Foster_2009_using_ME1_from_table3
+Dryolestidae_indet,Mammalia,,,Specialized_terrestrial,,,,,Invertivore,,,,,,,,,,,,,,,
+Mammalia_indet,Mammalia,,,Specialized_terrestrial,,,,,Invertivore,,,,,,,,,,,,,,,
+Fruitafossor_windscheffeli,Mammalia,,,Specialized_terrestrial,,,0.0062,,Invertivore,1,0,0,NA,1,0,0,NA,1,0,0,NA,,"Luo, Zhe-Xi, and John R. Wible. ""A Late Jurassic digging mammal and early mammalian diversification."" Science 308.5718 (2005): 103-107.",Foster_2009_using_ME1_from_table3
