@@ -12,21 +12,21 @@ Species name,Group,Source,Age (in Mya),Envronement (terrestrial/aquatic),Body le
 ,CAUDATA,,,,,,,,,,,,,,,,,,,
 ,CAUDATA,,,,,,,,,,,,,,,,,,,
 ,CAUDATA,,,,,,,,,,,,,,,,,,,
-Plesiobaena antiqua,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Baenidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Chelydridae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Adocus,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Basilemys sinuosa,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Kinosternidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Macrobaenidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Helopanoplia distincta,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Trionychidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Compsemys victa,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Lepidosauria indeterminate,LEPIDOSAURIA,,,,,,,,,,,,,,,,,,,
-Champsosaurus sp.,CHORISTODERA,,,,,,,,,,,,,,,,,,,
-Brachychampsa montana,CROCODILIA,,,,,,,,,,,,,,,,,,,
-Leidyosuchus sternbergi,CROCODILIA,,,,,,,,,,,,,,,,,,,
-Thoracosaurus neocesariensis,CROCODILIA,,,,,,,,,,,,,,,,,,,
+Plesiobaena_antiqua,TESTUDINES,body size from Brinkman 2003,70.6 - 63.3 ,aquatic,0.41,,small stuff eater (inverts),1,0,0,nothing,1,0,1,protection,1,0,0,nothing,
+Baenidae_indeterminate,TESTUDINES,ecology from Hartman,66.04,aquatic,,,carnivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Chelydridae_indeterminate,TESTUDINES,body size and ecology from Hartman,66.04,aquatic,0.21,,carnivore,,,,,1,0,1,protection,,,,,Protochelydra
+Adocus,TESTUDINES,body size and ecology from fossilworks ,70.6 - 66.043,aquatic,0.59,23.6,omnivore,0,NA,NA,NA,1,0,1,protection,0,NA,NA,NA,Adocus beautus?
+Basilemys_sinuosa,TESTUDINES,body size and ecology from Hartman,70.6 to 66.043,terrestrial,0.92,38.5,herbivore,1,0,0,nothing,1,0,1,protection,0,NA,NA,NA,armoured limbs
+Kinosternidae_indeterminate,TESTUDINES,ecology from fossil works body size from Hartman,70.6-present,aquatic,0.15,,carnivore,,,,,1,0,1,protection,,,,,Kinosternid morph
+Macrobaenidae_indeterminate,TESTUDINES,ecology from Hartman,66.04,aquatic,,,herbivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Helopanoplia_distincta,TESTUDINES,ecology from fossil works,70.6 - 66.043,aquatic,0.48,,carnivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Trionychidae_indeterminate,TESTUDINES,ecology from Hartman,66.04,aquatic,,,carnivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Compsemys_victa,TESTUDINES,Ecology from Lyson et al 2011 body size from Hartman,70.6 - 56.8,aquatic,0.23,,canivore,1,0,0,nothing,1,0,1,protection,,,,,multiple references to 30 cm but from dubious sources
+Lepidosauria_indeterminate,LEPIDOSAURIA,,,,,,,,,,,,,,,,,,,
+Champsosaurus_sp.,CHORISTODERA,Ecology from fossilworks, 70.6 - 66.043,aquatic,,,carnivore,0,NA,NA,NA,1,0,0,nothing,0,NA,NA,NA,"piscivore,Champsosaurus laramiensis?"
+Brachychampsa_montana,CROCODILIA,ecology from fossilworks body size from NatGeo, 70.6 - 66.043,aquatic,3,,carnivore,1,0,0,nothing,0,NA,NA,NA,0,NA,NA,NA,ate turtles?
+Leidyosuchus_sternbergi,CROCODILIA,body size and ecology from fossil works,66.043 - 63.3,aquatic,2.8,40,carnivore,1,0,0,nothing,1,0,0,nothing,0,NA,NA,NA,aka Borealosuchus sternbergii
+Thoracosaurus_neocesariensis,CROCODILIA,ecology from fossilworks,70.6 - 50.3,aquatic,,,carnivore,1,0,0,nothing,1,0,0,nothing,0,NA,NA,NA,
 ,PTEROSAURIA,,,,,,,,,,,,,,,,,,,
 ,ORNITHISCHIA,,,,,,,,,,,,,,,,,,,
 ,ORNITHISCHIA,,,,,,,,,,,,,,,,,,,
@@ -64,6 +64,7 @@ Didelphodon_sp.,Mammalia,,,,,,,,,,,,,,,,,,,
 Pediomys_elegans,Mammalia,body size from Wilson et al 2016. A large carnivorous mammal from the Late Cretaceous and the North American origin of marsupials,70.6-66.043,terrestrial,,0.05,insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
 Pediomys_florencae,Mammalia,,70.6-66.043,terrestrial,,,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only from teeth and skull fragments
 Pediomys_cf._P_florencae,Mammalia,,,,,,,,,,,,,,,,,,,
+<<<<<<< HEAD
 Alphadon_marshi,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.087,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,only from teeth and skull fragments
 Leptalestes_krejcii,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.023,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
 Protolambda_hatcheri,Mammalia,body size from Wilson et al 2013,83.5-66.043,terrestrial,,0.24,omnivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
@@ -77,3 +78,18 @@ Cimolestes_cerberoides,Mammalia,body size from Wilson et al 2013,70.6-66.043,ter
 Cimolestes_propalaeorcytes,Mammalia,body size from Wilson et al 2013,70.6-55.8,terrestrial,,0.049,carnivore-insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
 Cimolestes_incisus,Mammalia,body size from Wilson et al 2013,66.043-55.8,terrestrial,,0.15,insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
 Batodon_tenuis,Mammalia,body size from Wilson et al 2013,70.6-66.043,terrestrial,,0.005,insectivore,0,0,0,NA,0,0,0,NA,0,0,0,NA,species added to list from Wilson et al 2013 only from teeth and skull fragments
+=======
+Alphadon_marshi,Mammalia,body size from Wilson et al 2013,,,,0.087,,0,0,0,NA,0,0,0,NA,0,0,0,NA,only from teeth and skull fragments
+Leptalestes_krejcii,Mammalia,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Protolambda_hatcheri,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Protolambda_florencae,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Protalphadon_foxi,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Nortedelphys_jasoni,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Glasbius_twitchelli,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Cimolestes_stirtoni,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Cimolestes_magnus,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Cimolestes_cerberoides,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Cimolestes_propalaeorcytes,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Cimolestes_incisus,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+Batodon_tenuis,,,,,,,,,,,,,,,,,,,,species added to list from Wilson et al 2013
+>>>>>>> origin/master
