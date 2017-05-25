@@ -12,21 +12,21 @@ Species name,Group,Source,Age (in Mya),Envronement (terrestrial/aquatic),Body le
 ,CAUDATA,,,,,,,,,,,,,,,,,,,
 ,CAUDATA,,,,,,,,,,,,,,,,,,,
 ,CAUDATA,,,,,,,,,,,,,,,,,,,
-Plesiobaena antiqua,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Baenidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Chelydridae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Adocus,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Basilemys sinuosa,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Kinosternidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Macrobaenidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Helopanoplia distincta,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Trionychidae indeterminate,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Compsemys victa,TESTUDINES,,,,,,,,,,,,,,,,,,,
-Lepidosauria indeterminate,LEPIDOSAURIA,,,,,,,,,,,,,,,,,,,
-Champsosaurus sp.,CHORISTODERA,,,,,,,,,,,,,,,,,,,
-Brachychampsa montana,CROCODILIA,,,,,,,,,,,,,,,,,,,
-Leidyosuchus sternbergi,CROCODILIA,,,,,,,,,,,,,,,,,,,
-Thoracosaurus neocesariensis,CROCODILIA,,,,,,,,,,,,,,,,,,,
+Plesiobaena_antiqua,TESTUDINES,body size from Brinkman 2003,70.6 - 63.3 ,aquatic,0.41,,small stuff eater (inverts),1,0,0,nothing,1,0,1,protection,1,0,0,nothing,
+Baenidae_indeterminate,TESTUDINES,ecology from Hartman,66.04,aquatic,,,carnivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Chelydridae_indeterminate,TESTUDINES,body size and ecology from Hartman,66.04,aquatic,0.21,,carnivore,,,,,1,0,1,protection,,,,,Protochelydra
+Adocus,TESTUDINES,body size and ecology from fossilworks ,70.6 - 66.043,aquatic,0.59,23.6,omnivore,0,NA,NA,NA,1,0,1,protection,0,NA,NA,NA,Adocus beautus?
+Basilemys_sinuosa,TESTUDINES,body size and ecology from Hartman,70.6 to 66.043,terrestrial,0.92,38.5,herbivore,1,0,0,nothing,1,0,1,protection,0,NA,NA,NA,armoured limbs
+Kinosternidae_indeterminate,TESTUDINES,ecology from fossil works body size from Hartman,70.6-present,aquatic,0.15,,carnivore,,,,,1,0,1,protection,,,,,Kinosternid morph
+Macrobaenidae_indeterminate,TESTUDINES,ecology from Hartman,66.04,aquatic,,,herbivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Helopanoplia_distincta,TESTUDINES,ecology from fossil works,70.6 - 66.043,aquatic,0.48,,carnivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Trionychidae_indeterminate,TESTUDINES,ecology from Hartman,66.04,aquatic,,,carnivore,,,,,1,0,1,protection,,,,,armour inferred because it's a turtle
+Compsemys_victa,TESTUDINES,Ecology from Lyson et al 2011 body size from Hartman,70.6 - 56.8,aquatic,0.23,,canivore,1,0,0,nothing,1,0,1,protection,,,,,multiple references to 30 cm but from dubious sources
+Lepidosauria_indeterminate,LEPIDOSAURIA,,,,,,,,,,,,,,,,,,,
+Champsosaurus_sp.,CHORISTODERA,Ecology from fossilworks, 70.6 - 66.043,aquatic,,,carnivore,0,NA,NA,NA,1,0,0,nothing,0,NA,NA,NA,"piscivore,Champsosaurus laramiensis?"
+Brachychampsa_montana,CROCODILIA,ecology from fossilworks body size from NatGeo, 70.6 - 66.043,aquatic,3,,carnivore,1,0,0,nothing,0,NA,NA,NA,0,NA,NA,NA,ate turtles?
+Leidyosuchus_sternbergi,CROCODILIA,body size and ecology from fossil works,66.043 - 63.3,aquatic,2.8,40,carnivore,1,0,0,nothing,1,0,0,nothing,0,NA,NA,NA,aka Borealosuchus sternbergii
+Thoracosaurus_neocesariensis,CROCODILIA,ecology from fossilworks,70.6 - 50.3,aquatic,,,carnivore,1,0,0,nothing,1,0,0,nothing,0,NA,NA,NA,
 ,PTEROSAURIA,,,,,,,,,,,,,,,,,,,
 ,ORNITHISCHIA,,,,,,,,,,,,,,,,,,,
 ,ORNITHISCHIA,,,,,,,,,,,,,,,,,,,
