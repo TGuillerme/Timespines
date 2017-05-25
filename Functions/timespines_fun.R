@@ -92,7 +92,7 @@ get.armour <- function(data, body.part = 0, armour.type = 0) {
 #' 
 data.timespine <- function(one_site, measure = 7, standardise = FALSE) {
     ## Selecting the predators
-    carnivores <- which(as.character(one_site[, 10]) == "carnivore")
+    carnivores <- grep("carnivore", one_site[, 10], ignore.case = TRUE)
 
     ## Selecting the biggest predator
     predator <- max(one_site[carnivores,measure], na.rm = TRUE)
