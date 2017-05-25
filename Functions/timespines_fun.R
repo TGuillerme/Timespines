@@ -102,8 +102,8 @@ data.timespine <- function(one_site, measure = 7, standardise = FALSE) {
 
     if(standardise) {
         ## Get the mean and sd
-        mean <- mean(Body_measure)
-        sd <- sd(Body_measure)
+        mean <- mean(Body_measure, na.rm = TRUE)
+        sd <- sd(Body_measure, na.rm = TRUE)
 
         ## Correct the values in terms of units of sd
         Body_measure <- sqrt(((mean - Body_measure)/sd)^2)
