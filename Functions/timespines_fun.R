@@ -169,7 +169,7 @@ narrow.down.x <- function(x, density) {
 #' @description Plots the results
 #'
 #' @param site_measurement Measurements for on site in timespines format
-#' @param display_armour Whether to display the armours
+#' @param display.armour Whether to display the armours
 #' @param xlab x label (default = "Body Length (m)")
 #' @param ... arguments to be passed to plot
 #' 
@@ -178,7 +178,7 @@ narrow.down.x <- function(x, density) {
 #' @author Thomas Guillerme
 #' 
 
-plot.timespine <- function(site_measurements, display_armour = FALSE, xlab = "Body Length (m)", ...) {
+plot.timespine <- function(site_measurements, display.armour = FALSE, xlab = "Body Length (m)", ...) {
     ## Calculating the density
     density <- density.timespine(site_measurements)
 
@@ -186,7 +186,7 @@ plot.timespine <- function(site_measurements, display_armour = FALSE, xlab = "Bo
     plot(density$histogram, xlab = xlab, ylab = "Density", border = "grey", ...)
     lines(density$density)
 
-    if(display_armour) {
+    if(display.armour) {
         ## Adding the lines under the curve
         for(one_BL in 1:length(site_measurements$measure[which(site_measurements$armours)])) {
             ## Get the measurement of the armoured thing

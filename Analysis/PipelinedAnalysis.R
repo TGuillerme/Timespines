@@ -7,42 +7,27 @@ source("LoadingDatasets.R") ## Datasets
 
 
 ## Getting the data in the right format
-one_site <- data.timespine(datasets[[1]])
+extant_data <- lapply(datasets[[1]][-6], data.timespine, standardise = TRUE) #TG: excl europe
 
+## Plotting the distribution of body masses
+op <- par(mfrow = c(3,3))
+for(zone in 1:length(extant_data)) {
+    plot.timespine(extant_data[[zone]], main = names(extant_data[zone]), xlab = "Standard deviations")
+}
+par(op)
 
-plot.timespine(one_site)
 
 ## Testing the differences
-testing <- t.test(one_site$measure[which(one_site$armours)], one_site$measure[which(!one_site$armours)])
+lapply.test <- function(one_site, test = wilcox.test) {
+    return(test(one_site$measure[which(one_site$armours)], one_site$measure[which(!one_site$armours)]))
+}
 
-boxplot(one_site$measure[which(one_site$armours)], one_site$measure[which(!one_site$armours)], ylab = "Body Length", xaxt = "n", main = "Difference between groups")
-text(1.5, 1, paste("p value:", round(testing$p.value, digit = 3)))
-axis(1, at = 1:2, labels = c("Armour", "No armour"))
+testings <- lapply(extant_data, lapply.test, test = wilcox.test)
 
-
-
-
-
-####Kevin Extra analysis based on the distance a body mass is from the entire mean body mass
-###as we expect spines to be intermediate than non-armoured species should show higher 
-###distances from the overall mean body size.
-
-##get the mean and standard deviation of the entire group
-mean_bl <- mean(Body_length)
-SD_bl <- sd(Body_length)
-
-#get the distance from the mean in terms of SD units
-z_dif_arm <- (((mean_bl - Body_length[which(armours)])/SD_bl)^2)^0.5
-z_dif_noarm <- (((mean_bl - Body_length[which(!armours)])/SD_bl)^2)^0.5
-
-Ztesting <- t.test(z_dif_arm, z_dif_noarm)
-
-#plots
-boxplot(z_dif_arm, z_dif_noarm, ylab = "Body Length", xaxt = "n", main = "
-        Difference between groups")
-text(1.5, 1, paste("p value:", round(testing$p.value, digit = 3)))
-axis(1, at = 1:2, labels = c("Armour", "No armour"))
-
-
-
-
+op <- par(mfrow = c(3,3))
+for(zone in 1:length(extant_data)) {
+    boxplot(extant_data[[zone]]$measure[which(extant_data[[zone]]$armours)], extant_data[[zone]]$measure[which(!extant_data[[zone]]$armours)], ylab = "sd", xaxt = "n", main = names(extant_data[zone]))
+    text(1.5, 3, paste("p value:", round(testings[[zone]]$p.value, digit = 3)))
+    axis(1, at = 1:2, labels = c("Armour", "No armour"))
+}
+par(op)
