@@ -13,6 +13,7 @@ output:
 
 ```{r}
 library(dispRity)
+source("../Functions/clade.change_fun.R")
 set.seed(123)
 ```
 
@@ -35,7 +36,7 @@ The data needed is thus:
 
 ```{r}
 ## Loading the body mass data
-body_size <- read.csv("../Data/LaurenData/BodySizes/body_sizes.csv")
+body_size <- read.csv("../Data/LaurenData/BodySizes/body_sizes.csv", stringsAsFactors = FALSE)
 
 ## Body size numeric conversion
 body_size[,6] <- as.numeric(as.character(body_size[,6]))
@@ -49,6 +50,9 @@ no_doubles <- unique(match(unique(sp_names), sp_names))
 ## Adding unique species names as rownames
 body_size <- body_size[no_doubles, ]
 rownames(body_size) <- unique(sp_names)
+
+## Adding the group name for species with no subgroup name
+body_size[,2] <- ifelse(is.na(body_size[,2]), body_size[,1], body_size[,2])
 ```
 
 For now I'll just generate some random armour data with no phylogenetic signal.
@@ -102,6 +106,39 @@ The cons:
 
  1. Which taxonomic groups to use? Are they equivalent between clades?
  2. The armourness majority trick doesn't take into account phylogeny!
+
+```{r}
+## Getting the taxonomic groups
+group_names <- unique(body_size[,1]) # 7 groups
+subgroup_names <- unique(body_size[,2]) # 34 sub-groups
+genera_names <- unique(body_size[,3]) # 727 genera
+
+## Getting the changes per groups
+group_changes_random <- sapply(group_names, taxonomy.change, group.level = 1,
+                               state = body_size$Random, data = body_size, simplify = FALSE)
+group_changes_biased <- sapply(group_names, taxonomy.change, group.level = 1,
+                               state = body_size$Biased, data = body_size, simplify = FALSE)
+subgroup_changes_random <- sapply(subgroup_names, taxonomy.change, group.level = 2,
+                                  state = body_size$Random, data = body_size, simplify = FALSE)
+subgroup_changes_biased <- sapply(subgroup_names, taxonomy.change, group.level = 2,
+                                  state = body_size$Biased, data = body_size, simplify = FALSE)
+genera_changes_random <- sapply(genera_names, taxonomy.change, group.level = 3,
+                                state = body_size$Random, data = body_size, simplify = FALSE)
+genera_changes_biased <- sapply(genera_names, taxonomy.change, group.level = 3,
+                                state = body_size$Biased, data = body_size, simplify = FALSE)
+
+## Extracting the body sizes of the changed taxa per groups
+changed_groups_random <- extract.change(group_changes_random, what = "changed.taxa")
+
+########
+#
+# TODO: need to match the data properly in order to extract the body size of the changed + of the group
+#
+#######
+
+
+
+```
 
 
 ### Option 2: topology
