@@ -1,0 +1,155 @@
+---
+title: "Armour change analysis"
+author: "Thomas Guillerme"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    fig_width: 12
+    fig_height: 6
+---
+
+# Pipeline for looking at (dis)appearance of armour per clade
+
+
+```{r}
+library(dispRity)
+set.seed(123)
+```
+
+
+The idea here is to:
+ * Detect changes in armour in clades (loss or gain)
+ * Measure the body mass + the age and environment of the members of clades changing
+
+We can then check whether there is an increase/decrease in body mass related to gain/loss in armour through time.
+If there is a *danger zone*, we would expect an increase/decrease but not no changes.
+
+> Note that there might be a caveat were we should correct for the overall trend in body mass variation for each clade. I.e. maybe the detected change in body mass when armour switch on/off is just part of the clade trend.
+
+The data needed is thus:
+ * A phylogeny (chronogram)
+ * Body mass, and environment data
+ * Armour information
+
+## Data wrangling
+
+```{r}
+## Loading the body mass data
+body_size <- read.csv("../Data/LaurenData/BodySizes/body_sizes.csv")
+
+## Body size numeric conversion
+body_size[,6] <- as.numeric(as.character(body_size[,6]))
+
+## Getting species names
+sp_names <- paste(body_size[,3], body_size[,4], sep = "_")
+
+## Getting doubles
+no_doubles <- unique(match(unique(sp_names), sp_names))
+
+## Adding unique species names as rownames
+body_size <- body_size[no_doubles, ]
+rownames(body_size) <- unique(sp_names)
+```
+
+For now I'll just generate some random armour data with no phylogenetic signal.
+We'll eventually want to collect them for all these taxa.
+
+Just for the purpose of illustration, we can create two scenarios of random armour:
+
+ * One completely random with a frequency of 0.85 of no armour beasties and 0.15 of armoured ones
+ * One "Danger-zone" simulation one with a frequency of 0.85/0.15 for armourless/armourness in taxa with body size above/below the median +/- two standard deviation and 0.15/0.85 of armourless/armourness for taxa with body size within the median +/- two standard deviation (basically setting the danger zone in the middle of the logged distribution).
+
+```{r}
+## Random armour data (1 = armour) with low-ish frequency (0.15)
+armour_random <- sample(c(0,1), nrow(body_size), replace = TRUE, prob = c(0.85, 0.15))
+
+## Danger zone simulation
+median_dz <- exp(median(log(body_size[,6]), na.rm = TRUE))
+sd_dz <- exp(sd(log(body_size[,6]), na.rm = TRUE))
+
+## Selecting taxa in the simulated danger zone (roughly 10% of the taxa)
+taxa_dz <- which(body_size[,6] >= (median_dz - 2*sd_dz) & body_size[,6] <= (median_dz + 2*sd_dz))
+taxa_non_dz <- 1:nrow(body_size)[-taxa_dz]
+dz_armour <- sample(c(0,1), length(taxa_dz), replace = TRUE, prob = c(0.15, 0.85))
+non_dz_armour <- sample(c(0,1), length(taxa_non_dz), replace = TRUE, prob = c(0.85, 0.15))
+## Attributing the armorness to the right taxa in a vector
+armour_bias <- rep(0, nrow(body_size))
+armour_bias[taxa_dz] <- dz_armour
+armour_bias[taxa_non_dz] <- non_dz_armour
+
+## Combining the data
+body_size <- cbind(body_size, armour_random, armour_bias)
+colnames(body_size)[c(ncol(body_size)-1, ncol(body_size))] <- c("Random", "Biased")
+head(body_size)
+```
+
+Now we need to collect the body sizes of the taxa that differentiate in terms of presence/absence of armourness compared to their clade.
+In other words "what is the body size of the taxon acquiring/losing armour within a clade".
+Again, the idea being that when these taxa always acquire armour past a certain body size, they are entering the "danger zone" and when they are loosing it past another body size, they are exiting it.
+
+I came up with three options for selecting the taxa with in armourness (regardless of gain/loss):
+
+### Option 1: taxonomy
+
+This is the simplest option: we don't need any tree just taxonomic group names.
+Within each taxonomic group (genus, familly, order, class, etc...), we can get the majority armourness as the group's state (i.e. the group can be armoured or not from the start) and see what is the body mass of the taxa that deviate from it.
+
+The pros:
+
+ 1. It doesn't require any phylogeny so super fast/east to process
+
+The cons:
+
+ 1. Which taxonomic groups to use? Are they equivalent between clades?
+ 2. The armourness majority trick doesn't take into account phylogeny!
+
+
+### Option 2: topology
+
+This is an update on the Option 1 to correct for `cons 1.` by using topology to define a clade.
+Basically, we can apply a down pass procedure for every single tip and use a Fitch algorithm to check which node has a change or not (i.e. change from/to armourness) and select the body mass of the taxa changing or the average body mass of the clade changing (if the change occurs between two nodes).
+
+The pros:
+
+ 1. It doesn't require clade definition
+ 2. Using the Fitch algorithm, it's easy to see where the changes occur
+
+The cons:
+
+ 1. It requires a phylogeny (though the phylogeny can be super crude, doesn't need branch length and can contain big polytomies)
+ 2. It still uses a trick to estimate what was the body mass of the taxa when the change occurs between two clades
+
+
+```{r}
+## Loading a tree
+tree_placoderms <- read.nexus("../Data/Trees/Placoderms-King2017.tree")
+
+## Matching the data
+cleaned_data <- clean.data(body_size, tree_placoderms)
+body_size_data <- cleaned_data$data
+placoderms_tree <- cleaned_data$tree
+```
+
+### Option 3: branch length
+
+This one then tries to correct `cons 1.` from option 1 and `cons 2.` from option 2 by using both the topology and the branch length.
+The idea is to do an ancestral states reconstruction of the body size to have body size estimates at each nodes.
+We can then apply the same method as for option 2 but get the nodal estimated body size value when a change occurs rather than just the data for the taxa/clade where the change occurs.
+
+The pros:
+
+ 1. It doesn't require clade definition
+ 2. Using the Fitch algorithm, it's easy to see where the changes occur
+ 3. The body size at time of change is (more) correctly estimated statistically (i.e. including phylogenetic correction)
+
+The cons:
+
+ 1. It requires a correctly dated phylogeny.
+ 2. It takes longer to compute ancestral body sizes
+ 3. It's still unclear which body size to consider at the time of the change (though that can be fixed by using ACCTRAN/DELTRAN or more complex rules: i.e. the armour (dis)appear at the node or at the tip - or somewhere in between).
+
+```{r, eval = FALSE, message = FALSE, fig.width = 12, fig.height = 12, echo = FALSE}
+```
+
+
+## Getting the body sizes for gains and losses
