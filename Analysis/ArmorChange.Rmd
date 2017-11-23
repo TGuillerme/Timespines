@@ -14,6 +14,7 @@ output:
 ```{r}
 library(dispRity)
 source("../Functions/clade.change_fun.R")
+source("../Functions/timespines_fun.R")
 set.seed(123)
 ```
 
@@ -114,27 +115,65 @@ subgroup_names <- unique(body_size[,2]) # 34 sub-groups
 genera_names <- unique(body_size[,3]) # 727 genera
 
 ## Getting the changes per groups
-group_changes_random <- sapply(group_names, taxonomy.change, group.level = 1,
+group_changes_random <- sapply(group_names, taxonomy.change, group.level = 1, data.out = 6,
                                state = body_size$Random, data = body_size, simplify = FALSE)
-group_changes_biased <- sapply(group_names, taxonomy.change, group.level = 1,
+group_changes_biased <- sapply(group_names, taxonomy.change, group.level = 1, data.out = 6,
                                state = body_size$Biased, data = body_size, simplify = FALSE)
-subgroup_changes_random <- sapply(subgroup_names, taxonomy.change, group.level = 2,
+subgroup_changes_random <- sapply(subgroup_names, taxonomy.change, group.level = 2, data.out = 6,
                                   state = body_size$Random, data = body_size, simplify = FALSE)
-subgroup_changes_biased <- sapply(subgroup_names, taxonomy.change, group.level = 2,
+subgroup_changes_biased <- sapply(subgroup_names, taxonomy.change, group.level = 2, data.out = 6,
                                   state = body_size$Biased, data = body_size, simplify = FALSE)
-genera_changes_random <- sapply(genera_names, taxonomy.change, group.level = 3,
+genera_changes_random <- sapply(genera_names, taxonomy.change, group.level = 3, data.out = 6,
                                 state = body_size$Random, data = body_size, simplify = FALSE)
-genera_changes_biased <- sapply(genera_names, taxonomy.change, group.level = 3,
+genera_changes_biased <- sapply(genera_names, taxonomy.change, group.level = 3, data.out = 6,
                                 state = body_size$Biased, data = body_size, simplify = FALSE)
 
 ## Extracting the body sizes of the changed taxa per groups
-changed_groups_random <- extract.change(group_changes_random, what = "changed.taxa")
+group_bs_change_random <- lapply(extract.change(group_changes_random, what = "changed.val"), log)
+group_bs_change_biased <- lapply(extract.change(group_changes_biased, what = "changed.val"), log)
+group_bs_normal <- lapply(extract.change(group_changes_random, what = "group.val"), log)
+subgroup_bs_change_random <- lapply(extract.change(subgroup_changes_random, what = "changed.val"), log)
+subgroup_bs_change_biased <- lapply(extract.change(subgroup_changes_biased, what = "changed.val"), log)
+subgroup_bs_normal <- lapply(extract.change(subgroup_changes_random, what = "group.val"), log)
+genera_bs_change_random <- lapply(extract.change(genera_changes_random, what = "changed.val"), log)
+genera_bs_change_biased <- lapply(extract.change(genera_changes_biased, what = "changed.val"), log)
+genera_bs_normal_r <- lapply(extract.change(genera_changes_random, what = "group.val"), log)
+genera_bs_normal_b <- lapply(extract.change(genera_changes_biased, what = "group.val"), log)
 
-########
-#
-# TODO: need to match the data properly in order to extract the body size of the changed + of the group
-#
-#######
+## get the maximum of each group
+group_max <- lapply(group_bs_normal, max, na.rm = TRUE)
+subgroup_max <- lapply(subgroup_bs_normal, max, na.rm = TRUE)
+genera_max_r <- lapply(genera_bs_normal_r, max, na.rm = TRUE)
+genera_max_b <- lapply(genera_bs_normal_b, max, na.rm = TRUE)
+
+## Normalising the body sizes relative to their group maximum
+scale.fun <- function(X, Y) scale(X, center = FALSE, scale = Y)
+gro_bs_norm_scal <- mapply(scale.fun, group_bs_normal, group_max, SIMPLIFY = FALSE)
+gro_bs_chan_rand_scal <- mapply(scale.fun, group_bs_change_random, group_max, SIMPLIFY = FALSE)
+gro_bs_chan_bias_scal <- mapply(scale.fun, group_bs_change_biased, group_max, SIMPLIFY = FALSE)
+sub_bs_norm_scal <- mapply(scale.fun, subgroup_bs_normal, subgroup_max, SIMPLIFY = FALSE)
+sub_bs_chan_rand_scal <- mapply(scale.fun, subgroup_bs_change_random, subgroup_max, SIMPLIFY = FALSE)
+sub_bs_chan_bias_scal <- mapply(scale.fun, subgroup_bs_change_biased, subgroup_max, SIMPLIFY = FALSE)
+gen_bs_norm_scal <- mapply(scale.fun, genera_bs_normal_b, genera_max_b, SIMPLIFY = FALSE)
+gen_bs_chan_rand_scal <- mapply(scale.fun, genera_bs_change_random, genera_max_r, SIMPLIFY = FALSE)
+gen_bs_chan_bias_scal <- mapply(scale.fun, genera_bs_change_biased, genera_max_b, SIMPLIFY = FALSE)
+```
+
+We can now visualise where do the group changes occur relative to their group size
+
+```{r}
+## Get the density estimates for each group
+density_group <- lapply(gro_bs_norm_scal, density, na.rm = TRUE)
+density_subgroup <- lapply(sub_bs_norm_scal, density, na.rm = TRUE)
+density_genera <- lapply(gen_bs_norm_scal, hist) # As histograms (not enough data)
+
+## Graphical parameters
+## Colours
+colours_groups <- as.list(rainbow(length(group_names)))
+colours_subgroups <- as.list(rainbow(length(subgroup_names)))
+colours_genera <- as.list(rainbow(length(genera_names)))
+
+plot.change(gro_bs_norm_scal[[1]], gro_bs_norm_scal[[1]])
 
 
 
