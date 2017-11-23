@@ -6,24 +6,24 @@ one_site <- read.csv("../Data/GreenBassin.csv")
 
 
 ## Get the max predator (here I'm just assuming it's the biggest guy)
-predator <- max(one_site[,5])
+predator <- max(one_site[,7])
 
 ## Correct for the predator's size
-Body_length <- one_site[,5]/predator
+Body_length <- one_site[,7]/predator
 
 ## Get the spiny-ness (if the score is > 0, it means at least one part of the body has armour)
 get.armour <- function(species, data) {
     ## Get the "armourness" of the body parts
-    head <- ifelse(data[species, 8] == 1, sum(data[species, 9:10]), NA)
-    body <- ifelse(data[species, 12] == 1, sum(data[species, 13:14]), NA)
-    tail <- ifelse(data[species, 16] == 1, sum(data[species, 17:18]), NA)
+    head <- ifelse(data[species, 11] == 1, sum(data[species, 12:13]), NA)
+    body <- ifelse(data[species, 15] == 1, sum(data[species, 16:17]), NA)
+    tail <- ifelse(data[species, 19] == 1, sum(data[species, 20:21]), NA)
     ## Get the average "armourness score"
     return(mean(c(head, body, tail), na.rm = TRUE))
 }
 armours <- unlist(lapply(as.list(seq(1:ncol(one_site))), get.armour, data = one_site))
 
 ## Make it binary
-armours <- ifelse(armours != 0, 1, 0)
+armours <- ifelse(armours != 0, TRUE, FALSE)
 
 # ## Density plot
 # library(hdrcde)
