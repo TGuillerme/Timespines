@@ -12,7 +12,10 @@ output:
 
 
 ```{r}
+#install_github("TGuillerme/dispRity", ref = "release")
 library(dispRity)
+#install_github("TGuillerme/Inapp")
+library(Inapp)
 source("../Functions/clade.change_fun.R")
 source("../Functions/timespines_fun.R")
 set.seed(123)
@@ -161,21 +164,24 @@ gen_bs_chan_bias_scal <- mapply(scale.fun, genera_bs_change_biased, genera_max_b
 
 We can now visualise where do the group changes occur relative to their group size
 
-```{r}
-## Get the density estimates for each group
-density_group <- lapply(gro_bs_norm_scal, density, na.rm = TRUE)
-density_subgroup <- lapply(sub_bs_norm_scal, density, na.rm = TRUE)
-density_genera <- lapply(gen_bs_norm_scal, hist) # As histograms (not enough data)
-
+```{r, fig.width = 12, fig.height = 12}
 ## Graphical parameters
+op <- par(mfrow = c(2,3))
 ## Colours
-colours_groups <- as.list(rainbow(length(group_names)))
-colours_subgroups <- as.list(rainbow(length(subgroup_names)))
-colours_genera <- as.list(rainbow(length(genera_names)))
+# colours_groups <- as.list(rainbow(length(group_names)))
+# colours_subgroups <- as.list(rainbow(length(subgroup_names)))
+# colours_genera <- as.list(rainbow(length(genera_names)))
 
-plot.change(gro_bs_norm_scal[[1]], gro_bs_norm_scal[[1]])
-
-
+## Plotting the pooled data for every group
+plot.change(gro_bs_norm_scal, gro_bs_chan_rand_scal, main = "Group - Random")
+## ... subgroup ...
+plot.change(sub_bs_norm_scal, sub_bs_chan_rand_scal, main = "Subgroup - Random")
+## ... and genera.
+plot.change(gen_bs_norm_scal, gen_bs_chan_rand_scal, main = "Genera - Random")
+## And the biased results
+plot.change(gro_bs_norm_scal, gro_bs_chan_bias_scal, main = "Group - Biased")
+plot.change(sub_bs_norm_scal, sub_bs_chan_bias_scal, main = "Subgroup - Biased")
+plot.change(gen_bs_norm_scal, gen_bs_chan_bias_scal, main = "Genera - Biased")
 
 ```
 
@@ -204,6 +210,14 @@ tree_placoderms <- read.nexus("../Data/Trees/Placoderms-King2017.tree")
 cleaned_data <- clean.data(body_size, tree_placoderms)
 body_size_data <- cleaned_data$data
 placoderms_tree <- cleaned_data$tree
+
+## Traversal of the tree to detect changes.
+character_rand <- body_size_data$Random[match(rownames(body_size_data), rownames(body_size_data))]
+character_bias <- body_size_data$Biased
+
+
+test <- apply.reconstruction(placoderms_tree, character_rand, passes = 1, method = "Fitch", match.tip.char = TRUE)
+
 ```
 
 ### Option 3: branch length

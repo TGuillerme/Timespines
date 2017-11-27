@@ -178,7 +178,7 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
             histogram_change <- hist(change_data, plot = FALSE)
             density_change <- density(change_data, na.rm = TRUE)
             ## Plotting the histogram results
-            plot(histogram_change, col = "lightgrey", border = "darkgrey", ...)
+            plot(histogram_change, col = "lightgrey", border = "darkgrey", add = TRUE, ...)
             lines(density_change, lty = 2)
 
         } else {
@@ -195,12 +195,19 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
 
     }
             
-    if(class(group.data) != "list") {
-        ## Plot the overall distribution
-        plot.distribution(group.data, histogram = histogram, scale.density = scale.density, ...)
 
-        ## Add the changes
-        plot.change.occurence(change.data, group.data, change.hist = change.hist, scale.density = scale.density, ...)
+    if(class(group.data) == "list") {
+        ## Pooling the data
+        group.data <- unlist(group.data)
+    }
+    if(class(change.data) == "list") {
+        ## Pooling the data
+        change.data <- unlist(change.data)
     }
 
+    ## Plot the overall distribution
+    plot.distribution(group.data, histogram = histogram, scale.density = scale.density, ...)
+
+    ## Add the changes
+    plot.change.occurence(change.data, group.data, change.hist = change.hist, scale.density = scale.density, ...)
 }
