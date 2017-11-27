@@ -7,13 +7,11 @@
  	* Based on branch length (Fitch downpass + ancestral states reconstructions)
  * For both data sets (living ones and fossil ones) we will need groups phylogenies (they can be crude), body size data and armourness data
 
- 
-|  | Living | Fossils | 
------
-| Body size | OK | OK |
+|   | Living  | Fossil  |
+|---|---|---|
+| Body sizes | OK | OK |
 | Armourness | OK | missing |
 | Phylogenies | missing | OK |
-
 
  * Richard and Marco can have a look at the armourness for the fossils and see what they can easily collect and what will still need to be done
  * Somebody will have to find phylogenies for the living taxa (it should be easy since we only have them at the Familly-ish level)
