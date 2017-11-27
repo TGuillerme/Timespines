@@ -164,25 +164,24 @@ gen_bs_chan_bias_scal <- mapply(scale.fun, genera_bs_change_biased, genera_max_b
 
 We can now visualise where do the group changes occur relative to their group size
 
-```{r, fig.width = 12, fig.height = 12}
+```{r, fig.width = 18, fig.height = 12}
 ## Graphical parameters
 op <- par(mfrow = c(2,3))
-## Colours
-# colours_groups <- as.list(rainbow(length(group_names)))
-# colours_subgroups <- as.list(rainbow(length(subgroup_names)))
-# colours_genera <- as.list(rainbow(length(genera_names)))
 
 ## Plotting the pooled data for every group
-plot.change(gro_bs_norm_scal, gro_bs_chan_rand_scal, main = "Group - Random")
+plot.change(gro_bs_norm_scal, gro_bs_chan_rand_scal, main = "Group - Random", xlab = "")
 ## ... subgroup ...
-plot.change(sub_bs_norm_scal, sub_bs_chan_rand_scal, main = "Subgroup - Random")
+plot.change(sub_bs_norm_scal, sub_bs_chan_rand_scal, main = "Subgroup - Random", xlab = "")
 ## ... and genera.
-plot.change(gen_bs_norm_scal, gen_bs_chan_rand_scal, main = "Genera - Random")
+plot.change(gen_bs_norm_scal, gen_bs_chan_rand_scal, main = "Genera - Random", xlab = "")
 ## And the biased results
-plot.change(gro_bs_norm_scal, gro_bs_chan_bias_scal, main = "Group - Biased")
-plot.change(sub_bs_norm_scal, sub_bs_chan_bias_scal, main = "Subgroup - Biased")
-plot.change(gen_bs_norm_scal, gen_bs_chan_bias_scal, main = "Genera - Biased")
-
+plot.change(gro_bs_norm_scal, gro_bs_chan_bias_scal, main = "Group - Biased",
+            xlab = "Scaled log BS")
+plot.change(sub_bs_norm_scal, sub_bs_chan_bias_scal, main = "Subgroup - Biased",
+            xlab = "Scaled log BS")
+plot.change(gen_bs_norm_scal, gen_bs_chan_bias_scal, main = "Genera - Biased",
+            xlab = "Scaled log BS")
+par(op)
 ```
 
 
@@ -211,14 +210,60 @@ cleaned_data <- clean.data(body_size, tree_placoderms)
 body_size_data <- cleaned_data$data
 placoderms_tree <- cleaned_data$tree
 
+## Getting the characters
+character_rand <- paste((body_size_data$Random[match(sort(rownames(body_size_data)),
+                        (rownames(body_size_data)))]), collapse = "")
+character_bias <- paste((body_size_data$Biased[match(sort(rownames(body_size_data)),
+                        (rownames(body_size_data)))]), collapse = "")
+
 ## Traversal of the tree to detect changes.
-character_rand <- body_size_data$Random[match(rownames(body_size_data), rownames(body_size_data))]
-character_bias <- body_size_data$Biased
+traversal_rand <- apply.reconstruction(placoderms_tree, character_rand, passes = 1,
+                                       method = "Fitch", match.tip.char = TRUE)
+traversal_bias <- apply.reconstruction(placoderms_tree, character_bias, passes = 1,
+                                       method = "Fitch", match.tip.char = TRUE)
 
+## Get the subtrees with a state change
+subtrees_rand <- sapply(traversal_rand$changes,
+                        function(X, tree) return(extract.clade(tree, node = X)),
+                        tree = placoderms_tree, simplify = FALSE)
+subtrees_bias <- sapply(traversal_bias$changes,
+                        function(X, tree) return(extract.clade(tree, node = X)),
+                        tree = placoderms_tree, simplify = FALSE)
 
-test <- apply.reconstruction(placoderms_tree, character_rand, passes = 1, method = "Fitch", match.tip.char = TRUE)
+## Get the changes per clades
+changes_rand <- lapply(subtrees_rand, topology.change, data = body_size_data,
+                       state = body_size_data$Random, data.out = 6)
+changes_bias <- lapply(subtrees_bias, topology.change, data = body_size_data,
+                       state = body_size_data$Biased, data.out = 6)
 
+## Extract the changes values
+rand_norm <- lapply(extract.change(changes_rand, what = "group.val"), log)
+rand_chan <- lapply(extract.change(changes_rand, what = "changed.val"), log)
+bias_norm <- lapply(extract.change(changes_bias, what = "group.val"), log)
+bias_chan <- lapply(extract.change(changes_bias, what = "changed.val"), log)
+
+## get the maximum of each group
+rand_max <- lapply(rand_norm, max, na.rm = TRUE)
+bias_max <- lapply(bias_norm, max, na.rm = TRUE)
+
+## Normalising the body sizes relative to their group maximum
+rand_norm_scal <- mapply(scale.fun, rand_norm, rand_max, SIMPLIFY = FALSE)
+rand_chan_scal <- mapply(scale.fun, rand_chan, rand_max, SIMPLIFY = FALSE)
+bias_norm_scal <- mapply(scale.fun, bias_norm, bias_max, SIMPLIFY = FALSE)
+bias_chan_scal <- mapply(scale.fun, bias_chan, bias_max, SIMPLIFY = FALSE)
 ```
+
+We can now visualise where do the group changes occur relative to their group size
+
+```{r, fig.width = 12, fig.height = 6}
+## Graphical parameters
+op <- par(mfrow = c(1,2))
+## Plotting the pooled data for every group
+plot.change(rand_norm_scal, rand_chan_scal, main = "Topology - Random", xlab = "Scaled log BS")
+plot.change(bias_norm_scal, bias_chan_scal, main = "Topology - Biased", xlab = "Scaled log BS")
+par(op)
+```
+
 
 ### Option 3: branch length
 

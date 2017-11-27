@@ -211,3 +211,58 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
     ## Add the changes
     plot.change.occurence(change.data, group.data, change.hist = change.hist, scale.density = scale.density, ...)
 }
+
+
+#' @title Topology change
+#'
+#' @description Detects state changes based on a group topology
+#'
+#' @param group A \code{tree} that is the group.
+#' @param data the dataset
+#' @param state the state to evaluate
+#' @param data.out the column in the dataset containing the data to output (set to 0 for rownames - default)
+#' 
+#' @examples
+#' 
+#' @return A \code{list} composed of the following elements:
+#' \begin{itemize}
+#'  \item \code{state.origin} the origin state (for the direction of the change)
+#'  \item \code{changed.taxa} the taxa that have changed within the groups
+#'  \item \code{group.taxa} all the taxa from the group
+#'  \item \code{changed.val} the changed taxa values
+#'  \item \code{group.val} the group values
+#' \end{itemize}
+#'
+#' @seealso
+#' 
+#' @author Thomas Guillerme
+#' @export
+
+topology.change <- function(group, data, state, data.out = 0) {
+
+    ## Getting the members of the group in the data
+    group_taxa <- match(group$tip.label, rownames(data))
+
+    ## Getting the average group state
+    state_origin <- dispRity::mode.val(state[group_taxa])
+
+    ## Getting the taxa that have not the state_origin
+    changed_taxa <- which(state[group_taxa] != state_origin)
+
+    if(length(changed_taxa) == 0) {
+        changed_taxa <- NULL
+    }
+
+    ## Getting the values out
+    if(data.out == 0) {
+        data_out <- rownames(data)[group_taxa]
+    } else {
+        data_out <- data[group_taxa, data.out]
+    }
+
+    ## Getting the changed and group values
+    changed_val <- data_out[changed_taxa]
+    group_val <- data_out
+
+    return(list( "state.origin" = state_origin, "changed.taxa" = changed_taxa, "group.taxa" = group_taxa, "changed.val" = changed_val, "group.val" = group_val))
+}
