@@ -210,6 +210,13 @@ cleaned_data <- clean.data(body_size, tree_placoderms)
 body_size_data <- cleaned_data$data
 placoderms_tree <- cleaned_data$tree
 
+## Removing tips with NAs from the tree
+placoderms_tree <- drop.tip(placoderms_tree,
+                       tip = rownames(body_size_data)[which(is.na(body_size_data[,6]))])
+
+## Removing NAs from the data set
+body_size_data <- body_size_data[-which(is.na(body_size_data[, 6])), ]
+
 ## Getting the characters
 character_rand <- paste((body_size_data$Random[match(sort(rownames(body_size_data)),
                         (rownames(body_size_data)))]), collapse = "")
@@ -283,8 +290,32 @@ The cons:
  2. It takes longer to compute ancestral body sizes
  3. It's still unclear which body size to consider at the time of the change (though that can be fixed by using ACCTRAN/DELTRAN or more complex rules: i.e. the armour (dis)appear at the node or at the tip - or somewhere in between).
 
-```{r, eval = FALSE, message = FALSE, fig.width = 12, fig.height = 12, echo = FALSE}
+
+```{r}
+## Performing the ancestral states reconstruction
+ace_body_size <- ace(body_size_data[match(placoderms_tree$tip.label, rownames(body_size_data)),6],
+                     placoderms_tree, method = "pic")
+
+## Extract the changes for each group
+ace_change_rand <- log(ace_body_size$ace[traversal_rand$changes-Ntip(placoderms_tree)])
+ace_change_bias <- log(ace_body_size$ace[traversal_bias$changes-Ntip(placoderms_tree)])
+
+## Scale these values using the maximums from option 2
+ace_change_rand_scal <- mapply(scale.fun, as.list(ace_change_rand), rand_max, SIMPLIFY = FALSE)
+ace_change_bias_scal <- mapply(scale.fun, as.list(ace_change_bias), bias_max, SIMPLIFY = FALSE)
 ```
 
+> Note that the method for the reconstructions is important here! I just go with the simple PIC method for convenience
 
-## Getting the body sizes for gains and losses
+Similarly we can now plot the differences:
+
+```{r, fig.width = 12, fig.height = 6}
+## Graphical parameters
+op <- par(mfrow = c(1,2))
+## Plotting the pooled data for every group
+plot.change(rand_norm_scal, ace_change_rand_scal, main = "Branch length - Random",
+            xlab = "Scaled log BS")
+plot.change(bias_norm_scal, ace_change_bias_scal, main = "Branch length - Biased",
+            xlab = "Scaled log BS")
+par(op)
+```
