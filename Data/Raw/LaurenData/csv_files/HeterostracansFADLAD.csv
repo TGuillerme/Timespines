@@ -1,0 +1,328 @@
+Group,Genus,Species,Taxonomic Note,Order,Family,System,Series,Stage,Regional Stage,Group,Formation,Member,Locality,Max Age,Min Age,citation
+Heterostracans,Alaeckaspis,magnipinealis,,,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Alaeckaspis,ustetchkiensis,,,Pteraspidiformes,Devonian,,Pragian,,,Dniester Formation,Khmeleva ,"Podolia, Ukraine",410,408,lacustrine according to Voichyshyn 2011
+Heterostracans,Alaeckaspis,verbivciensis,,,Pteraspidiformes,Devonian,,Lockhovian,,,Ikva,,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2010
+Heterostracans,Alaeckaspis?,depressa,,Heterostraci,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Chortkov Member,"Podolia, Ukraine",416,415,Novitskaya 2007; shallow nearshore according to Voichyshyn 2011
+Heterostracans,Alainaspis,platyrhina,,Heterostraci,Cyathaspididae,Silurian,,Gorstian,,,Peel Sound & Somerset Island Fms,,"Prince of Wales Island & Somerset Island, Northwest territories, Canada",427,425,"Eliott and Dineley, 1983"
+Heterostracans,Alainaspis,platyrhina,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Peel Sound & Somerset Island Fms,,"Prince of Wales Island & Somerset Island, Northwest territories, Canada",423,419,"Eliott and Dineley, 1983"
+Heterostracans,Allocryptatus,laticostatus,,,,Devonian,,Pragian,,,Holland Quarry,,,410,407,Pers. Obs.
+Heterostracans,Allocryptatus,elliptica,,,,Devonian,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Pers. Obs.
+Heterostracans,Allocryptatus,flabelliformis,,,,Devonian,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Allocryptatus,utahensis,,,,,,Pragian (Upper),,,Water Canyon,,Utah,410,409,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Althaspis,leachi,,,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,,upper cornstone,Besom farm,419,414,Loeffler and Thomas 1980; Dineley & Metcalfe 1999; lack of any marine inverts
+Heterostracans,Althaspis,sp,,,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,,lower cornstone,Besom farm,413,411,Loeffler and Thomas 1980; Dineley & Metcalfe 1999; lack of any marine inverts
+Heterostracans,Althaspis,seeniensis,,,Pteraspididae,Devonian,,Pragian,,,,Senni Beds,"Hoel Senni, Powys, Wales, UK",410,407,Loeffler and Thomas 1980; GCR volume for envirionment
+Heterostracans,Althaspis,tarloi,,,Pteraspididae,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Pers. Obs.
+Heterostracans,Althaspis,? spathulirostris,,,Pteraspididae,,,Pragian,,,Dniester Formation,Strypa ,Podolia,408,407,Voichyshyn 2011
+Heterostracans,Althaspis,elongata,,,Pteraspididae,,,Pragian,,,Dniester Formation,Strypa ,Podolia,408,407,Voichyshyn 2011
+Heterostracans,Althaspis,longirostra,,,Pteraspididae,,,Pragian,,,Dniester Formation,Strypa ,Podolia,408,407,Voichyshyn 2011
+Heterostracans,Althaspis,sapovensis,,,Pteraspididae,,,Pragian,,,Dniester Formation,Strypa ,Podolia,408,407,Voichyshyn 2011
+Heterostracans,Americaspis,americana,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Bloomsburg Formation,,"Mt Union, Pennsylvania, USA",427,423,Plotnick 1999; Denison 1964
+Heterostracans,Americaspis,americana,,Heterostraci,Cyathaspididae,Silurian,,Late Pridoli,,,Wills Creek Formation,Landisburg Sandstone,"Perry County, Pennsylvania, USA",421,419,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Americaspis,claypolei,,,Cyathaspididae,Silurian,,Ludlow,,,Longwood Shale,,"northern New Jersey, USA",427,423,Denison 1964; Boucot & Janis 1983
+Heterostracans,Anchipteraspis,crenulata,,,,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Somerset Island, Arctic Canada",423,422,Elliott 1984; Boucot & Janis 1983 for BA
+Heterostracans,Anglaspis,sp,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Somerset Island Formation,,"Northwest territories, Canada",423,421,Denison 1964; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'
+Heterostracans,Anglaspis,,,,Cyathaspididae,Silurian,,Ludlow,,,Read Bay Formation,,"Somerset Island, Northwest territories, Canada",430,425,Jones & Dixon 1977; Boucot & Janis 1983 for BA
+Heterostracans,Anglaspis,sp,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Snowblind Bay Formation,,"Read Bay, Cornwallis Island, Canada",414,411,Elliott & Loeffler 1989; Boucot & Janis 1983 for BA
+Heterostracans,Anglaspis,sp,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Lievin Formation,,"Lievin, Northern France",419,411,Plotnick 1999
+Heterostracans,Anglaspis,sp,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Fraenkelryggen Formation,,"Red Bay, Spitsbergen",417,415,Plotnick 1999
+Heterostracans,Anglaspis,,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Ben Nevis Formation,,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Anglaspis,sp.,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Pod'emnaya Formation,,"Severnaya Zemlya, Russia",419,414,Blieck et al 2002; Turner 1999 for BA
+Heterostracans,Anglaspis,mcculloughi,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian (early),,St Maughan's Group,,?basal fish conglomerate,"Lydney, Gloucestershire",419,417,GCR; tidal?
+Heterostracans,Anglaspis,heintzi,Fraenkelaspis,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Fraenkelryggen,Primeva Horizon,"Spitsbergen, Norway",415,415,Novitskaya 2007; Blieck and Heintz 1983; Elliott 2013;  Plotnick 1999 for BA
+Heterostracans,Arandaspis,prionotolepis,,Arandaspidida,Arandaspididae,Ordovician,Middle,Darriwilian,Llanvirn (Arenig in error on PB),,Stairway Sandstone,,"Mt Watt, Northern Territory, Australia",466,464,Ritchie and Gilbert-Tomlinson 1977; Boucot and Janis 1983 and Davies et al 2011 for palaeoenvironment (shallower than BA 2 - 3 from B & J)
+Heterostracans,Arandaspis,prionotolepis,,Arandaspidida,Arandaspididae,Ordovician,Middle,Darriwilian,Llanvirn (Arenig in error on PB),,Stairway Sandstone,,"Mt Charlotte, Northern Territory, Australia",466,464,Ritchie and Gilbert-Tomlinson 1977; Boucot and Janis 1983 and Davies et al 2011 for palaeoenvironment (shallower than BA 2 - 3 from B & J)
+Heterostracans,Arandaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Middle,Darriwilian,Llanvirn,,Stairway Sandstone,,"James 'B' Anticline, Northern Territory, Australia",466,461,Young 1997; Boucot and Janis 1983 and Davies et al 2011 for palaeoenvironment
+Heterostracans,Archaegonaspis,ludensis,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,Ludfordian,,,Lower Leintwardine Shales,"Church Hill, Herefordshire, UK",425,423,GCR; Boucot & Janis for BA
+Heterostracans,Archaegonaspis,schmidti,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Somerset Island Formation,,"Port Leopold, Northwest territories, Canada",423,419,Loeffler and Jones 1976; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'
+Heterostracans,Archaegonaspis,ludensis,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,Gorstian,,,Black Cock Beds,"Cwar Glas, Dyfed, Wales",427,425,Denison 1964; Salopina fauna indicates BA
+Heterostracans,Archaegonaspis,drummondi,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Vernon Formation,,New York,427,423,Flower and Wayland-Smith 1952; Plotnick 1999 for BA
+Heterostracans,Archegonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,latest Homerian,,,Delorme,Avalanche Lake: AV1D and AV2R,"Avalanche Lake, Mackenzie, Northwest Territories",428,427,"Soehn, 2000; Boucot & Janis 1983 for BA"
+Heterostracans,Archegonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Leopold Formation,Cape Clarence Member,"Nunavut, Canada Somerset and Leopold Islands",427,423,Plotnick 1999; Eurypterid member
+Heterostracans,Archegonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Ust' Spokojnaya Formation,,"Severnaya Zemlya, Russia",427,423,Blieck et al 2002; Turner 1999 for BA
+Heterostracans,Archegonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Vernon-Pittsford Formations,,"western New York, USA",427,423,Sepkoski 1998
+Heterostracans,Archegonaspis,schmidti,,Heterostraci,Cyathaspididae,Silurian,Ludlow,Gorstian,,,,Graptolithengestein (erratic),Northern Germany,423,419,Marss 1977; Boucot & Janis 1983 for BA
+Heterostracans,Archegonaspis,lindstromi,,Heterostraci,Cyathaspididae,Silurian,,Gorstian,,,,Hemse Beds,"Goggs Island, Gotland Island",425,423,Marss 2001; Boucot & Janis 1983 for BA
+Heterostracans,Archegonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Ludfordian,,,Mituva Fm,Paadla,Western Latvia,427,425,Marss 2001; Boucot & Janis 1983 for BA
+Heterostracans,Archegonaspis,sp. B,,Heterostraci,Cyathaspididae,Silurian,,,Kuressaare,,Ohesaare,Tahula Beds,Estonia,425,423,Marss 1977; Boucot & Janis 1983 for BA
+Heterostracans,Arctictenaspis,ornata,,,,,,,,,?Peel Sound Formation,,"?Prince of Wales Island, Northwest Territories, Canada",423,422,Elliott & Blieck 2010
+Heterostracans,Arctictenaspis,obruchevi,,,,,,,,,Peel Sound Formation,,"Prince of Wales Island, Northwest Territories, Canada",423,422,Elliott & Blieck 2010; Boucot & Janis for BA
+Heterostracans,Ariaspis,sp.,genus name pre-occupied?,Heterostraci,Ariaspididae,Silurian,,Telychian/Sheinwoodian,,,Delorme,"Avalanche: AV1, 2, 4","Avalanche Lake, MacKenzie Mountains, Northwest terroritories, Canada",438,430,Boucot & Janis 1983 for BA
+Heterostracans,Ariaspis,sp.,genus name pre-occupied?,Heterostraci,Ariaspididae,Silurian,,late Sheinwoodian-Homerian,,,Delorme,Avalanche: AV4 and 5,"Avalanche Lake, MacKenzie Mountains, Northwest terroritories, Canada",438,430,Boucot & Janis 1983 for BA
+Heterostracans,Ariaspis,ornata,genus name pre-occupied?,Heterostraci,Ariaspididae,Silurian,,Gorstian,,,Road River Formation,,"Beaver River, Southeastern Yukon, Canada",427,425,"Denison, 1963; Boucot & Janis 1983 for BA and formation"
+Heterostracans,Ariaspis,arctata,genus name pre-occupied?,Heterostraci,Ariaspididae,Silurian,,Pridoli,,,Somerset Island Formation,,"Pressure Point, Somerset Island, Canadian Arctic",423,421,"Elliott and Smith, 2010; 'intertidal and supratidal'"
+Heterostracans,Asketaspis,interstincta,,Heterostraci,,Silurian/Devonian,,Lockhovian,Lower Dittonian,,Delorme,transition between Delorme and Road River,Northwest Territories,419,411,Dineley & Loeffler 1976 - GSC 69017 transistion between Delorme and Road River Fm detailed locality info in D&L suggests brackish lagoon - BA 3 according to Boucot & Janis 1983
+Heterostracans,Astraspis,desiderata,,Astraspidiformes,Astraspididae,Ordovician,Upper,Katian,Caradoc,,Harding Formation,,"Canon City, Colorado",454,453,Walcott 1892; Boucot and Janis 1983 for BA
+Heterostracans,Astraspis,desiderata,,Astraspidiformes,Astraspididae,Ordovician,Upper,Sandbian-Katian,Caradoc,,Winnipeg Formation,South Piney Member,"Bighorn Mountains, Wyoming",454,453,Sansom and Smith 2005
+Heterostracans,Astraspis,sp.,,Astraspidiformes,Astraspididae,Ordovician,Upper,Middle Katian,Caradoc 5b,,Lowville Formation,just above base,"Sand Point, Ontario",452,451,Turner et al 2004; Cameron and Mangion 1977 for palaeoenvironment
+Heterostracans,Astraspis,sp.,,Astraspidiformes,Astraspididae,Ordovician,Upper,,,,Pamelia Formation,uppermost,"Ouareau River, Quebec, Canada",453,452,Eliuk 1973
+Heterostracans,Astraspis,sp.,???,,,Ordovician,,Darriwilian,Whiterockian,,St Peter Formation,,"Winneshiek Lagerstatte, Decorah, Iowa, USA",462,457,"Liu et al 2006, based on Linguloids"
+Heterostracans,Athenaegis,chattertoni,,Heterostraci,Tolyaspididae,Silurian,,Telychian/Sheinwoodian,,,Delorme,"Avalanche: AV1, 2, 4","Avalanche Lake, MacKenzie Mountains, Northwest terroritories, Canada",438,430,"Soehn, 2000; Boucot & Janis 1983 for BA"
+Heterostracans,Blieckaspis,priscillae,,,,Devonian,,Emsian,late,,Lost Burro Formation,Lippincott Member,"Trail Canyon, Death Valley, California",400,397,Elliott & Ilyes 1996; 
+Heterostracans,Blieckaspis,priscillae,,,,Devonian,,Pragian (Upper),,,Water Canyon,,Utah,410,409,Pers. Obs.
+Heterostracans,Boothiaspis,,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Devon Island Formation,,"Ellesmere Island, Northwest territories, Canada",423,419,Broad 1973; Boucot & Janis 1983 for BA
+Heterostracans,Boothiaspis,ovata,,Heterostraci,Cyathaspididae,Silurian,,Pridoli (Early),,,Peel Sound Fm,,"Prince of Wales Island, Canada",423,422,"Eliott and Dineley, 1991' Novitskaya 2007; Boucot & Janis 1983 for BA"
+Heterostracans,Boothiaspis,ovata,,Heterostraci,Cyathaspididae,Silurian,,Pridoli (Early),,,Somerset Island Fm,,"Somerset Island, Canada",423,422,"Eliott and Dineley, 1991' Novitskaya 2007; Elliott 2013; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'"
+Heterostracans,Boothiaspis,alata,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Peel Sound Fm,,"Prince of Wales Island, Canada",423,422,Elliott and Dineley 1991; Boucot & Janis 1983 for BA
+Heterostracans,Boothiaspis,alata,,Heterostraci,Cyathaspididae,Silurian,,Pridoli (Early),,,Somerset Island Fm,,"Pressure Point, Somerset Island, Canada",423,422,Elliott and Dineley 1991; Elliott and Swift 2013; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'
+Heterostracans,Brachipteraspis,latissima,,,Pteraspididae,,,Lockhovian,,,Dniester Formation,Strypa ,Podolia,408,407,Voichyshyn 2011
+Heterostracans,Canadapteraspis,alocostomata,,,,,,Lockhovian,Lower Dittonian,,Delorme,transition between Delorme and Road River,Northwest Territories,427,423,Dineley & Loeffler 1976 - GSC 69014 transistion between Delorme and Road River Fm detailed locality info in D&L suggests brackish lagoon similar to GSC 69017  - BA 3 according to Boucot & Janis 1983
+Heterostracans,Canadapteraspis,thymostomata,,,,,,Lockhovian,Lower Dittonian,,Delorme,,Northwest Territories,427,423,"Dineley & Loeffler 1976 - GSC 81053 - environment same as GSC 69017 - which is Delorme Fm according to Boucot & Janis 1983 - coded as 3 for BA, but locality list suggests brackish so possibly shallower"
+Heterostracans,Canadapteraspis,helostomata,,,,,,Lockhovian,Lower Dittonian,,Delorme,,Northwest Territories,427,423,"Dineley & Loeffler 1976 - GSC 81053 - environment same as GSC 69017 - which is Delorme Fm according to Boucot & Janis 1983 - coded as 3 for BA, but locality list suggests brackish so possibly shallower"
+Heterostracans,Capitaspis,giblingi,,Heterostraci,Cyathaspididae,Silurian,,Pridoli (early),,,Somerset Island Fm,Upper Member,"Somerset Island, Canada",423,421,Elliott and Dineley 1991; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'; Boucot & Janis 1983 give BA 3
+Heterostracans,Cosmaspis,transversa,,,,,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Novitskaya 2007; Denison 1970; Fiorillo 2000 for environment
+Heterostracans,Cosmaspis,sp.,,,,,,Pragian (Upper),,,Water Canyon,,Utah,410,409,Novitskaya 2007; Denison 1970; Reed 1997 (unpublishes thesis)
+Heterostracans,Ctenaspis,kiaeri,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Ctenaspis,cancellata,,,,Devonian,,Lockhovian,,,Ben Nevis Formation,,Spitzbergen,413,410,Denison 1964
+Heterostracans,Ctenaspis,dentata,,,,Devonian,,Lockhovian,,,Ben Nevis Formation,,Spitzbergen,413,410,Demson 1964
+Heterostracans,Cyathaspis,banksi,,Heterostraci,Cyathaspididae,Silurian,,Ludfordian,,,Whitcliffe beds,,Shropshire,425,423,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Cyathaspis,banksi,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Downton Castle Sandstone Formation,,England,423,419,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Cyathaspis,banksi,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Ludlow Bone Bed,,,423,421,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Cyathaspis,acadia,,,Cyathaspididae,Silurian,,Ludlow-Pridoli,,,Jones Creek Formation,,New Brunswick,427,419,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Cyathaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Downton Castle Sandstone Formation,Platyschisma Beds,"Herefordshire, UK",423,419,Plotnick 1999
+Heterostracans,Cyrtaspidichthys,ovata,,,,,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Novitskaya 2007; Whitley 1940; Fiorillo 2000 for environment
+Heterostracans,Cyrtaspidichthys,sculpta,,,,,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Novitskaya 2007; Whitley 1940; Fiorillo 2000 for environment
+Heterostracans,Dikenaspis,yukonensis,,Heterostraci,Cyathaspididae,Silurian,,Gorstian,,,Road River Formation,,"Beaver River, Southeastern Yukon, Canada",427,425,Denison 1964; Boucot & Janis 1983 for BA and formation
+Heterostracans,Dinaspidella,sp.,,Heterostraci,Cyathaspididae,Silurian,,late Sheinwoodian-Homerian,,,Delorme,Avalanche Lake: AV4 and AV5,"Northwest territories, Canada",431,427,Elliott and Petriello 2011; Soehn 2000; Boucot & Janis 1983 for BA
+Heterostracans,Dinaspidella,sp,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Fraenkelryggen Formation,,"Red Bay, Spitsbergen",417,415,Plotnick 1999
+Heterostracans,Dinaspidella,elizabethae,,Heterostraci,Irregularaspididae,Devonian,,Lockhovian,,,Delorme,transition between Delorme and Road River,"MOTH Site 127, GSC locality 69014, Unit 10, Northwest territories, Canada",419,411,Pellerin and Wilson 1995; Dineley & Loeffler 1976 loc info - GSC 69014 transistion between Delorme and Road River Fm detailed locality info in D&L suggests brackish lagoon similar to GSC 69017  - BA 3 according to Boucot & Janis 1983
+Heterostracans,Djurinaspis,prima,,,Pteraspidiformes,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Djurinaspis,secunda,,,Pteraspidiformes,Devonian,,Lockhovian,,,Ikva,,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Dnestraspis,firma,,,Pteraspidiformes,Devonian,,Pragian,,,Dniester Formation,Khmeleva ,"Podolia, Ukraine",410,408,"Novitskaya, 2007; lacustrine according to Voichyshyn 2011"
+Heterostracans,Doryaspis,nathorsti,,,,Devonian,,Pragian,,,Wood Bay,,"Spitbergen, Norway",410,407,Novitskaya; White 1935; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Drepanaspis,gemuendensis,,,,Devonian,,Emsian,Lower,,Hunsruck Slate Formation,,"Gemuenden, Germany",407,403,Kuhl et al 2012; 'depths just below storm wave-base' Raiswell et al 2008
+Heterostracans,Eriptychius,americanus,,Eriptychiida,Eriptychiidae,Ordovician,Upper,Sandbian,Sandbian,,Harding Formation,,"Canon City, Colorado",454,453,Walcott 1892; Boucot and Janis 1983 for BA; Allulee andHolland 2005
+Heterostracans,Eriptychius,americanus,,Eriptychiida,Eriptychiidae,Ordovician,Upper,Katian,Caradoc,Winnipeg,Winnipeg Formation,South Piney Member,"Bighorn Mountains, Wyoming",454,453,Sansom and Smith 2005
+Heterostracans,Eriptychius,americanus,,Eriptychiida,Eriptychiidae,Ordovician,Upper,Katian,Caradoc,,Viola Limestone,,"Arbuckle Mountains, southern Oklahoma",455,451,Ossian and Halseth 1976; Alberstadt 1973 and Boucot and Janis 1983 for palaeoenvironment; Amsden 1983 and Gao et al 1996 for age and shallow subtidal in upper deposits
+Heterostracans,Errivaspis,waynensis,,,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,,Wayne Herbert Quarry,"Abergavenny, South Wales",419,411,Dineley 1999; lot of lit for environment cited in GCR volume
+Heterostracans,Escharaspis,alata,,,,Devonian,,Lockhovian (Upper),,,"Peel Sound, Drake Bay, Snowblind Bay",,"Prince of Wales Island, Canadian Arctic",414,410,Elliott 1983; Boucot & Janis 1983 for BA
+Heterostracans,Eucyclaspis,erroli,,,,,,Pragian (Upper),,,Water Canyon,,Utah,410,409,Novitskaya 2007; Denison 1970; Reed 1997 (unpublishes thesis)
+Heterostracans,Europrotaspis,crenulata,,,Pteraspididae,,,Lockhovian,,Ditton Group,,upper cornstone,Besom farm,413,411,Loeffler and Thomas 1980; Dineley & Metcalfe 1999; lack of any marine inverts
+Heterostracans,Europrotaspis,arnelli,,,,,,Lockhovian (Upper),,,Dniester Formation,Strypa Stage,"Podolia, Ukraine",408,407,Novitskaya 2007; terrestrial channel deposit according to Voichyshyn 2011
+Heterostracans,Gigantaspis,minima,,,Pteraspidiformes,,,Pragian,early,,Wood Bay Formation,Sigurdfjellet,"Spitsbergen , Norway",410,409,Pernegre & Goujet 2007; Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Gigantaspis,laticephala,,,Pteraspidiformes,,,Pragian,,,Wood Bay Formation,Kapp Kjeldsen,"Spitsbergen , Norway",408,407,Pernegre & Goujet 2007; Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Gigantaspis,isachseni,,,Pteraspidiformes,,,Pragian,,,Wood Bay Formation,Kapp Kjeldsen,"Spitsbergen , Norway",408,407,Pernegre & Goujet 2007; Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Gigantaspis,bocki,,,Pteraspidiformes,,,Pragian,,,Wood Bay Formation,Kapp Kjeldsen,"Spitsbergen , Norway",408,407,Pernegre & Goujet 2007; Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,"""Helaspis"" Name preoccupied",finis,name appears to preoccupied by insect,,,Devonian,,Givetian,,,Yahatinda Formation,,Canada,387,382,Williams & Krause 2000 for environment
+Heterostracans,Homalaspidella,borealis,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Somerset Island Formation,,"Northwest territories, Canada",423,421,Loeffler and Jones 1976; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'
+Heterostracans,Homalaspidella,borealis,,Heterostraci,Cyathaspididae,,,Pridoli,,,Leopold Fm,,"Port Leopold,Somerset Island,  Canada",423,419,Jones 1975; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'; Plotnick 1999 for BA
+Heterostracans,Homalaspidella,borealis,,Heterostraci,Cyathaspididae,Silurian,,Gorstian,below Monograptus dubius zone,,Road River Formation,,"Beaver River, Yukon, Canada",427,425,"Elliott and Swift, 2013; Boucot & Janis 1983 for BA and Formation"
+Heterostracans,Homalaspidella,sp.,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Pod'emnaya Formation,,"Severnaya Zemlya, Russia",419,414,Blieck et al 2002; Turner 1999 for BA
+Heterostracans,Homalaspidella,nitida,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,Geddinian,,Red Bay Series,Ben Nevis division,"Spitsbergen, Norway",413,410,Denison 1964; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Irregularaspis,stensioei,,Heterostraci,Irregularaspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Irregularaspis,seretensis,,Heterostraci,Irregularaspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Irregulareaspis,hoeli,,,,Devonian,,Lockhovian ,,Red Bay,Ben Nevis,,"Spitbergen, Norway",413,410,Blieck & Heintz 1983; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Lamiaspis,,,,,Devonian,,Emsian,late,,Sevy Dolomite,Sandy Member,,400,397,Pers. Obs.
+Heterostracans,Lampraspis,tuberculata,,,,,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Novitskaya 2007; Denison 1970; Fiorillo 2000 for environment
+Heterostracans,Lampraspis,carmani,,,Pteraspidiformes,,,Pragian,,,Holland Quarry Shale,,"Toledo, Ohio, USA",410,407,Denison 1960; Plotnick 1999
+Heterostracans,Larnovaspis,sp,,,Pteraspididae,Devonian,,Lockhovian,,,Chortkov Formation,,"Podolia, Ukraine",416,415,Plotnick 1999
+Heterostracans,Larnovaspis,iwaniensis,,,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Larnovaspis,major,,,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Larnovaspis,major,,,Pteraspidiformes,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Larnovaspis,mogielnensis,,,Pteraspidiformes,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Larnovaspis,mogielnensis,,,Pteraspidiformes,Devonian,,Lockhovian,,,Ikva,,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Larnovaspis,kneri,,,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Larnovaspis,kneri,,Heterostraci,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Chortkov Member,"Podolia, Ukraine",416,415,Novitskaya 2007; shallow nearshore according to Voichyshyn 2011
+Heterostracans,Larnovaspis,stensioei,,,,Devonian,,Lockhovian,,Ditton Group,Lower Ditton,crouchi zone,"Gwyn Genni Quarry, Herefordshire",415,413,White 1935
+Heterostracans,Listraspis,canadensis,,,,Devonian,????Pridoli????,Lockhovian,,,Muncho-McConnell Formation,,"Muncho Lake, British Columbia, Canada",420,419,Denison 1964; Novitskaya 2007; peritidal environment from sedimentology Taylor & Mackenzie 1970 and Nadjiwon et al 2000
+Heterostracans,Loricopteraspis,althi,,,,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Stage,"Podolia, Ukraine",414,412,Novitskaya 2007; Tarlo 1961; Voichyshyn 2011
+Heterostracans,Loricopteraspis,dairydinglensis,,,,Devonian,,Lockhovian,,Ditton Group,,Dairy Dingle,"Clee Hill, Shropshire",412,410,Dineley 1999; lot of lit for environment cited in GCR volume
+Heterostracans,Miltaspis,,,,,Devonian,,Lockhovian,,,Ben Nevis Formation,Vogti Horizon,"Spitbergen, Norway",413,410,Novitskaya 2007; Blieck 1981; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Mitraspis,cracens,,,,Devonian,,Lockhovian,,,Drake Bay Formation,upper member',"Prince of Wales Island, Canadian Arctic",415,410,Elliott et al 2015
+Heterostracans,Mylopterapidella,gracilis,,,Pteraspidiformes,,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Novitskaya 2007; lagoon-delta according to Voichyshyn 2011
+Heterostracans,Mylopterapis,robusta,,,Pteraspidiformes,,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Novitskaya 2007; lagoon-delta according to Voichyshyn 2011
+Heterostracans,Nahanniaspis,mackensiei,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Delorme,,"Northwest territories, Canada",419,411,Elliott and Petriello 2011; Boucot & Janis 1983 for BA
+Heterostracans,Nahanniaspis,mackenziei,May be a subfamily in Cyathaspididae,Heterostraci,Irregularaspidinae,Devonian,,Lockhovian,,,Delorme,transition between Delorme and Road River,"MOTH Site 127, GSC locality 69014, Unit 10, Northwest territories, Canada",419,411,Elliott and Petriello 2011; Pellerin and Wilson 1995; Dineley & Loeffler 1976 - loc info GSC 69014 transistion between Delorme and Road River Fm detailed locality info in D&L suggests brackish lagoon similar to GSC 69017  - BA 3 according to Boucot & Janis 1983
+Heterostracans,Oreaspis,,,,,,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Novitskaya 2007; Denison 1970; Fiorillo 2000 for environment
+Heterostracans,Oreaspis,,,,,,,Pragian (Upper),,,Water Canyon,,Utah,410,409,Novitskaya 2007; Denison 1970; Reed 1997 (unpublishes thesis)
+Heterostracans,Panamintaspis,snowi,,,,Devonian,,Emsian,late,,Lost Burro Formation,Lippincott Member,"Trail Canyon, Death Valley, California",400,497,Elliott & Ilyes 1996; 
+Heterostracans,Paraliliaspis,egregia,,,,Devonian,,Lockhovian,immediately above boundary,,,Ovinparm horizon,"Pechora River area, Polar Urals, Russia",419,418,Novitskaya 2007; Novitskaya and Talimaa 1994; shallow water 'littoral'? Zhemchugova et al 1990
+Heterostracans,Parapteraspis,lata,,,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Parapteraspis,lata,,,Pteraspidiformes,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Parapteraspis,plana,,,Pteraspidiformes,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Parapteraspis,plana,,,Pteraspidiformes,Devonian,,Pragian,,,Dniester Formation,Khmeleva ,"Podolia, Ukraine",410,408,lacustrine according to Voichyshyn 2011
+Heterostracans,Pavlovaspis,pasternaki,,,Pteraspididae,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Voichyshyn 2011; Novitskaya 2007
+Heterostracans,Pionaspis,amplissima,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Delorme,,"Northwest territories, Canada",419,411,"Elliott and Petriello 2011; Boucot & Janis 1983 for BA, but locality list suggests brackish"
+Heterostracans,Pionaspis,,,,Cyathaspididae,Silurian,,Ludlow,,,Read Bay Formation,,"Somerset Island, Northwest territories, Canada",430,425,Jones & Dixon 1977; Boucot & Janis 1983 for BA
+Heterostracans,Pionaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Somerset Island Fm,,"Somerset Island, Canada",423,419,Elliott and Dineley 1991; Miall & Kerr 1977 for palaeoenvironment 'inter-tidal'; Boucot & Janis 1983 give BA 3
+Heterostracans,Pirumaspis,,,,,Devonian,,Emsian,late,,Sevy Dolomite,Sandy Member,,400,397,Pers. Obs.
+Heterostracans,Podolaspis,danieli,,,Pteraspididae,Devonian,,Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Voichyshyn 2011; Novitskaya 2007
+Heterostracans,Podolaspis,podolica,,,Pteraspididae,Devonian,,Lockhovian,,,Ikva,,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2010
+Heterostracans,Podolaspis,podolica,,,Pteraspididae,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Voichyshyn 2011
+Heterostracans,Podolaspis,podolica,,,Pteraspididae,Devonian,,Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Voichyshyn 2011
+Heterostracans,Podolaspis,lerichei,,,Pteraspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Podolaspis,lerichei,,,Pteraspididae,Devonian,,Lockhovian,,,Ikva,,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Podolaspis,lerichei,,,Pteraspididae,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Voichyshyn 2011
+Heterostracans,Podolaspis,zychi,,,Pteraspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Podolaspis,zychi,,,Pteraspididae,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,Voichyshyn 2011
+Heterostracans,Podolaspis,sp,,,Pteraspididae,Devonian,,Lockhovian,,,Chortkov Formation,,"Podolia, Ukraine",416,415,Plotnick 1999
+Heterostracans,Poraspis,heintzae,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Silurian,,Pridoli,Geddinian instead?,,Peel Sound Fm,,Prince of Wales Island,421,417,Elliott et al. 1998; Elliot and Dineley 1991; Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,cracens,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Silurian,,Pridoli (Earliest),Lower,,Peel Sound Fm,,Prince of Wales Island,416,414,Elliott et al. 1998; Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,thules,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Silurian,,Pridoli (Earliest),Lower,,Peel Sound Fm,,Prince of Wales Island,423,422,Elliott et al. 1998; Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,parmula,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Silurian,,Pridoli (Earliest),Lower,,Peel Sound Fm,,Prince of Wales Island,423,422,Elliott et al. 1998; Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,polaris,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,crouchi zone,,Peel Sound Fm,,"Prince of Wales Island, Canada",416,414,Elliott and Dineley 1991; Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,polaris,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,,Pteraspis Band,"Devils Hole, Morville, Shropshire, UK",419,417,Dineley 1999; freshwater sequence
+Heterostracans,Poraspis,polaris,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Fraenkelryggen,,"Spitsbergen, Norway",417,415,Elliott et al. 1998; Plotnick 1999 for BA
+Heterostracans,Poraspis,polaris,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Delorme,,,419,411,Pers. Obs.
+Heterostracans,Poraspis,rostrata,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Ben Nevis,,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Poraspis,rostrata,var trimpleyensis,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,Ditton Group,,Pteraspis rostrata band,"Oak Dingle, Bouldon, Shropshire",419,417,GCR
+Heterostracans,Poraspis,,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Ben Nevis Formation,,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Poraspis,,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Fraenkelryggen Formation,,Spitsbergen,417,415,Plotnick 1999
+Heterostracans,Poraspis,brevis,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,"Peel Sound, Drake Bay, Snowblind Bay",,Canadian Arctic,414,411,Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,simplex,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,"Peel Sound, Drake Bay, Snowblind Bay",,Canadian arctic,414,411,Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,simplex,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,Elliott et al. 1998; Littoral according to Voichyshyn 2011
+Heterostracans,Poraspis,pompeckjii,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,"Peel Sound, Drake Bay, Snowblind Bay",,Canadian arctic,414,411,Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,pompeckjii,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,Elliott et al. 1998; Littoral according to Voichyshyn 2011
+Heterostracans,Poraspis,semiradzkii,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,"Peel Sound, Drake Bay, Snowblind Bay",,Canadian arctic,414,411,Boucot & Janis 1983 for BA
+Heterostracans,Poraspis,semiradzkii,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,Elliott et al. 1998; Littoral according to Voichyshyn 2011
+Heterostracans,Poraspis,sp.,,Heterostraci,Cyathaspididae,Devonian,,Pragian,,,Spokojnaya Formation,,"Severnaya Zemlya, Russia",411,407,Blieck et al 2002; Turner 1999 for BA
+Heterostracans,Poraspis,sp.,,Heterostraci,Cyathaspididae,Devonian,,Pragian,,,Pod'emnaya Formation,,"Severnaya Zemlya, Russia",419,414,Blieck et al 2002; Turner 1999 for BA
+Heterostracans,Poraspis,sp,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Lievin Formation,,"Lievin, Northern France",419,411,Plotnick 1999
+Heterostracans,Poraspis,sp,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Fraenkelryggen Formation,,"Red Bay, Spitsbergen",417,415,Plotnick 1999
+Heterostracans,Poraspis,,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,Upper,,Chortkov Formation,,"Podolia, Ukraine",414,411,Plotnick 1999
+Heterostracans,Poraspis,sturi,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Tyver Formation,Chortkov,"Podolia, Ukraine",414,412,shallow near shore according to Voichyshyn 2011
+Heterostracans,Poraspis,sturi,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,Littoral according to Voichyshyn 2011
+Heterostracans,Poraspis,sturi,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Poraspis,sturi,,Heterostraci,Cyathaspididae,Devonian,,Pragian,,,Dniester Formation,khm1,"Podolia, Ukraine",410,409,lacustrine according to Voichyshyn 2011
+Heterostracans,Poraspis ,sericea,,Heterostraci,Cyathaspididae,Devonian,,Lockhovian,,Ditton Group,,Wayne Herbert Quarry,"Abergavenny, South Wales",419,411,lot of lit cited in GCR review for locality
+Heterostracans,Poraspis ,sericea,Poraspidinae subfamily,Heterostraci,Cyathaspididae,Devonian,,Lockhovian-Early Pragian,Upper member,,Peel Sound Fm,,"Prince of Wales Island, Canada",412,409,Elliott et al. 1998; Boucot & Janis 1983 for BA
+Heterostracans,Porophoraspis,crenulata,,Arandaspidida,Arandaspididae,Ordovician,Middle,Darriwilian,Llanvirn,,Stairway Sandstone,,"Mt Watt, Northern Territory, Australia",466,461,Ritchie and Gilbert-Tomlinson 1977; Boucot and Janis 1983 and Davies et al 2011 for palaeoenvironment
+Heterostracans,Porophoraspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Lower,Florian-Darriwillian,Arenig,,Horn Valley Siltstone,,"Areyonga Creek, Gardiner Range, Northern Territory, Australia",467,465,Young 1997
+Heterostracans,Porophoraspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Middle,Darriwilian,Llanvirn,,Stairway Sandstone,,"James 'B' Anticline, Northern Territory, Australia",466,461,Young 1997; Boucot and Janis 1983 and Davies et al 2011 for palaeoenvironment
+Heterostracans,Protaspis,dorfi,,,,,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Blieck 1984; Bryant 1933; Novitskaya 2007; Fiorillo 2000 for environment
+Heterostracans,Protaspis,bucheri,,,,,,Emsian,,,Beartooth Butte,,Wyoming,407,393,Denison 1970; Blieck 1984; Bryant 1933; Novitskaya 2007; Fiorillo 2000 for environment
+Heterostracans,Protopteraspis,whitei,,Heterostraci,,Devonian,,Lockhovian,Late Gedinnian,,Knoydart,,Nova Scotia,414,411,Elliott and Dineley 1983; Plotnick 1999 for BA
+Heterostracans,Protopteraspis,pygmaea,,Heterostraci,Pteraspididae,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Prince of Wales Island, Northwest Territories, Canada",427,425,Elliott and Dineley 1983; Boucot & Janis 1983 for BA
+Heterostracans,Protopteraspis,siliktokia,,Heterostraci,Pteraspididae,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Northwest Territories, Canada",427,425,Elliott and Dineley 1983; Boucot & Janis 1983 for BA
+Heterostracans,Protopteraspis,sartokia,,Heterostraci,Pteraspididae,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Northwest Territories, Canada",427,425,Elliott and Dineley 1983; Boucot & Janis 1983 for BA
+Heterostracans,Protopteraspis,corniga,,Heterostraci,Pteraspididae,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Northwest Territories, Canada",427,425,Elliott and Dineley 1983; Boucot & Janis 1983 for BA
+Heterostracans,Protopteraspis,arctica,,Heterostraci,Pteraspididae,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Northwest Territories, Canada",427,425,Elliott and Dineley 1983; Boucot & Janis 1983 for BA
+Heterostracans,Protopteraspis,primaeva,,,,Devonian,,Lockhovian ,,Red Bay,Ben Nevis,,"Spitbergen, Norway",413,410,Novitskaya 2007; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Protopteraspis,gosseletti,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,,leathensis zone,"Devils Hole, Morville, Shropshire, UK",419,417,Dineley 1999
+Heterostracans,Protopteraspis,leathensis,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,St Maughan's Group,,?basal fish conglomerate,"Lydney, Gloucestershire",419,417,GCR; tidal?
+Heterostracans,Protopteraspis,sp,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,Knoydart Formation,,"Arisaig, Nova Scotica, Canada",414,411,Plotnick 1999
+Heterostracans,Protopteraspis,sp,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,Lievin Formation,,"Lievin, Northern France",419,411,Plotnick 1999
+Heterostracans,Protopteraspis,sp,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,Fraenkelryggen Formation,,"Red Bay, Spitsbergen",417,415,Plotnick 1999; Boucot & Janis has BA 0 for lower Fraenkelryggen
+Heterostracans,Protopteraspis,sp.,,,,Devonian,,Lockhovian ,,Red Bay,Ben Nevis,,"Spitbergen, Norway",413,410,Novitskaya 2007; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Protopteraspis,sp.,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,Pod'emnaya Formation,,"Severnaya Zemlya, Russia",419,414,Blieck et al 2002; Turner 1999 for BA
+Heterostracans,Protopteraspis,sp.,,Heterostraci,,Devonian,,Lockhovian,,,Dalhousie Fm,Correlated with Knoydart,"Dalhousie, New Brunswick",414,411,Elliott and Dineley 1983; Plotnick 1999 for BA
+Heterostracans,Protopteraspis,sp.,,,,,,,,,Delorme,,Mackenzie Mountains,427,423,Elliott and Dineley 1983; Boucot & Janis 1983 for BA
+Heterostracans,Psammosteus,asper,,,,Devonian,,Frasnian,Plavinas Stage,,,,"Stolbovo, Syas River, Leningrad District",382,380,"Sallan and Coates, 2010; Mark-Kurik and Poldvere, 2012 for age "
+Heterostracans,Psammosteus,asper,,,,Devonian,,Frasnian,,,Andoma Fm,upper part of lower,"Andoma Hill, Onega Lake, Russia",381,380,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,asper,,,,Devonian,,Frasnian,,,Klimovskaya Fm,,"Andoma Hill, Onega Lake, Russia",378,376,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,bergi,,,,Devonian,,Givetian,Burtnieki Stage ,,,,"Karksi outcrop, Viljandi County, Estonia",386,385,"Sallan and Coates, 2010; Mark-Kurik and Poldvere, 2012 for age "
+Heterostracans,Psammosteus,bergi,,,,Devonian,,Givetian,,,Burtnieki Fm,,Estonia + Latvia,386,385,Mark-Kurik 2000; Kleesment et al 2012
+Heterostracans,Psammosteus,cuneatus,,,,Devonian,,Frasnian,,,Andoma Fm,upper part of lower,"Andoma Hill, Onega Lake, Russia",381,380,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,cuneatus,,,,Devonian,,Frasnian,,,Klimovskaya Fm,,"Andoma Hill, Onega Lake, Russia",378,376,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,falcatus,,,,Devonian,,Frasnian,,,Klimovskaya Fm,,"Andoma Hill, Onega Lake, Russia",380,378,Mikulas et al 2013
+Heterostracans,Psammosteus,kiaeri,,,,Devonian,,Frasnian,,,Fram Fm,,"Ellesmere Island, Canada",377,377,Kiaer 1915; de Freitas & Thorsteinsson 1994; Downs et al. 2011
+Heterostracans,Psammosteus,levis,,,,Devonian,,Frasnian,,,Andoma Fm,upper,"Andoma Hill, Onega Lake, Russia",380,378,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,levis,,,,Devonian,,Frasnian,,,Klimovskaya Fm,,"Andoma Hill, Onega Lake, Russia",378,376,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,livonicus,,,,Devonian,,Frasnian,,,Andoma Fm,lower  ,"Andoma Hill, Onega Lake, Russia",380,378,Glinskiy & Mark-Kurik 2016; Mikulas et al 2013
+Heterostracans,Psammosteus,maeandrinus,,,,Devonian,,Frasnian,Plavinas Stage,Snetnaya Gora Substage,,,"Russia, Syas River, downstream Tahnovo Village",382,378,Pers. Obs.
+Heterostracans,Psammosteus,maeandrinus,,,,Devonian,,Frasnian,,,Andoma Fm,upper part of lower,"Andoma Hill, Onega Lake, Russia",381,380,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,maeandrinus,,,,Devonian,,Frasnian,,,Andoma Fm,upper  ,"Andoma Hill, Onega Lake, Russia",380,379,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,maeandrinus,,,,Devonian,,Frasnian,,,Klimovskaya Fm,,"Andoma Hill, Onega Lake, Russia",378,376,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,megalopteryx,,,,Devonian,,Frasnian,Plavinas Stage,, ,,"Russia, Leningrad district, Syas River",382,378,Pers. Obs.
+Heterostracans,Psammosteus,megalopteryx,,,,Devonian,,Frasnian,,,Klimovskaya Fm,,"Andoma Hill, Onega Lake, Russia",378,376,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,pectinatus,,,,Devonian,,Frasnian,,,Klimovskaya Fm,,"Andoma Hill, Onega Lake, Russia",378,376,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,praecursor,,,,Devonian,,Frasnian,,,Andoma Fm,lower,"Andoma Hill, Onega Lake, Russia",382,381,Glinskiy & Nilov 2017; Mikulas et al 2013
+Heterostracans,Psammosteus,cf praecursor,,,,Devonian,,Frasnian,lower,,,,"Mikhailovskii Mine, Zheleznogorsk, Russian Federation",382,379,"Moloshnikov, 2007"
+Heterostracans,Psammosteus,proia,,,,Devonian,,Givetian,,,Arukula Fm,,Estonia + Latvia,387,385,"Mark-Kurik 2000; Kleesment et al 2012; Mark-Kurik and Poldvere, 2012 for age "
+Heterostracans,Psammosteus,ramosus,,,,Devonian,,Frasnian,,,Andoma Fm,lower,"Andoma Hill, Onega Lake, Russia",382,381,Glinskiy & Nilov 2017; Mikulas et al 2013
+Heterostracans,Psammosteus,toriensis,,,,Devonian,,Eifelian,Very early,,Parnu Fm,Tori Member,Estonia + Latvia,393,392,"Mark-Kurik 2000; Kleesment et al 2012; Mark-Kurik and Poldvere, 2012 for age "
+Heterostracans,Psammosteus,undulata,,,,Devonian,,Frasnian,,,Andoma Fm,lower,"Andoma Hill, Onega Lake, Russia",382,381,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psammosteus,venyukovi,,,,Devonian,,Givetian,Upper,,Pavlikovskaya Fm,,"Andoma Hill, Onega Lake, Russia",384,382,Glinskiy & Ivanov 2015; Mikulas et al 2013
+Heterostracans,Psephaspis,idahoensis,,,,Devonian,Givetian,,,,Jefferson Fm,basal,Idaho,388,385,Novitskaya; Denison 1970; wide range of deposits encountered within lower member of Jefferson from subtidal (BA 3+4) peritidal and esturine
+Heterostracans,Psephaspis,,,,,Devonian,Givetian,,,,Jefferson Fm,basal,Utah,388,385,Novitskaya; Denison 1970; PBDB
+Heterostracans,Psephaspis,williamsi,,,,Devonian,,Pragian (Lower),,,Water Canyon Formation,,"Bear Lake County, Idaho",410,409,Novitskaya; Denison 1970
+Heterostracans,Psephaspis,williamsi,,,,Devonian,,Pragian (Lower),,,Water Canyon Formation,,"Cache County, Utah",410,409,Novitskaya; Denison 1970
+Heterostracans,Pteraspis,rostrata,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,Lower Ditton,,"Oak Dingle, Shropshire, UK",419,417,"Frichinger 1991, white 1935; GCR review"
+Heterostracans,Pteraspis,rostrata,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,,Wayne Herbert Quarry,"Abergavenny, South Wales, UK",419,411,Dineley 1999; lot of lit for environment cited in GCR volume
+Heterostracans,Pteraspis,rostrata,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,Lower Ditton micrornatus-newportensis spore biozone zone,,Targrove Quarry,417,413,Lang 1937
+Heterostracans,Pteraspis,jackana,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,,Wayne Herbert Quarry,"Abergavenny, South Wales",419,411,Dineley 1999; lot of lit for environment cited in GCR volume
+Heterostracans,Pteraspis,mitchelli,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,Scone Sandstone Formation,Sheriffmuir Sandstone Member,"Wolfs Hole, nr Bridge of Allen, Forfarshire, Scotland, UK",414,411,Dineley 1999; fluvial in GCR 
+Heterostracans,Pteraspis,sp,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,Rhinopteraspis crouchi Zone?,,Rowlestone Hill,415,413,Plotnick 1999
+Heterostracans,Pteraspis,sp,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,Ivane Suite,,"Podoli , Ukraine",414,412,Gritsenko et al 1999
+Heterostracans,Pteraspis,sp,,Heterostraci,Pteraspididae,Devonian,,Lockhovian,,,Chortkov Formation,,Podolia,416,415,Plotnick 199
+Heterostracans,Ptomaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Telychian/Sheinwoodian,,,Delorme,"Avalanche: AV1, 2, 4","Avalanche Lake, Mackenzie, Northwest Territories",428,427,Boucot & Janis 1983 for BA
+Heterostracans,Ptomaspis,n. sp. ,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Leopold Formation,Section P,"Port Leopold,Somerset Island,  Canada",423,419,Loeffler and Jones 1976; Jones ; Plotnick 1999 for BA
+Heterostracans,Ptomaspis,canadensis,,Heterostraci,Cyathaspididae,Silurian,,Gorstian,,,Road River Formation,,"Beaver River, Southeastern Yukon, Canada",427,425,Loeffler and Dineley 1976; Boucot & Janis 1983 for BA and formation
+Heterostracans,Rhachiaspis,pteriga,,,,Devonian,,Lochkovian,,,Somerset Island Formation,lower member,"Somerset Island, Northwest Territories, Canada",423,422,Elliott 1984
+Heterostracans,Rhachiaspis,pteriga,,,,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Somerset Island, Arctic Canada",427,425,Elliott 1984; Boucot & Janis 1983 for BA
+Heterostracans,Rhinopteraspis,crouchi,,,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,,,Cwm Mill,415,413,Dineley 1999; lot of lit for environment cited in GCR volume
+Heterostracans,Rhinopteraspis,crouchi,,,Pteraspididae,Devonian,,Lockhovian (late),"lower Althaspis leachi zone/Z spore zone, Gedinnian",Ardenne Massif,Bois d'Ausse Fm (lower),,"La Gileppe, Liege, Belgium",414,412,Novitskaya 2007; Blieck 2009; plants in PBDB
+Heterostracans,Rhinopteraspis,crouchi,,,Pteraspididae,Devonian,,Lockhovian (late),"G spore zone, late Gedinnian",Ardenne Massif,Bois d'Ausse Fm (lower),,"Nonceveux, Liege, Belgium",412,411,Novitskaya 2007; Blieck 2009; Plants in PBDB
+Heterostracans,Rhinopteraspis,dunensis,,,Pteraspididae,Devonian,,Lockhovian,,Ditton Group,,,Cwm Mill,415,413,Dineley 1999; lot of lit for environment cited in GCR volume
+Heterostracans,Rhinopteraspis,dunensis,,,Pteraspididae,Devonian,,Early Emsian,,,,Nellen Koepfchen Beds,"Alken, Germany",407,403,Kraeusel & Weyland 1962; Same age as Hunsruck Stets and Schafer 2009
+Heterostracans,Rhinopteraspis,cornubica,,,Pteraspididae,Devonian,,Emsian,,,Placoderm Sandstone,,"Kielce, Holy Cross Mountains",407,403,"Tarlo, 1961; PBDB; Szrek 2014"
+Heterostracans,Rhinopteraspis,cornubica,,Heterostraci,Pteraspididae,Devonian,,?Eifelian,,,Saltash Formation,?Trevose Slate/Dartmouth Slates,"Bedruthian Steps, Cornwall, UK",407,393,GCR; Tarlo 1961
+Heterostracans,Ritchieichthys,nibili,,Arandaspidida,Arandaspididae,Ordovician,Upper,,Katian,,Nibil Formation,,"subsurface Kidson 1 core, Western Australia",451,449,Sansom et al 2013
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Upper,Katian,Caradoc,,Anzaldo Formation,,"Sacabambilla, Cochabamba Province, Bolivia",461,457,"Pradel et al 2007; Gagnier 1991; Age based on Gagnier et al. 1996, PBDB"
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Upper,Katian,Caradoc,,Anzaldo Formation,,"Cerro Chakeri, Puntata, Cochabamba Province, Bolivia",461,457,Emig and Herrera 2006
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Upper,Katian,Caradoc,,Anzaldo Formation,,"Cerro San Pedro, Cochabamba, Bolivia",461,457,Gagnier 1991
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Upper,Katian,Caradoc,,Anzaldo Formation,,"Anzaldo, Tarata Province, Bolivia",461,457,Gagnier 1991
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Upper,Katian,Caradoc,,Anzaldo Formation,,"Sacabamba, Cochabamba. Bolivia",461,457,Gagnier 1991
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Upper,Katian,Caradoc,,Anzaldo Formation,,"Pajcha Pata, Cochabamba, Bolivia",461,457,Gagnier et al 1996
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Upper,Katian,Caradoc,,Anzaldo Formation,,"Santivanez, Cochabamba, Bolivia",461,457,Gagnier 1991; Gagnier et al 1996
+Heterostracans,Sacabambaspis,janvieri,,Arandaspidida,Arandaspididae,Ordovician,Middle,Uppermost Darriwilian,Llandeilian,Trapiche Group,La Cantera Formation,lower mbr,"Sierra de Villicum, San Juan province, Argentina",462,461,Albanesi et al 1995
+Heterostracans,Sacabambaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Middle,Darriwilian,Llanvirn,,Amdeh Fm,Am5 Mbr,"Wadi Qahza, Oman",465,463,Sansom et al 2009
+Heterostracans,Sacabambaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Middle,Florian-Darriwillian,Arenig,,Amdeh Fm,Am4 Mbr,"Wadi Daiqa, Oman",467,465,Sansom et al 2009
+Heterostracans,Sacabambaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Upper,Sandbian-Katian,Caradoc,,Carmichael Sandstone,,"Johnny's Creek Anticline, N of King's Canyon, Northern Territory, Australia",458,453,Young 1997; Boucot and Janis 1983 for BA; age from Edgoose 2013
+Heterostracans,Sacabambaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Middle,Upper Darriwilian,Llanvirn,,Stokes Formation,basal member,"Areyonga Creek, Gardiner Range, Northern Territory, Australia",467,465,Young 1997; Boucot and Janis 1983 and Davies et al 2011 for palaeoenvironment; age from edgoose 2013
+Heterostracans,Sacabambaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Middle,Upper Darriwilian,Llanvirn,,Stairway Sandstone,,"Maloney Hill, Northern Territory, Australia",466,461,Boucot & Janis 1983 have BA 2
+Heterostracans,Sacabambaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,,Uppermost Darriwilian,Llandeilian,Trapiche Group,La Pola Formation,,"San Juan, Argentina",462,461,Pers. Obs.
+Heterostracans,Sacabambaspis,sp.,,Arandaspidida,Arandaspididae,Ordovician,Middle,,Darriwilian,,Sepulturas Formation,,"west of Alto del Condor, Jujuy Province, Argentina",461,458,Albanesi and Astini 2002; Acenolaza and Acenolaza 2002
+Heterostracans,Semipodolaspis,slobodensis,,,Pteraspididae,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,littoral according to Voichyshyn 2011
+Heterostracans,Stegobranchiaspis,baringensis,,,,Devonian,,Lockhovian (Upper),,,"Peel Sound, Drake Bay, Snowblind Bay",,"Prince of Wales Island, Canadian Arctic",414,410,Elliott 1983; Boucot & Janis 1983 for BA
+Heterostracans,Stegobranchiaspis,baringensis,,,,Devonian,,Lockhovian (Upper),,,"Peel Sound, Drake Bay, Snowblind Bay",,"Read Bay, Cornwallis Island, Canadian Arctic",414,410,Elliott 1983; Boucot & Janis 1983 for BA
+Heterostracans,Strosipherus,indentatus,,Heterostraci,,Silurian,,Pridoli,,,,Loo Beds K3b-L,"Estonia, Baltic",423,421,Mark-Kurik 1969; Marss 1977; subtidal marine; Boucot & Janis 1983 for BA
+Heterostracans,Strosipherus,indentatus,,Heterostraci,,Silurian,,Pridoli,,,,Ohesaare Stage K4,"Estonia, Baltic",421,420,Mark-Kurik 1969; Marss 1977; Boucot & Janis 1983 for BA
+Heterostracans,Strosipherus,sp,,Heterostraci,,Silurian,,Pridoli,,,Krasnaya Bukhta Formation,,"Severnaya Zemlya, Russia",423,419,Blieck et al 2002
+Heterostracans,Tolypelepis,sp.,,Heterostraci,Tolyaspididae,,,Telychian/Sheinwoodian,,,Delorme,"Avalanche: AV1, 2, 4","Avalanche Lake, MacKenzie Mountains, Northwest terroritories, Canada",438,430,Boucot & Janis 1983 for BA
+Heterostracans,Tolypelepis,undulata,,Heterostraci,Tolyaspididae,Silurian,,Pridoli,,,,Loo Beds K3b-L,"Estonia, Baltic",423,421,Marss 1977; subtidal marine; Boucot & Janis 1983 for BA
+Heterostracans,Tolypelepis,undulata,,Heterostraci,Tolyaspididae,Silurian,,Pridoli,,,,Ohesaare Stage K4,"Estonia, Baltic",421,420,Marss 1977; Boucot & Janis 1983 for BA
+Heterostracans,Tolypelepis,undulata,,Heterostraci,Tolyaspididae,Silurian,,Pridoli,,,,Oesel Group K4,"Estonia, Baltic",421,420,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Tolypelepis,cf. undulata,,Heterostraci,Tolyaspididae,Silurian,,Pridoli,,,Krasnaya Bukhta Formation,,"Severnaya Zemlya, Russia",423,419,Blieck et al 2002
+Heterostracans,Tolypelepis,cf. undulata,,,Tolyaspididae,Silurian,,Pridoli,,,Beyrichienkalk,1,north Germany,421,417,Denison 1964; Boucot & Janis 1983 and Turner 1999 for BA; age from PBDB = to osehaare
+Heterostracans,Tolypelepis,timanica,,Heterostraci,Tolyaspididae,Devonian,,Lockhovian,,,Eptarma,,Northern Timan,419,419,Denison 1964; Dineley & Loeffler 1976 have as Pridoli; Boucot & Janis for BA - strat may be Pridoli
+Heterostracans,Tolypelepis,sp.,,Heterostraci,Tolyaspididae,Silurian,Early Wenlockian,Sheinwoodian,,,Allen Bay Formation,,"Cornwallis Island, Canada",433,430,Denison 1964; Novitskaya 2007; Boucot & Janis 1983 for BA and formation
+Heterostracans,Torpedaspis,elongata,,,,,,,,,Peel Sound Formation,,"Prince of Wales Island, Northwest Territories, Canada",414,410,Broad & Dineley 1973; Boucot & Janis 1983 for BA
+Heterostracans,Torpedaspis,elongata,,,,,,,,,Peel Sound Formation,,"Somerset Island, Northwest territories, Canada",423,419,Broad & Dineley 1973; Boucot & Janis 1983 for BA
+Heterostracans,Torpedaspis,elongata,,,,,,,,,Read Bay Formation,,"Somerset Island, Northwest territories, Canada",430,425,Broad & Dineley 1973; Boucot & Janis 1983 for BA
+Heterostracans,Tuberculaspis,elyensis,,,,,,Emsian,late,,Sevy Dolomite,Sandy Member,,400,397,Pers. Obs.
+Heterostracans,Ulutitaspis,notidana,,,,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Prince of Wales Island, Northwest Territories, Canada",414,410,Elliott 1984; Boucot & Janis 1983 for BA
+Heterostracans,Ulutitaspis,notidana,,,,Devonian,,Lochkovian,,,Somerset Island Formation,lower member,"Somerset Island, Northwest Territories, Canada",423,422,Elliott 1984
+Heterostracans,Ulutitaspis,aquilonia,,,,Devonian,,Lochkovian,,,Somerset Island Formation,upper member,"Somerset Island, Northwest Territories, Canada",422,419,Elliott 1984
+Heterostracans,Ulutitaspis,truncata,,,,Silurian,,Pridoli,,,Peel Sound Formation,lower member,"Prince of Wales Island, Northwest Territories, Canada",419,410,Elliott 1984; Boucot & Janis 1983 for BA
+Heterostracans,Unarkaspis,schultzei,,,,Devonian,,Lockhovian (Upper),,,Snowblind Bay Formation,,"Read Bay, Cornwallis Island, Canadian Arctic",414,411,Elliott 1983; Boucot & Janis 1983 for BA
+Heterostracans,Unarkaspis,schultzei,,,,Devonian,,Lockhovian (Upper),,,Drake Bay Formation,upper member',"Prince of Wales Island, Canadian Arctic",415,410,Elliott et al 2015
+Heterostracans,Vernonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Vernon Formation,,"Kenwood, New York, USA",427,423,Plotnick 1999
+Heterostracans,Vernonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Bloomsburg Formation,,"Mt Union, Pennsylvania, USA",427,423,Plotnick 1999
+Heterostracans,Vernonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Homerian-Gorstian,,,Shawangunk Formation,"Guymard Quartzite, Otisville Shale","New York and Pennsylvania, USA",430,427,Plotnick 1999 marginal marine; Boucot & Janis 1983; Denison 1964
+Heterostracans,Vernonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,,Homerian-Gorstian,,,Longwood Shale/Guymard Quartzite,,New York State,430,425,"Broad and Lenz, 1972; Denison 1964; Boucot & Janis 1983 for BA"
+Heterostracans,Vernonaspis,sp. ,,Heterostraci,Cyathaspididae,Silurian,,late Sheinwoodian-Homerian,,,Delorme,Avalanche Lake: AV4 and AV5,"Avalanche Lake, Mackenzie, Northwest Territories",431,427,"Soehn, 2000; Boucot & Janis 1983 for BA"
+Heterostracans,Vernonaspis,sp. ,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Vernon-Pittsford Formations,,"western New York, USA",423,419,Sepkoski 1998
+Heterostracans,Vernonaspis,sp.,,Heterostraci,Cyathaspididae,Silurian,Ludlow,Gorstian,,,High Falls Fm,,New Jersey,427,425,"Broad and Lenz, 1972; Denison 1964; Boucot & Janis 1983 for BA"
+Heterostracans,Vernonaspis,major,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Road River Formation,,"Beaver River Area, Yukon, Canada",423,419,"Broad and Lenz, 1972; Boucot & Janis 1983 for BA and formation"
+Heterostracans,Vernonaspis,major,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Gossage Formation,,"Snake River Area, Yukon, Canada",423,419,"Broad and Lenz, 1972; Lenz 1982 'very shallow water, including possible supratidal, conditions'"
+Heterostracans,Vernonaspis,bamberi,,,Cyathaspididae,Silurian,,Pridoli,,,Road River Formation,,"Beaver River Area, Yukon, Canada",423,419,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Vernonaspis,epitegosa,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Road River Formation,,"Beaver River Area, Yukon, Canada",423,419,"Broad and Lenz, 1972; Boucot & Janis 1983 for BA and formation"
+Heterostracans,Vernonaspis,epitegosa,,Heterostraci,Cyathaspididae,Silurian,,Pridoli,,,Gossage Formation,,"Snake River Area, Yukon, Canada",423,419,"Broad and Lenz, 1972; Lenz 1982 'very shallow water, including possible supratidal, conditions'"
+Heterostracans,Vernonaspis,allenae,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Vernon Formation,,New York,427,423,"Broad and Lenz, 1972; Flower and Wayland-Smith 1952; Plotnick 1999 for BA"
+Heterostracans,Vernonaspis,leonardi,,Heterostraci,Cyathaspididae,Silurian,,Ludlow,,,Vernon Formation,,New York,427,423,"Broad and Lenz, 1972; Flower and Wayland-Smith 1952; Plotnick 1999 for BA"
+Heterostracans,Vernonaspis,bryanti,,Heterostraci,Cyathaspididae,Silurian,,Ludfordian,,,Bloomsburg Fm,upper,"Monroe County, Pennsylvania",425,423,"Broad and Lenz, 1972; Giffin 1979; Boucot & Janis 1983 for BA - might be non-marine "
+Heterostracans,Vernonaspis,vaningeni,,Heterostraci,Cyathaspididae,Silurian,,Ludfordian,,,Bloomsburg Fm,upper,"Monroe County, Pennsylvania",425,423,"Broad and Lenz, 1972; Giffin 1979; Boucot & Janis 1983 for BA - might be non-marine "
+Heterostracans,Vernonaspis,vaningeni,,Heterostraci,Cyathaspididae,Silurian,,Homerian,Niagarian,Lockport,Shawagunk,Otisville,Orange Co. New York,427,423,Bryant 1926
+Heterostracans,Vernonaspis,vaningeni,,Heterostraci,Cyathaspididae,,,Gorstian,late Niagarian or early Cayugian,,Bloomsburg Fm (High Falls),,"Delaware Water Gap, Water Gap Village, Pennsylvania",428,426,"Beerbower and Hait, 1959"
+Heterostracans,Vernonaspis,,,,,Silurian,,Wenlock,early,,Cape Phillips Formation,Member C,"Baillie-Hamilton Island, Canada",434,433,Boucot & Janis 1983 with pers comm from Thorsteinsson
+Heterostracans,Vernonaspis,sekwiae,,,,Silurian,,Ludlovian,late,,Delorme,,"Mt Sekwi, Keele Riverm Northwest Territories, Canada",425,423,Denison 1964; Boucot & Janis 1983 for BA
+Heterostracans,Woodfjordaspis,felixi,,,,Devonian,,Pragian,,,Wood Bay,Kapp Kjeldsen,"Spitbergen, Norway",409,408,Pernègre 2006.; Harland 1997 chpt.16 Geology of Svalbard
+Heterostracans,Xylaspis,prima,,,Pteraspidiformes,,,Pragian,,,Wood Bay Formation,Kapp Kjeldsen,"Spitsbergen , Norway",409,408,"Pernegre 2003, 2004; Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard"
+Heterostracans,Zaphoctenaspis ,meemannae,,,,Devonian,,Emsian,late,,Sevy Dolomite,Sandy Member,,400,397,Elliott & Blieck 2010
+Heterostracans,Zascinaspis,bryanti,,Heterostraci,Pteraspidiformes,Devonian,,Lockhovian,,,Tyver Formation,Ivanie Member,"Podolia, Ukraine",414,412,lagoon delta according to Voichyshyn 2011
+Heterostracans,Zascinaspis,heintzi,,,Pteraspidiformes,Devonian,,Lockhovian,,,Ikva,,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Zascinaspis,heintzi,,,Pteraspidiformes,Devonian,,Lockhovian/Pragian,,,Dniester Formation,Ustechko,"Podolia, Ukraine",412,410,lagoon-delta according to Voichyshyn 2011
+Heterostracans,Zascinaspis,heintzi,,,Pteraspidiformes,Devonian,,Pragian,,,Dniester Formation,Khmeleva ,"Podolia, Ukraine",410,408,lacustrine according to Voichyshyn 2011
+Heterostracans,Zascinaspis,,,,Pteraspidiformes,,,,,,Chortkov Formation,,Podolia,416,415,Plotnick 1999
+Heterostracans,Zascinaspis,sp,,,Pteraspidiformes,,,Pragian,,,Holland Quarry Shale,,"Toledo, Ohio, USA",410,407,Plotnick 1999

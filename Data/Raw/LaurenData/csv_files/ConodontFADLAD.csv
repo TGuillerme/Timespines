@@ -1,0 +1,78 @@
+Group,Genus,Species,1,2,3,Superfamily,Family,System,Series,Stage,Regional Stage,Group,Formation,Member,Locality,Max Age,Min Age,citation
+Conodont,"""Plectodina""",tenuis,Prioniodontida,Ozarkodinida,,,,Ordovician,,early?,Blackriverian,Galena Group,Glenwood Formation,,"Fillmore, Olmstead County, Minnesota",456,454,Rice & Hedblom 1987; Boucot & Janis 1983; Fraser 1976
+Conodont,"""Plectodina""",tenuis,Prioniodontida,Ozarkodinida,,,,Ordovician,,,Blackriverian,Galena Group,Platteville Formation,,"Fillmore, Olmstead County, Minnesota",456,455,Rice & Hedblom 1987; Fraser 1976
+Conodont,"""Plectodina""",tenuis,Prioniodontida,Ozarkodinida,,,,Ordovician,,,Blackriverian,Galena Group,Decorah Formation,,"Fillmore, Olmstead County, Minnesota",456,455,Rice & Hedblom 1987; Ludvigson et al 1996
+Conodont,"""Plectodina""",tenuis,Prioniodontida,Ozarkodinida,,,,Ordovician,,,Blackriveran,,Platteville Formation,,"St Paul, Minnesota",456,455,Sweet 1987; Fraser 1976
+Conodont,"""Plectodina""",tenuis,Prioniodontida,Ozarkodinida,,,,Ordovician,,,Blackriveran,,Decorah Formation,,"St Paul, Minnesota",456,455,Sweet 1987; Ludvigson et al 1996
+Conodont,Amorphognathus,sp.,Prioniodontida,,Balognathidae,,,Ordovician,Arenig,,Dawanian,,Dawan Formation,,"Hubei Province, China",471,467,Wang et al 1987
+Conodont,Amorphognathus,sp.,Prioniodontida,,Balognathidae,,,Ordovician,Ashgill,,,,White Head Formation,"""unit"" 1","Gaspe Peninsula, Quebec, Canada",478,471,Nowlan 1981
+Conodont,Apatognathus,varians,Prioniodontida,Ozarkodinida,Prioniodinina,,,Devonian,Fammenian,late,,,Berchogur? Formation,,Russian Federation,365,359.8,Barskov et al 1984
+Conodont,Aphelognathus,sp.,Prioniodontida,Ozarkodinida,Prioniodinina,,,Ordovician,Sandbian,Mohawkian,Soudleyan,,Taoqipo Formation,,"Shaan'Xi Province, China",458,455.8,Zhang 1983
+Conodont,Aphelognathus,sp.,Prioniodontida,Ozarkodinida,Prioniodinina,,,Ordovician,Sandbian,Mohawkian,Soudleyan,,Fengfeng Formation,2 Member,"HeBei Province, China",458,455.8,North China Strat Group 1979
+Conodont,Baltoniodus,triangularis,Prioniodontida,,Balognathidae,,,Ordovician,Floian,,,,Volkhov Stage Formation,Dikari Member,"Putilovo Quarry, north-western Russia",470,466,Tolmacheva et al 2003
+Conodont,Baltoniodus,sp.,Prioniodontida,,Balognathidae,,,Ordovician,Arenig,,,,Dawan Formation,lower member,"Hubei Province, China",478,472,Wang et al 1987
+Conodont,Baltoniodus,sp.,Prioniodontida,,Balognathidae,,,Ordovician,,,,,Dawan Formation,,"JiangSu Province, China",478,466,multi-authors 1988
+Conodont,Bispathodus,stabilis,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Polygnathidae,Devonian,,Famennian,late,,Berchogur? Formation,Member 2,Russian Federation,364.7,360.7,Barskov et al 1984
+Conodont,Chirognathus,sp.,Prioniodontida,Ozarkodinida,Prioniodinina,,,Ordovician,Arenig,,,,Xia Majiagou Formation,,"HeBei Province, China",473,466,North China Strat Group 1979
+Conodont,Clydagnathus,tragelehni,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,unnamed family,Devonian,Fammennian,,,,Mra17d,,Morocco,374,359.8,Hartenfels 2011
+Conodont,Dinodus,? primus,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Devonian,,Givetian,,,Laoyefen Formation,,"Lali, Guangxi, China",383,382,Ji & Ziegler 1993
+Conodont,Eognathodus,sulcatus,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Devonian,,Pragian,,,Karheen Formation,,"Prince of Wales County, Alaska",411,409,Savage 1977
+Conodont,Erika,sp.,,,,,,Silurian,Wenlock,Homerian,,,Klinteberg,,"Gotland, Sweden",434,433,Jeppsson in Marss et al 1998
+Conodont,Erismodus,sp.,Prioniodontida,Ozarkodinida,Prioniodinina,,,Ordovician,Llanvirn,early,,,Viknorevskii Formation,,"Kulumbe River Valley, Siberia",466,465,Sokolov 1982
+Conodont,Erraticodon,sp.,Prioniodontida,Ozarkodinida,Prioniodinina,,,Ordovician,Arenig,upper,,,San Juan Formation,,"La Rinconada and Talacasto, Argentina",471,466,Benedetto & Herrera 1993
+Conodont,Gamachignathus,ensifer,Prioniodontida,Ozarkodinida,,,,Ordovician,,,Maysvillian,,Hanson Creek Formation,,central Nevada,451,450,Sweet 2000; Sheehan & Schiefelbein 1984 for environment
+Conodont,Hibbardella,sp.,Prioniodontida,Ozarkodinida,Prioniodinina,,,Devonian,,Eifelian,,,,,"Padaukpin, Myanmar",392,387,Anderson et al 1969
+Conodont,Histiodella,sp.,Prioniodontida,,,,,Ordovician,Arenig,,,Tochilinskaya Suite,Kimaiskii Formation,,"Upper Lena River Basin, Russian Federation",478.6,466,Kanygin et al 1989
+Conodont,Histiodella,sp.,Prioniodontida,,,,,Ordovician,Arenig,,,,Kimaiskii Formation,,"Kulumbe River Valley, Siberia",478.6,466,Sokolov 1982
+Conodont,Histiodella,sp.,Prioniodontida,,,,,Ordovician,Arenig,,,,Xia MaJiaGou Formation,,"HeBei, China",473,466,Lai et al 1982
+Conodont,Icriodella,superba,Prioniodontida,,Balognathidae,,,Ordovician,Caradoc,,Shermanian,,Denley Limestone Formation,Glendale Member,"Roaring Brook, New York",457,456,Titus & Cameron 1976
+Conodont,Icriodella,superba,Prioniodontida,,Balognathidae,,,Ordovician,Caradoc,,Shermanian,,Denley Limestone Formation,Poland Member,"Trenton Gorge, New York",459,457,Titus & Cameron 1976
+Conodont,Kockelella,cf. ortus,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Sorve Formation,,"Ruhnu core, Estonia",433,430,Mannik 2003
+Conodont,Kockelella,ranuliformis,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Jaagarahu Formation,Vilsandi Member,"Viki core, Estonia",433,430,Mannik 2010; Boucot & Janis 1983 for BA
+Conodont,Kockelella,walliseri,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Lilley Formation,,"Highland County, Ohio",433,430,Kleffner 1990
+Conodont,Kockelella,sp.,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Jamaja Formation,,"Ruhnu core, Estonia",433,430,Mannik 2003
+Conodont,Kockelella,sp.,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Bisher Formation,,"Highland County, Ohio",433,430,Kleffner 1990
+Conodont,Mehlina,gradata,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Polygnathidae,Devonian,,Frasnian,middle,,Buregi Formation,,"Ilmen Lake Buregi Beds, Russian Federation",381,379,Zhuravlev 1999
+Conodont,Mesotaxis,ovalis,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Gogo Formation,,northern Canning Basin,381,379,George et al 2009
+Conodont,Mesotaxis,ovalis,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Virgin Hills Formation,,northern Canning Basin,381,379,George et al 2009
+Conodont,Microzarkodina,sp.,Prioniodontida,Ozarkodinida,,,,Ordovician,Arenig,,,,Dawan Formation,,"Hubei Province, China",471,467,Wang et al 1987
+Conodont,Microzarkodina,sp.,Prioniodontida,Ozarkodinida,,,,Ordovician,Arenig,,,,Kimaiskii Formation,,"Kulumbe River Valley, Siberia",478,466,Sokolov 1982
+Conodont,Microzarkodina,flabellum,Prioniodontida,Ozarkodinida,,,,Ordovician,Floian,,,,Volkhov Stage Formation,Dikari Member,"Putilovo Quarry, north-western Russia",477,471,Tolmacheva et al 2003
+Conodont,Nicollidina,brevis,,,,,,Devonian,Frasnian,Gogo equivalent,,,Napier Formation,,"Oscar Range, Canning Basin, WA",381,379,Nicoll 1985; Playford 1980 and Stephens & Sumner 2003 for environment
+Conodont,Nicollidina,remscheidensis,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Genus Nicollidina,Silurian,Wenlock,,,,Fluminimaggiore Formation,,"Sardinia, Italy",433,427,Ferretti et al 1999
+Conodont,Oepikodus,sp.,Prioniodontida,,,,,Ordovician,Arenig,lower,,,San Juan Formation,,"Talacasto, Argentina",477,470,Benedetto & Herrera 1993
+Conodont,Oepikodus,sp.,Prioniodontida,,,,,Ordovician,Arenig,lower,,,San Juan Formation,,"Rio Gualcamayo, Cerro Vie, Argentina",477,470,Keller et al 1994
+Conodont,Oulodus,sp.,Prioniodontida,Ozarkodinida,Prioniodinina,,,Ordovician,Arenig,,,,Dawan Formation,,"Hubei Province, China",478,466,Wang et al 1987
+Conodont,Ozarkodina,cf. excavata,Prioniodontida,Ozarkodinida,Ozarkodinina,,,Silurian,Llandovery,Telychian,,,Kilbride Formation,,"Coolin Lough, Galway, Ireland",438.5,433.5,Aldridge et al 1996
+Conodont,Ozarkodina,ex gr. confluens,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Jaagarahu Formation,Vilsandi Member,"Viki core, Estonia",431.5,428.5,Mannik 2010; Boucot & Janis 1983 for BA
+Conodont,Ozarkodina,ex gr. confluens,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Jaagarahu Formation,Maasi Member,"Viki core, Estonia",431.5,428.5,Mannik 2010; Boucot & Janis 1983 for BA
+Conodont,Ozarkodina,ex gr. confluens,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,,Sheinwoodian,,,Jaagarahu Formation,Tagavere Member,"Viki core, Estonia",431.5,428.5,Mannik 2010; Boucot & Janis 1983 for BA
+Conodont,Ozarkodina,hassi,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,,Silurian,Llandovery,Rhuddanian,,,Gun River Formation,,"Anticosti Island, Quebec, Canada",444,441,Zhang & Barnes 2002
+Conodont,Palmatolepis,crepida,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Krtiny Limestone Formation,,"Mokra, Czech Republic",382,372,Friakova et al 1985
+Conodont,Palmatolepis,crepida,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Vilemovice Limestone Formation,,"Mokra, Czech Republic",382,372,Friakova et al 1985
+Conodont,Palmatolepis,distorta,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Krtiny Limestone Formation,,"Mokra, Czech Republic",382,372,Friakova et al 1985
+Conodont,Palmatolepis,hassi,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Evtropina Formation,,"Northern Urals, Russian Federation",382,372,Puchkov et al. 1981
+Conodont,Palmatolepis,gigas,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Xom Nha Formation,,"Rao Cai, Vietnam",382,372,Tong-Dzuy ey al. 1988
+Conodont,Palmatolepis,gigas,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Evtropina Formation,,"Northern Urals, Russian Federation",382,372,Puchkov et al. 1981
+Conodont,Palmatolepis,glabra,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Palmatolepidae,Devonian,,Frasnian,,,Krtiny Limestone Formation,,"Mokra, Czech Republic",382,372,Friakova et al 1985
+Conodont,Pandorinellina,optima,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Polygnathidae,Devonian,,Lochkovian,,,,,"New South Wales, Australia",419,410,Farrell 2004
+Conodont,Pandorinellina,optima,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Polygnathidae,Devonian,,Lochkovian,,,Rauchkofel Formation,,"Wolayer area, Mt Seewarte, Austria",419,410,Suttner 2007
+Conodont,Pandorinellina,cf. ebzeryi,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Polygnathidae,Devonian,,Lochkovian,,,Rauchkofel Formation,,"Wolayer area, Mt Seewarte, Austria",419,410,Suttner 2007
+Conodont,Pandorinellina,cf. ebzeryi,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Polygnathidae,Devonian,,Lochkovian,,,Rauchkofel Formation,,"Wolayer area, Mt Seewarte, Austria",419,410,Suttner 2007
+Conodont,Paracordylodus,sp.,Prioniodontida,,,,,Ordovician,,Arenig,,,Xia Majiagou Formation,,"TangShan City, HeBei, China",473,466,Lai et al. 1982
+Conodont,Paracordylodus,sp.,Prioniodontida,,,,,Ordovician,,Arenig,,,San Juan Formation,,"Rio Gualcamayo, Argentina",471,466,Keller et al. 1994
+Conodont,Periodon,flabellum,Prioniodontida,Ozarkodinida,,,,Ordovician,Floian,,,,Volkhov Stage Formation,Dikari Member,"Putilovo Quarry, north-western Russia",477,471,Tolmacheva et al 2003
+Conodont,Phragmodus,sp.,Prioniodontida,,,,,Ordovician,Llandeilo,early,,,Tchertovskii Formation,,"Zagor Stream and Kulumbe River Valley, Siberia",461,458,Sokolov 1982
+Conodont,Phragmodus,sp.,Prioniodontida,,,,,Ordovician,Llandeilo,early,,,Kurenskii-Kudiin Formation,,"Zagor Stream and Kulumbe River Valley, Siberia",461,458,Sokolov 1982
+Conodont,Phragmodus,sp.,Prioniodontida,,,,,Ordovician,Llandeilo,early,,,Voginskii Formation,,"Zagor Stream and Kulumbe River Valley, Siberia",461,458,Sokolov 1982
+Conodont,Plectodina,sp.,Prioniodontida,Ozarkodinida,,,,Ordovician,Arenig,,,,Xia Majiagou Formation,3 Member,"HeBei Province, China",473,466,North China Stratigraphic Group 1979
+Conodont,Polygnathus,eberieini,Prioniodontida,Ozarkodinida,Ozarkodinina,Polygnathacea,Polygnathidae,Devonian,,Pragian,,,Soda Creek Formation,,"Reef Ridge, Alaska",410,407,Blodgett et al. 1999
+Conodont,Prioniodina,sardinia,Prioniodontida,Ozarkodinida,Prioniodinina,,,Devonian,,Eifelian,,Broken River Group,Jessey Springs limestone,,"Broken River, North Queensland, Australia",393,387,Mawson & Talent 1989
+Conodont,Prionodus (Baltoniodus),prevaribilis,Prioniodontida,,Balognathidae,,,Ordovician,,,Volkhov,,Langevoja Limestone Formation,,"Kalmar, Sweden",470,466,Berg-Madsen 1987
+Conodont,Promissum,pulchrum,Prioniodontida,,Balognathidae,,,Ordovician,,Hirnantian,,,Cedarburg Formation,Soom Shale Member,"SE of Clanwilliam, Cape, South Africa",445,444,Cocks and Fortey 1986
+Conodont,Pteraspathodus,amorphognathoides,Prioniodontida,,Balognathidae,,,Silurian,Llandovery,AERONIAN,,Bolotino series,,Tremetsy member,"Podolia, Ukraine",440,439,Gritsenko et al 1999
+Conodont,Pteraspathodus,pennatus,Prioniodontida,,Balognathidae,,,Silurian,Llandovery,Aeronian (middle),,,Gun River Formation,,"Anticosti Island, Quebec, Canada",440,439,Zhang & Barnes 2002; Nowlan 1983 for date
+Conodont,Pteraspathodus,cf. celloni,Prioniodontida,,Balognathidae,,,Silurian,Llandovery,Aeronian (middle),,,Gun River Formation,,"Anticosti Island, Quebec, Canada",440,439,Zhang & Barnes 2002; Nowlan 1983 for date
+Conodont,Sagittodontina,sp.,Prioniodontida,,Balognathidae,,,Ordovician,Ashgill,,Kralodvorian,,Cystoid (Ashgill) Limestone Formation,,"Zaragoza, Spain",449,445,Carls 1975
+Conodont,Sagittodontina,cf robusta,Prioniodontida,,Balognathidae,,,Ordovician,,,Kralodvorian,,Kraluv Dvur ,Pernik Beds Member,Czech Republic,449,445,Ferretti 1998
+Conodont,Yaoxianognathus,yaoxianensis,,,,,,Ordovician,Upper Katian,"""Ashgillian""",,,Lianglitag Formation,,"Bachu section, north margin Tarim Basin",451,445,Zhi-hao et al. 2007; Zhang et al 2014 for the environment of reefal structures

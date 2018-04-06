@@ -5,33 +5,48 @@
 
 If info not available or too hard to collect set NA for now
 
-## Species name
+# Details
+
+### Species name
 Lowest taxonomic level available
-## Group
+### Group
 Just information for us for the general taxonomic group (i.e. class)
-## Oldest Age (in Mya)
+### Oldest Age (in Mya)
 Oldest formation age 
-## Youngest Age (in Mya) 
+### Youngest Age (in Mya) 
 Youngest formation age 
-## Environement
+### Environement
 Either terrestrial or aquatic (i.e. does it swim or fly/walk)
-## Source
+### Source
 Of the data!
-## Body length (m)
+### Body length (m)
 Get the best estimate if incomplete but add the way it was estimated to a note file
-## Body mass (kg)
+### Body mass (kg)
 Get the best estimate if incomplete but add the way it was estimated to a note file
-## BM (source)
+### BM (source)
 Source of the body mass (e.g. estimation from another paper, original paper, calculated by hand...)
-## Diet (herbivore, omnivore, carnivore, small stuff eater)
+### Diet (herbivore, omnivore, carnivore, small stuff eater)
 Small stuff eater are things like insectivores, durophagy, filter/suspension feeding, etc...
-## Head/Body/Tail presence (0/1)
+### Head/Body/Tail presence (0/1)
 Is the Head/Body/Tail fairly preserved in the fossil record.
-## Head/Body/Tail projection (0/1/NA)
+### Head/Body/Tail projection (0/1/NA)
 Does the Head/Body/Tail have any sort of discrete projections (e.g. spikes, horns, etc...)
-## Head/Body/Tail surface (0/1/NA)
+### Head/Body/Tail surface (0/1/NA)
 Does the Head/Body/Tail have any sort of surface protection (e.g. osteoderms, plates, etc...)
-## Head/Body/Tail function (nothing/foraging/sexual/other/NA)
+### Head/Body/Tail function (nothing/foraging/sexual/other/NA)
 Does the Head/Body/Tail these surface or projections have any other purpose (suspected) than defense
-## Notes
+### Notes
 Use this one only for small notes (if none fill with NA). For longer notes like body measurements estimation, create a text file in the Notes folder in the Data folder named by the `species_name_formation.txt` (for example) specifying the notes/details.
+
+# Folder organisation
+
+All the raw data (just collected - unprocessed) is stored in the `Raw/` folder.
+
+ * The collected data (finalised - not to be modified again) is in `Raw/Collected/`
+ * The data still in collection (not finished yet) is in `Raw/Still_collecting/`
+ * The trees used are in `Raw/Trees/`
+ * `LaurenData` contains body length data and FAD/LAD for a lot of fishes
+ * `Notes` contain notes on data collection. It will eventually be removed
+
+All the processed data needs to be associated to a data script (in `Analysis/`) and saved in `Processed/`.
+

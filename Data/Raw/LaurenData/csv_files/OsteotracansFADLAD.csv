@@ -1,0 +1,159 @@
+Group,Genus,species,Order,Family,System,Series,Stage,Group,Formation,Member,Locality,Max Age,Min Age,citation
+Osteotracans,"""Boreaspis""",ginsburgi,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,Sigurdfjellet ,Spitsbergen,407,403,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,"""Boreaspis""",intermedia,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,"""Boreaspis""",ceratops,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,"Sigurdfjellet, Kapp Kjeldsen",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Aceraspis,robustus,,Ateleaspididae,Silurian,Wenlock,Homerian,,Sundvollen Formation,,"Norway; Rudstangen, Oslo Region",430,427,"Davies et al 2006; Davies et al 2005, Baarli et al 2003"
+Osteotracans,Acrotomaspis,instabilis,Thyestiida,Kiaeraspididae,Devonian,Lower,Pragian,,Wood Bay,Sigurdfjellet lower ,Spitsbergen,407,403,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Aestiaspis,wiitaensis,Thyestiida,Tremataspidoidea,Silurian,Wenlock,Homerian,,Rootsikula 1-3,,Baltic; Saaremaa,429,427,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2004; Boucot & Janis 1983"
+Osteotracans,Ateleaspis,tesselata,,Ateleaspididae,Silurian,Wenlock,Sheinwoodian,,Slot Burn,,"Scotland; Lesmahagow, South Lanarkshire",432,431,"Walton and Oliver, 1991; Wellman and Richardson, 1993"
+Osteotracans,Auchenaspis,salteri,Thyestiida,,Silurian,Pridoli,Pridoli,,"Red Downton, Downton Castle",,Welshborderlands,423,419,Cocks et al 2003
+Osteotracans,Axinaspis,whitei,Thyestiida,Kiaeraspididae,Devonian,Lower,Pragian,,Wood Bay,"Sigurdfjellet, Kapp Kjeldsen",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Belonaspis,minuta,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,Sigurdfjellet upper,Spitsbergen,407,405,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Belonaspis,puella,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,"Sigurdfjellet, Kapp Kjeldsen",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Benneviaspis,grandis,Benneviaspidida,,Devonian,Lower,Pragian,,Wood Bay,Sigurdfjellet lower ,Spitsbergen,407,403,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Benneviaspis,loevgreeni,Benneviaspidida,,Devonian,Lower,Pragian,,Wood Bay,"Sigurdfjellet, Kapp Kjeldsen",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Benneviaspis,maxima,Benneviaspidida,,Devonian,Lower,Pragian,,Wood Bay,"Sigurdfjellet, Kapp Kjeldsen",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Benneviaspis,lankesteri,Benneviaspidida,,Devonian,Lower,Lochkovian,Dittonian,(Rhinopterus crouchi zone),,Welshborderlands,411,410,"Allen and Tarlo, 1963; Schmitz et al., 2008"
+Osteotracans,Benneviaspis,longicornis,Benneviaspidida,,Devonian,Lower,Pragian,,Ben Nevis,Vogti horizon,Spitsbergen,415,413,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Benneviaspis,platessa,Benneviaspidida,,Devonian,Lower,Pragian,,Ben Nevis,Benneviaspis horizon,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Benneviaspis,holtedahli,Benneviaspidida,,Devonian,Lower,Pragian,,Ben Nevis,Ctenaspis and Benneviaspis horizon,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Benneviaspis,junia,Benneviaspidida,,Devonian,Lower,Pragian,,Stypa,,Podolia,409,407,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Benneviaspis,polonica,Benneviaspidida,,Devonian,Lower,Pragian,,Strypa,,Podolia,409,407,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Benneviaspis,salopiensis,Benneviaspidida,,Devonian,Lower,Pragian,Dittonian,leachi zone,,Welshborderlands,411,410,"Allen and Tarlo, 1963; Schmitz et al., 2009"
+Osteotracans,Benneviaspis,talimaae,Benneviaspidida,,Devonian,Lower,Lochkovian,,"Ustechko, Khmeleva",,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Benneviaspis,urvantsevi,Benneviaspidida,,Devonian,Lower,Pragian,,Spokojnaya,,"Severnaya Zemyla, Arctic Russia",410,408,"Ma_nnik et al., 2002 "
+Osteotracans,Benneviaspis,urvantsevi,Benneviaspidida,,Devonian,Lower,Pragian,,Spokojnaya,,"Severnaya Zemyla, Arctic Russia",410,408,"Ma_nnik et al., 2002 "
+Osteotracans,Benneviaspis,whitei,Benneviaspidida,,Devonian,Lower,Lochkovian,,"Ustechko, Khmeleva",,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Benneviaspis,zychi,Benneviaspidida,,Devonian,Lower,Pragian,,Strypa,,Podolia,409,407,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Boreaspis,rostrata,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,"Sigurdfjellet, Kapp Kjeldsen",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Boreaspis,macrorhynchus,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,"Sigurdfjellet, Kapp Kjeldsen",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Camptaspis,utahensis,,unnamed group D,Devonian,Lower,Emsian,,Water Canyon ,,Utah,407,393,Reed 1997 (unpublishes thesis); Williams & Taylor 1964
+Osteotracans,Camptaspis?,brevirostris,,unnamed group D,Devonian,Lower,Emsian,,Water Canyon ,,Utah,407,393,Reed 1997 (unpublishes thesis); Williams & Taylor 1964
+Osteotracans,Camptaspis??,wyomingensis,,unnamed group D,Devonian,Lower,Emsian,,"Water Canyon, Beartooth Butte",,Wyoming,407,393,Reed 1997 (unpublishes thesis); Williams & Taylor 1964
+Osteotracans,Cephalaspis,lyelli,,,Devonian,Lower,Lochkovian,Arbuthnott Group,,,"Scotland; Glamis, Forfarshire",413,411,"Lavender and Wellman, 2002; Mykura, 1991; Dineley & Metcalf 1999"
+Osteotracans,Cephalaspis,cradleyensis,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,Fraenkel (Plant horizon),Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Cephalaspis,sollasi,,,Devonian,Lower,,,(Lower Old Red Sandstone),,Welshborderlands; Cradley,419,393,"Allen and Tarlo, 1963; Schmitz et al., 2016"
+Osteotracans,Cephalaspis,producta,,,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Dartmuthia,gemmifera,Thyestiida,Tremataspidoidea,Silurian,Ludlow,Gorstian,,Paadla (2),,Baltic; Saaremaa,427,423,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2003; Boucot & Janis 1983"
+Osteotracans,Diademaspis,brevicornis,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Diademaspis,fracticornis,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Diademaspis,jarviki,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Diademaspis,stensioei,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Dniester,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Diademaspis,janvieri,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Dittonian,(Rhinopterus crouchi zone),,Welshborderlands,415,413,"Allen and Tarlo, 1963; Schmitz et al., 2001"
+Osteotracans,Diademaspis,poplinae,Zenaspidida,Zenaspididae,Devonian,Lower,Emsian,,Wood Bay,Stjordalen,Spitsbergen,400,393,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Diademaspis?,mackenziensis,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,,Delmorme,Unit 10,"North West Territories, Canada",417,410,"Dineley and Loeffler 1976, Zorn et al 2005"
+Osteotracans,Dicranaspis,circinus,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Dicranaspis,triangularis,Benneviaspidida,Boreaspididae,Devonian,Lower,Emsian,,Wood Bay,"Kapp Kjeldsen, Lykta",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Dicranaspis,spinicornis,Benneviaspidida,Boreaspididae,Devonian,Lower,Emsian,,Wood Bay,"Kapp Kjeldsen, Lykta",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Dicranaspis,gracilis,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Wood Bay,Lyktan Division,Spitsbergen,407,400,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Dicranaspis,curtirostris,Benneviaspidida,Boreaspididae,Devonian,Lower,Emsian,,Wood Bay,Lyktan Division,Spitsbergen,407,400,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Didymaspis,grindrodi,Thyestiida,Kiaeraspidoidea,Silurian,Pridoli,Pridoli,,Red Downton Formation (Traquairaspis pocoki zone),,Welshborderlands,423,419,Cocks et al 2003
+Osteotracans,Ectinaspis,heintzi,Benneviaspidida,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,primeava horizon,Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Escuminaspis,laticeps,Zenaspidida,Parameteoraspididae,Devonian,Upper,Frasnian,,Escmuinac formation,,Quebec,382,377,"Cloutier et al., 1996; Hesse and Sawh, 1992; Prichonnet et al., 1996 "
+Osteotracans,Gustavaspis,trinodis,Thyestiida,Kiaeraspididae,Devonian,Lower,Emsian,,Wood Bay,Stjordalen Division,Spitsbergen,400,393,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Hapilaspis,apheles,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Spokoinaya ,,"Severnaya Zemyla, Arctic Russia",410,408,"Ma_nnik et al., 2002 "
+Osteotracans,Hemicyclaspis,murchinsoni,,,Silurian,Pridoli,Pridoli,,Downton Castle Sandstone Formation,,Welshborderlands,423,419,Cocks et al 2003; Plotnick 1999; Dineley & Metcalf 1999
+Osteotracans,Hemicyclaspis,ludlowensis,,,Silurian,Pridoli,Pridoli,,(Downtonian),,Welshborderlands,423,419,Cocks et al 2003
+Osteotracans,Hemicyclaspis,kiaeri,,,Silurian,Pridoli,Pridoli,,(Lower Downtonian),,"Norway; Jeloy, Oslo Region, ",423,421,Davies et al 2006; Davies et al 2005
+Osteotracans,Hemicyclaspis,heintzi,,,Silurian,Pridoli,"Pridoli (could be Ludlow or Wenlock though, Marshall 1991)",,Cowie Formation,Dictyocaris band,"Scotland; Stonehaven,  Aberdeenshire",430,420,Plotnick 1999
+Osteotracans,Hildenaspis,digitalis,,,Devonian,Lower,Pragian,,Bensberg formation,Hahner muhle sediments,"Rhineland, Germany; Bielstien",410,407,Wehrmann et al 2005 
+Osteotracans,Hirella,gracilis,,Ateleaspididae,Silurian,Wenlock,Homerian,,Sundvollen Formation,,"Norway; Rudstangen, Oslo Region",430,427,"Davies et al 2006; Davies et al 2005, Baarli et al 2003"
+Osteotracans,Hoelaspis,angulata,Benneviaspidida,Boreaspidoidea,Devonian,Lower,Pragian,,Ben Nevis,Ctenaspis and Benneviaspis horizon,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Ilemoraspis,kirkinskayae,Thyestiida,,Devonian,Early,Emsian,,Matarakskaya ,Pridorozhnaya ,"Khakassia, Central Asia",407,400,Sansom et al 2008
+Osteotracans,Kiaeraspis,auchenaspidoides,Thyestiida,Kiaeraspididae,Devonian,Lower,Pragian,Red Bay,Ben Nevis,Ctenaspis and Benneviaspis horizons,Spitsbergen,410,408,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Levesquaspis,patteni,Zenaspidida,Parameteoraspididae,Devonian,Upper,Frasnian,,Escmuinac formation,,Quebec,382,377,"Cloutier et al., 1996; Hesse and Sawh, 1992; Prichonnet et al., 1996 "
+Osteotracans,Machairaspis,isachseni,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Machairaspis,battaili,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,407,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Machairaspis,corystis,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,Psammosteus horizons,Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Machairaspis,hastata,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,Anglaspis horizons,Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Machairaspis,ibex,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,,Ben Nevis,Vogti horizon,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Machairaspis,serratus,,,,,,,Delorme,,,417,410,Scott and Wilson 2013
+Osteotracans,Mimetaspis,hoeli,Red Bay Group,Ben Nevis,Spitsbergen,Laurentia,,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Mimetaspis,concordis,,,Devonian,Lower,Lochkovian,Dniester,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Mimetaspis,exilis,,,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,"A-I, Ctenaspis, Benneviaspis horizons",Spitsbergen,415,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Mimetaspis,glazewskii,,,Devonian,Lower,Lochkovian,Tiver,Ivanie,Ivane (ORI),Podolia,414,412,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Nectaspis,peltata,Thyestiida,Kiaeraspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Nectaspis,areolata,Thyestiida,Kiaeraspididae,Devonian,Lower,Emsian,,Wood Bay,Lyktan,Spitsbergen,407,400,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Nectaspis,dellei,Thyestiida,Kiaeraspididae,Devonian,Lower,Emsian,,Wood Bay,Stjordalen,Spitsbergen,400,393,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Norselaspis,glacialis,Thyestiida,Kiaeraspididae,Devonian,Lower,Pragian,,Wood Bay,Sigurdfjellet lower ,Spitsbergen,407,403,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Oeselaspis,pustulata,Thyestiida,Tremataspididae,Silurian,Wenlock,Homerian,,Rootsikula 1-3,,Baltic; Saaremaa,429,427,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2004; Boucot & Janis 1983"
+Osteotracans,Parameteoraspis,gigas,Zenaspidida,Parameteoraspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,borealis,Zenaspidida,Parameteoraspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,dobrovlensis,Zenaspidida,Parameteoraspididae,Devonian,Lower,Lochkovian,Dniester,Ivanie,,Podolia,413,411,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Parameteoraspis,oblongus,Zenaspidida,Parameteoraspididae,Devonian,Lower,Lochkovian,,Peel sound formation,Upper member,Nunavut,419,410,Miall et al 1978
+Osteotracans,Parameteoraspis,?pinnifera,Zenaspidida,Parameteoraspididae,Devonian,Lower,Lochkovian,Red Bay Group,Ben Nevis Formation?,,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,caroli,Zenaspidida,Parameteoraspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,lata,Zenaspidida,Parameteoraspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,laticornus,Zenaspidida,Parameteoraspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,oberon,Zenaspidida,Parameteoraspididae,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,semicircularis,Zenaspidida,Parameteoraspididae,Devonian,Lower,Emsian,,Wood Bay,Stjordalen Division,Spitsbergen,400,393,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,moythomasi,Zenaspidida,Parameteoraspididae,Devonian,Lower,Pragian,,Wood Bay,"Kapp Kjeldsen, Lyta",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,hoegi,Zenaspidida,Parameteoraspididae,Devonian,Lower,Emsian,,Wood Bay,Lykta Division,Spitsbergen,407,400,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,lanternaria,Zenaspidida,Parameteoraspididae,Devonian,Lower,Emsian,,Wood Bay,Lykta Division,Spitsbergen,407,400,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Parameteoraspis,menoides,Zenaspidida,Parameteoraspididae,Devonian,Lower,Emsian,,Wood Bay,Lykta Division,Spitsbergen,407,400,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Pattenaspis,acuminata,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,"Corvaspis, primaeva horizons",Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Pattenaspis,artensis,,,Devonian,Lower,Lochkovian,Lievin,Pernes,,Pas-de-Calais France,415,414,Turner 1999
+Osteotracans,Pattenaspis,divaricata,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,"Primaeva, Anglaspis? Horizons",Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Pattenaspis,deltoides,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,Anglaspis Horizon,Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Pattenaspis,eukeraspidoides,,,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,Benneviaspis Horizon,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Pattenaspis,eurhynchus,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,"Corvaspis, primaeva, Anglaspis? horizons",Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Pattenaspis,foeyni,,,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,Vogti Horizon,Spitsbergen,415,413,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Pattenaspis,heintzi,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,"Primaeva, Anglaspis Horizons",Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Pattenaspis,rogalai,,,Devonian,Lower,Lochkovian,,"Ivanie, Ustechko",,Podolia,414,412,"Schmitz et al., 1991; Uchman et al., 2004 "
+Osteotracans,Pattenaspis,whitei,,,Devonian,Lower,Lochkovian,Dittonian,(Rhinopterus crouchi zone),,Welshborderlands,415,413,"Allen and Tarlo, 1963; Schmitz et al., 1997"
+Osteotracans,Pattenaspis,oreas,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,"Primaeva, Polaris? Horizons",Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Pattenaspis,pygmaea,,,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,"Plant, Primaeva horizons",Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Pattenaspis,watneleili,,,Devonian,Lower,Pragian,,Wood Bay,Kapp Kjeldsen Division,Spitsbergen,413,410,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Procephalaspis,oeselensis,Thyestiida,,Silurian,Ludlow,Gorstian,,Paadla (2),,Baltic; Saaremaa,427,423,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2003; Boucot & Janis 1983"
+Osteotracans,Saaremaaspis,mickwitzi,Thyestiida,Tremataspidoidea,Silurian,Wenlock,Homerian,,Rootsikula 1-3,,Baltic; Saaremaa,429,427,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2004; Boucot & Janis 1983"
+Osteotracans,Sclerodus,pustuliferus,Thyestiida,Tremataspididae,Devonian,Lower,Lochkovian,Dittonian,"Ludlow Bone Bed, Downton Castle Sandstone, Temeside Shales",,Welshborderlands,415,413,Cocks et al 2003
+Osteotracans,Scolenaspis,mikrolepidota,,,Devonian,Lower,Lochkovian,,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Scolenaspis,signata,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Securiaspis,caledonica,Benneviaspidida,,Devonian,Lower,Lochkovian,,Base of Garvock Group,,"Scotland; Bridge of Allan, Stirling",417,415,"Lavender and Wellman, 2002; Mykura, 1991 "
+Osteotracans,Securiaspis,kingi,Benneviaspidida,,Devonian,Lower,Lochkovian,Dittonian,(Rhinopterus crouchi zone),,Welshborderlands,411,410,"Allen and Tarlo, 1963; Schmitz et al., 2007"
+Osteotracans,Severaspis,rostralis,Benneviaspidida,Boreaspidoidea,Devonian,Lower,Pragian,,Spokojnaya,,"Severnaya Zemyla, Arctic Russia",410,408,"Ma_nnik et al., 2002 "
+Osteotracans,Spangenhelmaspis,staxrudi,Zenaspidida,,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,"A-I, Benneviaspis horizons",Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Spangenhelmaspis,quadrata,Zenaspidida,,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Spatulaspis,robusta,Benneviaspidida,Boreaspididae,Devonian,Lower,Emsian,,Wood Bay,"Kapp Kjeldsen, Lykta",Spitsbergen,409,408,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Spatulaspis,costata,Benneviaspidida,Boreaspididae,Devonian,Lower,Emsian,,Wood Bay,Lyktan Division,Spitsbergen,407,400,Blomeier et al 2003; Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Stensiopelta,woodwardi,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Dittonian,,,"Welshborderlands; Asylum grounds, Abergavenny",419,410,"Allen and Tarlo, 1963; Schmitz et al., 2015"
+Osteotracans,Stensiopelta,pustulata,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Dniester,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Superciliaspis,gabrielsei,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,,Delmorme,Unit 10,"North West Territories, Canada",417,410,"Dineley and Loeffler 1976, Zorn et al 2005"
+Osteotracans,Tauraspis,rara,Benneviaspidida,Boreaspididae,Devonian,Lower,Pragian,,Spokoinaya ,,"Severnaya Zemyla, Arctic Russia",410,408,"Ma_nnik et al., 2002 "
+Osteotracans,Tegaspis,kolleri,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,"A-i, Benneviaspis horizon",Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Tegaspis,pedata,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,Red Bay Group,Ben Nevis,Benneviaspis horizon,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Tegaspis,waengsjoei,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Tiver,Ivanie,Ivane (ORI),Podolia,414,412,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Thyestes,verrucosus,Thyestiida,,Silurian,Wenlock,Homerian,,Rootsikula,,Baltic; Saaremaa,429,427,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2004; Boucot & Janis 1983"
+Osteotracans,Timanaspis,kossovoii,Thyestiida,Tremataspididae,Silurian,Pridoli,Pridoli,,Eptarma,Katoporus timanicus zone,Urals,419,419,Baarli et al 2003
+Osteotracans,Tremataspis,schrenkii,Thyestiida,Tremataspididae,Silurian,Wenlock,Homerian,,Rootsikula 1-3,,Baltic; Saaremaa,429,427,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2004; Boucot & Janis 1983"
+Osteotracans,Tremataspis,mammillata,Thyestiida,Tremataspididae,Silurian,Ludlow,Gorstian,,Paadla (2),,Baltic; Saaremaa,427,423,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2003; Boucot & Janis 1983"
+Osteotracans,Tremataspis,milleri,Thyestiida,Tremataspididae,Silurian,Wenlock,Homerian,,Rootsiukla 3,,Baltic; Saaremaa,429,427,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2004; Boucot & Janis 1983"
+Osteotracans,Tremataspis,obruchevi,Thyestiida,Tremataspididae,Silurian,Ludlow,Gorstian,,Ustye Spokoinoi ,,"Severnaya Zemyla, Arctic Russia",427,425,Turner 1999
+Osteotracans,Tremataspis,rohoni,Thyestiida,Tremataspididae,Silurian,Ludlow,Gorstian,,Paadla (2),,Baltic; Saaremaa,427,423,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2003; Boucot & Janis 1983"
+Osteotracans,Trewinia,magnifica,Zenaspidida,Parameteoraspididae,Devonian,Middle,Eifelian,"Upper Caithness Flagstone group (lowerpart, lower Latheron subgroup)",,,Scotland,386,384,Dineley 1999
+Osteotracans,Tyriaspis,whitei,Thyestiida,Tremataspidoidea,Silurian,Wenlock,Homerian,,Sundvollen,Zone 10,Norway; Oslo Region,430,427,"Davies et al 2006; Davies et al 2005, Baarli et al 2003"
+Osteotracans,Ukrainaspis,kozlowskii,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Tiver,"Ivanie, Ustechko",,Podolia,413,411,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Waengsjoeaspis,excellens,,unnamed group D,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,Anglaspis Horizons,Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Waengsjoeaspis,vogti,,unnamed group D,Devonian,Lower,Lochkovian,Red Bay Group,Fraenkelryggen,Anglaspis Horizons,Spitsbergen,417,415,Harland 1997 chpt.16 Geology of Svalbard; Boucot & Janis 1983
+Osteotracans,Waengsjoeaspis,nahanniensis,,unnamed group D,Devonian,Lower,Lochkovian,,Delmorme,Unit 10,"North West Territories, Canada",417,410,"Dineley and Loeffler 1976, Zorn et al 2005"
+Osteotracans,Witaaspis,schrenkii,Thyestiida,,Silurian,Wenlock,Homerian,,Rootsikula,,Baltic; Saaremaa,429,427,"Janvier, 1985a; Ma_rss and Einasto, 1978 ; Baarli et al 2004; Boucot & Janis 1983"
+Osteotracans,Wladysagitta,janvieri,Zenaspidida,,Devonian,Lower,Pragian,Dniester,Khmeleva ,Khmeleva ,Podolia,410,409,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Wladysagitta,acutirostris,Zenaspidida,,Devonian,Lower,,Dittonian,,,Welshborderlands,419,410,"Allen and Tarlo, 1963; Schmitz et al., 1998"
+Osteotracans,Yvonaspis,campbelltonensis,,unnamed group D,Devonian,Lower,Emsian,,La Garde,,Quebec,396,393,"Blieck and Cloutier, 2000; Griffing et al., 2002"
+Osteotracans,Yvonaspis,dawsoni,,unnamed group D,Devonian,Lower,Emsian,,Battery Point,,Quebec,400,393,"Blieck and Cloutier, 2000; Griffing et al., 2003; Cant 1974"
+Osteotracans,Yvonaspis,jexi,,unnamed group D,Devonian,Lower,Emsian,,La Garde,,Quebec,396,393,"Blieck and Cloutier, 2000; Griffing et al., 2004"
+Osteotracans,Yvonaspis,lunata,,unnamed group D,Devonian,Lower,Emsian,,Battery Point,,Quebec,400,393,"Blieck and Cloutier, 2000; Griffing et al., 2003; Cant 1974"
+Osteotracans,Yvonaspis,peninsulae,,unnamed group D,Devonian,Lower,Emsian,,Battery Point,,Quebec,400,393,"Blieck and Cloutier, 2000; Griffing et al., 2003; Cant 1974"
+Osteotracans,Yvonaspis,westolli,,unnamed group D,Devonian,Lower,Emsian,,Battery Point,,Quebec,400,393,"Blieck and Cloutier, 2000; Griffing et al., 2003; Cant 1974"
+Osteotracans,Yvonaspis,syndenhami,,unnamed group D,Devonian,Lower,Emsian,,Battery Point,,Quebec,400,393,"Blieck and Cloutier, 2000; Griffing et al., 2003; Cant 1974"
+Osteotracans,Zenaspis,salweyi,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Dittonian,(Rhinopterus crouchi zone),,Welshborderlands,415,413,"Allen and Tarlo, 1963; Schmitz et al., 1999"
+Osteotracans,Zenaspis,metopias,Zenaspidida,Zenaspididae,Devonian,Lower,Pragian,,Ben Nevis,Benneviapis horizons,Spitsbergen,413,410,Harland 1997 chpt.16 Geology of Svalbard
+Osteotracans,Zenaspis,podolica,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Zenaspis,waynensis,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,Dittonian,(Rhinopterus crouchi zone),,Welshborderlands,415,413,"Allen and Tarlo, 1963; Schmitz et al., 2000"
+Osteotracans,Zenaspis,dzieduszyckii,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Zenaspis,major,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Zenaspis,kasymyri,Zenaspidida,Zenaspididae,Devonian,Lower,Lochkovian,,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Zychiaspis,siemiradzkii,,,Devonian,Lower,Lochkovian,Tiver,"Ivanie, Ustechko",,Podolia,414,412,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Zychiaspis,elegans,,,Devonian,Lower,Pragian,,Khmeleva,,Podolia,410,409,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Zychiaspis,granulata,,,Devonian,Lower,Lochkovian,Dniester,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
+Osteotracans,Zychiaspis,concinna,,,Devonian,Lower,Lochkovian,Dniester,Ustechko,,Podolia,412,410,"Schmitz et al., 1991; Uchman et al., 2004"
