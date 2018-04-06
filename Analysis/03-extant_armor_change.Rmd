@@ -1,0 +1,121 @@
+---
+title: "Armour change analysis"
+author: "Thomas Guillerme"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    fig_width: 12
+    fig_height: 6
+---
+
+# Pipeline for looking at (dis)appearance of armour per clade in extant clades
+
+
+```{r}
+library(dispRity)
+library(Inapp)
+source("../Functions/clade.change_fun.R")
+set.seed(42)
+
+## Loading the extant data
+load("../Data/Processed/extant.rda")
+```
+
+Here we test two hypothesis:
+
+ 1. Is there a relation between change in armourness regime (i.e. presence or absence) and body length within clades.
+ In other words, are taxa with/without armour bigger/smaller than the rest.
+
+ 2. If 1 is true, is there a relation between members in a clade having armour and the size of the top predator.
+
+To check these hypothesis, we use two approaches based on topology only or on topology and branch length.
+Both approach are based on the same principles:
+
+  1. Estimating the armour origination state of a clade (i.e. the state of armourness at the appearance of the clade)
+  2. Measure the body length of taxa in the clade that do not have the origination state.
+
+For the second hypothesis, we can then make these body lengths relative to the biggest predator's length.
+
+The topology and topology+branch length method only differ in the way to measure the armourness origination state:
+
+ 1. When based on topology only, the origination state is the state that is represented in majority in the clade (parsimony-like --- if there is no strict majority, the origination state is arbitrarily set to no-armour (0))
+ 2. When based on topology and branch length, the origination state is estimated using a likelihood ancestral state estimation calculation based on the taxa' states and branch length
+ + The mass at the node is used.
+
+See analysis 02 for discussion on the pros and cons of both methods.
+
+## Relation between change in armourness regime and body length
+
+### Topology method
+
+
+```{r}
+## The tree
+tree <- spine_data$tree
+
+## The body size values
+body_size_values <- spine_data$spine_data[, 3]
+
+## The armour values
+armour_binary <- paste(spine_data$armour[,1], collapse = "") # character_rand
+# armour_scored <- paste(spine_data$armour[,2], collapse = "") # character_rand
+
+## Traversal of the tree to detect changes.
+traversal_binary <- apply.reconstruction(tree, armour_binary, passes = 1,
+                                         method = "Fitch", match.tip.char = TRUE)
+
+## Get the subtrees with a state change
+subtrees_binary <- sapply(traversal_binary$changes,
+                         function(X, tree) return(extract.clade(tree, node = X)),
+                         tree = tree, simplify = FALSE)
+
+## Get the changes per clades
+changes_binary <- lapply(subtrees_binary, topology.change, data = spine_data$spine_data,
+                         state = spine_data$armour[,1], data.out = 3)
+
+## Extract the changes values
+binary_normal <- lapply(extract.change(changes_binary, what = "group.val"), log)
+binary_change <- lapply(extract.change(changes_binary, what = "changed.val"), log)
+
+## get the maximum of each group
+max_normal <- lapply(binary_normal, max, na.rm = TRUE)
+
+## Normalising the body sizes relative to their group maximum
+scale.fun <- function(X, Y) scale(X, center = FALSE, scale = Y)
+binary_normal_scaled <- mapply(scale.fun, binary_normal, max_normal, SIMPLIFY = FALSE)
+binary_change_scaled <- mapply(scale.fun, binary_change, max_normal, SIMPLIFY = FALSE)
+```
+
+We can now visualise where do the group changes occur relative to their group size
+
+```{r, fig.width = 12, fig.height = 6}
+## Plotting the pooled data for every group
+plot.change(binary_normal_scaled, binary_change_scaled, main = "Topology - Binary change", xlab = "Scaled log BL")
+```
+
+
+### Topology + branch length method
+
+
+```{r}
+## Performing the ancestral states reconstruction
+ace_body_size <- ace(body_size_values[match(tree$tip.label, rownames(spine_data$spine_data))],
+                     tree, method = "pic")
+
+## Extract the changes for each group
+ace_changes <- log(ace_body_size$ace[traversal_binary$changes-Ntip(tree)])
+
+## Scale these values using the maximums from option 2
+ace_changes_scaled <- mapply(scale.fun, as.list(ace_changes), max_normal, SIMPLIFY = FALSE)
+```
+
+> Note that the method for the reconstructions is important here! I just go with the simple PIC method for convenience
+
+Similarly we can now plot the differences:
+
+```{r, fig.width = 12, fig.height = 6}
+## Plotting the pooled data for every group
+plot.change(binary_normal_scaled, ace_changes_scaled, main = "Branch length - Random",
+            xlab = "Scaled log BS")
+
+```
