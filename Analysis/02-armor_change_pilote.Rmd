@@ -18,7 +18,7 @@ library(dispRity)
 library(Inapp)
 source("../Functions/clade.change_fun.R")
 source("../Functions/timespines_fun.R")
-set.seed(123)
+set.seed(42)
 ```
 
 
@@ -40,7 +40,7 @@ The data needed is thus:
 
 ```{r}
 ## Loading the body mass data
-body_size <- read.csv("../Data/LaurenData/BodySizes/body_sizes.csv", stringsAsFactors = FALSE)
+body_size <- read.csv("../Data/Raw/LaurenData/csv_files/body_sizes.csv", stringsAsFactors = FALSE)
 
 ## Body size numeric conversion
 body_size[,6] <- as.numeric(as.character(body_size[,6]))
@@ -203,7 +203,7 @@ The cons:
 
 ```{r}
 ## Loading a tree
-tree_placoderms <- read.nexus("../Data/Trees/Placoderms-King2017.tree")
+tree_placoderms <- read.nexus("../Data/Raw/Trees/Placoderms-King2017.tree")
 
 ## Matching the data
 cleaned_data <- clean.data(body_size, tree_placoderms)
