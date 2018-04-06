@@ -67,7 +67,6 @@ Antigonia_capros,Caproidae
 Caranx_hippos,Carangidae
 Echiodon_cryomargarites,Carapidae
 Catostomus_bernardini,Catostomidae
-Diplodus_fasciatus,Centracanthidae
 Centrarchus_macropterus,Centrarchidae
 Aeoliscus_strigatus,Centriscidae
 Centrogenys_vaigiensis,Centrogenyidae
@@ -92,7 +91,6 @@ Chilorhinus_platyrhynchus,Chlopsidae
 Chlorophthalmus_agassizi,Chlorophthalmidae
 Cichlasoma_amazonarum,Cichlidae
 Cirrhitus_rivulatus,Cirrhitidae
-MISSING,Citharinidae
 Clarias_meladerma,Clariidae
 Parauchenoglanis_balayi,Claroteidae
 Heterostichus_rostratus,Clinidae
@@ -171,7 +169,6 @@ Brachyhypopomus_brevirostris,Hypopomidae
 Aulichthys_japonicus,Hypoptychidae
 Icosteus_aenigmaticus,Icosteidae
 Ictalurus_balsanus,Ictaluridae
-Haemulon_squamipinna,Inermiidae
 Bathypterois_phenax,Ipnopidae
 Makaira_indica,Istiophoridae
 Kuhlia_mugil,Kuhliidae
@@ -192,7 +189,6 @@ Lophius_gastrophysus,Lophiidae
 Pterygoplichthys_joselimaianus,Loricariidae
 Molva_macrophthalma,Lotidae
 Lutjanus_colorado,Lutjanidae
-MISSING,Luvaridae
 Coryphaenoides_subserrulatus,Macrouridae
 Lopholatilus_chamaeleonticeps,Malacanthidae
 Malapterurus_beninensis,Malapteruridae
@@ -296,7 +292,6 @@ Rachycentron_canadum,Rachycentridae
 Retropinna_semoni,Retropinnidae
 Rhamphocottus_richardsonii,Rhamphocottidae
 Protogobius_attiti,Rhyacichthyidae
-Aphyosemion_guineense,Rivulidae
 Salanx_cuvieri,Salangidae
 Oncorhynchus_kisutch,Salmonidae
 Samariscus_xenicus,Samaridae
