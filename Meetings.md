@@ -11,7 +11,7 @@
 |---|---|---|
 | Body sizes | OK | OK |
 | Armourness | OK | missing |
-| Phylogenies | missing | OK |
+| Phylogenies | OK | OK |
 
  * Richard and Marco can have a look at the armourness for the fossils and see what they can easily collect and what will still need to be done
  * Somebody will have to find phylogenies for the living taxa (it should be easy since we only have them at the Familly-ish level)
