@@ -8,18 +8,59 @@ output:
     fig_height: 6
 ---
 
-# Pipeline for looking at (dis)appearance of armour per clade in extant clades
-
-
 ```{r}
 library(dispRity)
-library(Inapp)
+library(Inapp) # home package
+library(landmarktest) # home package
 source("../Functions/clade.change_fun.R")
+source("../Functions/utilities.R")
 set.seed(42)
 
 ## Loading the extant data
 load("../Data/Processed/extant.rda")
 ```
+
+Here we want to test:
+
+  1. Whether there is a difference in body size between armoured/non-armoured fishes
+  2. Whether there is a difference in body size at the time armour appears/disappear in a phylogeny
+  3. Whether the there is a relation between the body size or armoured fishes and the predator's size
+
+If all three are true, we can suggest that armour evolved in fishes as a response to predation.
+
+# Is a difference in body size between armoured/non-armoured fishes?
+
+This is a crude analysis simply to test if there is a difference between the fishes with and without armour.
+A simple t-test can be used here.
+
+```{r}
+## Selecting both groups
+armour_body_sizes <- spine_data$spine_data[which(spine_data$armour[,1] == 1), 3]
+nonarm_body_sizes <- spine_data$spine_data[which(spine_data$armour[,1] == 0), 3]
+
+## Logging the data
+armour_body_sizes <- log(armour_body_sizes)
+nonarm_body_sizes <- log(nonarm_body_sizes)
+
+## Testing the differences
+armour_bs_test <- t.test(armour_body_sizes, nonarm_body_sizes)
+
+## Plotting this
+boxplot(list("Spines" = armour_body_sizes, "No spines" = nonarm_body_sizes),
+        ylab = "Log(body size)")
+text(1, -0.25, paste0("Mean difference = ",
+  round(abs(armour_bs_test$estimate[1]-armour_bs_test$estimate[2]), digits = 3),
+  "\np = ", round(armour_bs_test$p.value, digits = 3)))
+```
+
+Nice.
+Something is happening.
+
+However, this difference only tells us armoured fishes are smaller than the others.
+It doesn't tell us if they evolved armourness in relation to their body size or the body size of predators around.
+
+
+# Is a difference in body size at the time armour appears/disappear in a phylogeny
 
 Here we test two hypothesis:
 
@@ -44,78 +85,86 @@ The topology and topology+branch length method only differ in the way to measure
 
 See analysis 02 for discussion on the pros and cons of both methods.
 
-## Relation between change in armourness regime and body length
-
-### Topology method
-
-
-```{r}
+```{r, fig.width = 6, fig.height = 6}
 ## The tree
 tree <- spine_data$tree
 
 ## The body size values
 body_size_values <- spine_data$spine_data[, 3]
 
-## The armour values
-armour_binary <- paste(spine_data$armour[,1], collapse = "") # character_rand
-# armour_scored <- paste(spine_data$armour[,2], collapse = "") # character_rand
+## Armour values
+armour_values <- spine_data$armour[,1]
 
-## Traversal of the tree to detect changes.
-traversal_binary <- apply.reconstruction(tree, armour_binary, passes = 1,
-                                         method = "Fitch", match.tip.char = TRUE)
+## Running the results for topology
+results_topol <- run.timespines(body_size_values, armour_values, tree,
+                                method = "topol",
+                                taxa.names = rownames(spine_data$spine_data))
 
-## Get the subtrees with a state change
-subtrees_binary <- sapply(traversal_binary$changes,
-                         function(X, tree) return(extract.clade(tree, node = X)),
-                         tree = tree, simplify = FALSE)
-
-## Get the changes per clades
-changes_binary <- lapply(subtrees_binary, topology.change, data = spine_data$spine_data,
-                         state = spine_data$armour[,1], data.out = 3)
-
-## Extract the changes values
-binary_normal <- lapply(extract.change(changes_binary, what = "group.val"), log)
-binary_change <- lapply(extract.change(changes_binary, what = "changed.val"), log)
-
-## get the maximum of each group
-max_normal <- lapply(binary_normal, max, na.rm = TRUE)
-
-## Normalising the body sizes relative to their group maximum
-scale.fun <- function(X, Y) scale(X, center = FALSE, scale = Y)
-binary_normal_scaled <- mapply(scale.fun, binary_normal, max_normal, SIMPLIFY = FALSE)
-binary_change_scaled <- mapply(scale.fun, binary_change, max_normal, SIMPLIFY = FALSE)
+## Running the results for topology and branch length
+results_brlen <- run.timespines(body_size_values, armour_values, tree,
+                                method = "brlen",
+                                taxa.names = rownames(spine_data$spine_data))
 ```
 
-We can now visualise where do the group changes occur relative to their group size
+We can now visualise where do the group changes occur relative to their group size:
 
 ```{r, fig.width = 12, fig.height = 6}
+par(mfrow = c(2,1))
 ## Plotting the pooled data for every group
-plot.change(binary_normal_scaled, binary_change_scaled, main = "Topology - Binary change", xlab = "Scaled log BL")
+plot.change(results_topol$normal.val, results_topol$change.val, 
+            main = "Topology", xlab = "Scaled log BL")
+## Plotting the pooled data for every group
+plot.change(results_brlen$normal.val, results_brlen$change.val,
+            main = "Topology and branch length", xlab = "Scaled log BL")
 ```
 
+We then need to test whether this difference is significant or not
 
-### Topology + branch length method
+## Testing the body size at time of appearance
 
+For that we can use a kind of permutation test.
 
 ```{r}
-## Performing the ancestral states reconstruction
-ace_body_size <- ace(body_size_values[match(tree$tip.label, rownames(spine_data$spine_data))],
-                     tree, method = "pic")
+## Running the test for the topology
+## Adding the estimate ancestral values to the pooled distribution
+distribution <- c(unlist(results_topol$normal.val),
+                  unlist(results_topol$change.val))
+## The IDs to test are the last one in the distribution
+subset <- seq(from = length(results_topol$normal.val) + 1,
+              to = length(distribution))
 
-## Extract the changes for each group
-ace_changes <- log(ace_body_size$ace[traversal_binary$changes-Ntip(tree)])
+## Applying the random test for the topology
+test_topol <- rand.test(distribution, subset, test = t.test,
+                           replicates = 1000, test.parameter = TRUE)
 
-## Scale these values using the maximums from option 2
-ace_changes_scaled <- mapply(scale.fun, as.list(ace_changes), max_normal, SIMPLIFY = FALSE)
+
+
+
+## Running the test for the branch length
+## Adding the estimate ancestral values to the pooled distribution
+distribution <- c(unlist(results_brlen$normal.val),
+                  unlist(results_brlen$change.val))
+## The IDs to test are the last one in the distribution
+subset <- seq(from = length(results_brlen$normal.val) + 1,
+              to = length(distribution))
+
+## Applying the random test for the branch length
+test_brlen <- rand.test(distribution, subset, test = t.test,
+                           replicates = 1000, test.parameter = TRUE)
 ```
 
-> Note that the method for the reconstructions is important here! I just go with the simple PIC method for convenience
-
-Similarly we can now plot the differences:
-
 ```{r, fig.width = 12, fig.height = 6}
+par(mfrow = c(2,1))
 ## Plotting the pooled data for every group
-plot.change(binary_normal_scaled, ace_changes_scaled, main = "Branch length - Random",
-            xlab = "Scaled log BS")
+plot(test_topol, main = "Topology", xlab = "Mean log body size")
+## Add the text
+legend(ifelse(test_topol$obs < test_topol$expvar[2], "topleft", "topright"),
+  paste0("p = ", round(test_topol$pvalue, 5), sep = "\n")  , bty = "n")
 
+
+## Plotting the pooled data for every group
+plot(test_brlen, main = "Branch length", xlab = "Mean log body size")
+## Add the text
+legend(ifelse(test_brlen$obs < test_brlen$expvar[2], "topleft", "topright"),
+  paste0("p = ", round(test_brlen$pvalue, 5), sep = "\n")  , bty = "n")
 ```

@@ -92,7 +92,7 @@ extract.change <- function(list, what, inc.null = FALSE) {
 #' @param change.data A vector or a list
 #' @param histogram logical, whether to plot the histogram in the background (TRUE)
 #' @param scale.density logical, whether to scale the density (TRUE)
-#' @param change.hist logical, whether to display the changes a histogram (TRUE)
+#' @param change logical, whether to display the changes as an "hist" or "lines" or both (default)
 #' @param ... Arguments to be passed to plot()
 #'
 #' @examples
@@ -103,7 +103,7 @@ extract.change <- function(list, what, inc.null = FALSE) {
 #' @export
 
 
-plot.change <- function(group.data, change.data, histogram = TRUE, scale.density = TRUE, change.hist = TRUE, ...) {
+plot.change <- function(group.data, change.data, histogram = TRUE, scale.density = TRUE, change = c("hist", "lines"), ...) {
 
     ## Function for one single plot
     plot.distribution <- function(group.data, histogram, scale.density, ...) {
@@ -159,7 +159,7 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
         }
     }
 
-    plot.change.occurence <- function(change.data, group.data, change.hist, scale.density, ...) {
+    plot.change.occurence <- function(change.data, group.data, change, scale.density, ...) {
         change_data <- as.numeric(change.data)
         group_data <- as.numeric(group.data)
 
@@ -173,7 +173,7 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
             density_data$y <- density_data$y/max(density_data$y)
         }
 
-        if(change.hist) {
+        if(any(change %in% "hist")) {
             ## Getting the histogram data
             histogram_change <- hist(change_data, plot = FALSE)
             density_change <- density(change_data, na.rm = TRUE)
@@ -181,14 +181,28 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
             plot(histogram_change, col = "lightgrey", border = "darkgrey", add = TRUE, ...)
             lines(density_change, lty = 2)
 
-        } else {
+        } 
+
+        if(any(change %in% "lines")) {
             ## Scaling the density line
             density_data$y <- density_data$y * max(histogram_data$counts)
+
+            narrow.down.x <- function(x, density) {
+                ## Start from rounding = 0
+                rounding <- 0
+                ## Check if any matching with lower rounding
+                while(length(which(round(x, digit = rounding) == round(density, digit = rounding))) != 0) {
+                    rounding <- rounding + 1
+                }
+                ## Return the before last rounding
+                narrow <- which(round(x, digit = rounding-1) == round(density, digit = rounding-1))
+                return(narrow[ceiling(length(narrow)/2)])
+            }
 
             ## Add segments below the density line
             for(one_change in 1:length(change_data)) {
                 x_value <- narrow.down.x(change_data[one_change], density_data$x)
-                segments(x0 = density_data$x[x_value], y0 = 0, y1 = density_data$y[x_value], lwd = 1)
+                segments(x0 = density_data$x[x_value], y0 = 0, y1 = density_data$y[x_value], lwd = 1, lty = 3)
             }
 
         }
@@ -209,7 +223,7 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
     plot.distribution(group.data, histogram = histogram, scale.density = scale.density, ...)
 
     ## Add the changes
-    plot.change.occurence(change.data, group.data, change.hist = change.hist, scale.density = scale.density, ...)
+    plot.change.occurence(change.data, group.data, change = change, scale.density = scale.density, ...)
 }
 
 
@@ -218,9 +232,9 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
 #' @description Detects state changes based on a group topology
 #'
 #' @param group A \code{tree} that is the group.
-#' @param data the dataset
+#' @param data the dataset or the names of the species to check
 #' @param state the state to evaluate
-#' @param data.out the column in the dataset containing the data to output (set to 0 for rownames - default)
+#' @param data.out the column in the dataset containing the data to output (set to 0 for rownames - default) or, if data is the names of species, the values to output
 #' 
 #' @examples
 #' 
@@ -241,7 +255,11 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
 topology.change <- function(group, data, state, data.out = 0) {
 
     ## Getting the members of the group in the data
-    group_taxa <- match(group$tip.label, rownames(data))
+    if(class(data) == "data.frame") {
+        group_taxa <- match(group$tip.label, rownames(data))
+    } else {
+        group_taxa <- match(group$tip.label, data)
+    }
 
     ## Getting the average group state
     state_origin <- dispRity::mode.val(state[group_taxa])
@@ -254,10 +272,18 @@ topology.change <- function(group, data, state, data.out = 0) {
     }
 
     ## Getting the values out
-    if(data.out == 0) {
-        data_out <- rownames(data)[group_taxa]
+    if(data.out == 0 && class(data) == "data.frame") {
+        if(class(data) == "data.frame"){
+            data_out <- rownames(data)[group_taxa]
+        } else {
+            data_out <- data[group_taxa]
+        }
     } else {
-        data_out <- data[group_taxa, data.out]
+        if(class(data) == "data.frame"){
+            data_out <- data[group_taxa, data.out]
+        } else {
+            data_out <- data.out[group_taxa]
+        }
     }
 
     ## Getting the changed and group values
