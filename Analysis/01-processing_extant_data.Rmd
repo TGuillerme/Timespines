@@ -58,10 +58,10 @@ get.armourness <- function(one_row, armour_columns, type = "binary") {
 
     score <- which(one_row[armour_columns] == 1)
     if(length(score) == 0){
-      score <- 0
+      score <- NULL
     }
 
-    return(ifelse(type == "binary", ifelse(score == 0, 0, 1), sum(score)))
+    return(ifelse(type == "binary", ifelse(is.null(score), 0, 1), length(score)))
 }
 
 binary_armour <- apply(pruned_data, 1, get.armourness, armour_columns = c(6,7,9,10,12,13), type = "binary")
@@ -73,7 +73,6 @@ armour <- cbind("binary" = binary_armour, "scored" = scored_armour)
 spine_data <- list("tree" = pruned_tree, "spine_data" = pruned_data, "armour" = armour)
 
 ## Saving the data
-
 save(spine_data, file = "../Data/Processed/extant.rda")
 
 ```
