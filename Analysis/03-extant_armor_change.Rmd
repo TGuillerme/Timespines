@@ -108,7 +108,7 @@ results_brlen <- run.timespines(body_size_values, armour_values, tree,
 
 We can now visualise where do the group changes occur relative to their group size:
 
-```{r, fig.width = 12, fig.height = 6}
+```{r, fig.width = 6, fig.height = 12}
 par(mfrow = c(2,1))
 ## Plotting the pooled data for every group
 plot.change(results_topol$normal.val, results_topol$change.val, 
@@ -153,7 +153,7 @@ test_brlen <- rand.test(distribution, subset, test = t.test,
                            replicates = 1000, test.parameter = TRUE)
 ```
 
-```{r, fig.width = 12, fig.height = 6}
+```{r, fig.width = 6, fig.height = 12}
 par(mfrow = c(2,1))
 ## Plotting the pooled data for every group
 plot(test_topol, main = "Topology", xlab = "Mean log body size")
