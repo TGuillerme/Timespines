@@ -1,3 +1,29 @@
+## 2018/04/17
+
+We will now try to focus the project on the "through time" aspect of it (the relation between spininess and body size from the Devonian to the present).
+
+I (Thomas) will work on getting the pipeline ready for the living species.
+This includes the full analysis from data preparation and visualisation to hypothesis testing.
+
+We will test the hypothesis in two ways:
+
+ 1. Using the threshold model to detect a correlation between the discrete trait (armourness) and the continuous trait (body size). The test is implemented in `phytools::threshBayes`.
+ 2. Using a null model expectancy were we can make both traits evolve with three correlation scenarios: (1) no correlation between body size, armourness and birth-death; (2) a correlation between body size and armourness where _small_-armoured taxa are more likely to speciate and less likely to go extinct; (3) a correlation between body size and armourness where _big_-armoured taxa are more likely to speciate and less likely to go extinct. We can then compare the resulting distributions to the observed one using a permutation style test.
+
+### The things we need to do:
+
+ - [ ] get a tree for living sharks genus ([this one?](https://www.nature.com/articles/s41559-017-0448-4?error=cookies_not_supported&code=9d5dd48d-ee56-48dc-b669-4431c6c1bf55)). [Anna?]
+
+ - [ ] get the spine data for the fossil fishes! [everyone?]
+
+ - [ ] differentiate the loss and gains of armour in the analysis and the plots. [Thomas]
+
+ - [ ] pipeline the `threshBayes` test. [Thomas]
+
+ - [ ] pipeline the null test. [Thomas]
+
+ - [ ] linking the fossil trees together and to the living tree (if possible - the pruned tree is [here](https://github.com/TGuillerme/Timespines/tree/master/Data/Processed/342t_living.tre)). [Lauren?]
+
 ## 2017/11/27
 
 > Getting there!
