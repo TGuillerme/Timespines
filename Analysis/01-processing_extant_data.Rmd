@@ -37,6 +37,7 @@ pruned_tree <- cleaned_data$tree
 
 ## Converting the sp names into family names
 pruned_tree$tip.label <- list_sp[match(pruned_tree$tip.label, list_sp[,1]), 2]
+write.tree(pruned_tree, file = paste0("../Data/Processed/", Ntip(pruned_tree), "t_living.tre"))
 ```
 
 ### Combining the tree and the spines/body mass data
