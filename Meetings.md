@@ -1,3 +1,11 @@
+## 2018/05/29
+
+TOSORT:
+- Do biogeography estimates
+- Do body size estimates at the age of the transitions
+- Check spines: reserve them in chunks.
+- Write a more detailed methods.
+
 ## 2018/04/17
 
 We will now try to focus the project on the "through time" aspect of it (the relation between spininess and body size from the Devonian to the present).
