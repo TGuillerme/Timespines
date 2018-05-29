@@ -9,6 +9,7 @@
 
 run.timespines <- function(body.val, armour.val, tree, method = "topol", taxa.names, do.log = TRUE, do.scale = TRUE) {
     
+
     ## The armour values
     armour_character <- paste(armour.val, collapse = "")
 
@@ -61,6 +62,6 @@ run.timespines <- function(body.val, armour.val, tree, method = "topol", taxa.na
 
     changed_taxa <-  extract.change(armour_changes, what = "changed.taxa")
 
-    return(list("normal.val" = normal_values, "change.val" = change_values, "change.taxa" = changed_taxa))
+    return(list("normal.val" = normal_values, "change.val" = change_values, "change.taxa" = changed_taxa, "node.changes" = traversal_results$changes))
 
 }
