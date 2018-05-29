@@ -86,14 +86,50 @@ plot(mcm_binary_1M)
 
 Excellent: there is a negative correlation between body length and armourness: the smaller you get, the more likely you are to evolve have spines!
 
+This is how the the phylogeny and the reconstructed states look:
 
-However, this difference only tells us armoured fishes are smaller than the others.
-It doesn't tell us if they evolved armourness in relation to their body size or the body size of predators around.
 
+```{r, fig.height = 10, fig.width = 10}
+## get the node changes
+results_topol <- run.timespines(body_size_values, armour_values, tree,
+                                method = "topol",
+                                taxa.names = rownames(spine_data$spine_data))
+
+## Create a vector of two colours
+spine_cols <- c("white", "black")
+
+## Calculating the traits ancestral values
+traits <- body_size_values[match(tree$tip.label, rownames(spine_data$spine_data))]
+names(traits) <- tree$tip.label
+trait_map <- contMap(tree, traits, plot = FALSE)
+
+## Results plot
+par(mar = c(1,1,1,1))
+plot(trait_map, fsize = 0.001, type = "fan", lwd = 2)
+
+## Adding the spine colours
+tiplabels(pch = 21, cex = 0.7, col = "black")
+tiplabels(pch = 16, cex = 0.7,
+          col = spine_cols[armour_values[match(tree$tip.label, rownames(spine_data$spine_data))]+1])
+
+## Adding the node changes
+nodelabels(pch = 21, node = unlist(results_topol$node.changes), col = "black", bg = "magenta",
+           cex = 1.2)
+
+## Legends
+legend("topleft",legend = c("Not spiny", "Spiny", "Stage change"), pch = 21, col = "black",
+       pt.bg = c(spine_cols, "magenta"), bty = "n")
+legend("bottomleft",legend = paste(round(trait_map$lims, digit = 2), collapse = " Body length "),
+       bty = "n")
+
+```
+
+Now this is just a reconstruction of how the two traits (body size and armourness) coevolved but it doesn't allow to really distinguish whether there is an effect of body size when the armourness trait changes: this difference only tells us armoured fishes are smaller than the others.
 
 # Is a difference in body size at the time armour appears/disappear in a phylogeny
 
-Here we test two hypothesis:
+So now lets see whether the changes in armourness occurs when there is a change in body size.
+The hypothesis being that:
 
  1. Is there a relation between change in armourness regime (i.e. presence or absence) and body length within clades.
  In other words, are taxa with/without armour bigger/smaller than the rest.
@@ -128,42 +164,6 @@ results_brlen <- run.timespines(body_size_values, armour_values, tree,
                                 taxa.names = rownames(spine_data$spine_data))
 ```
 
-This is how the the phylogeny and the reconstructed states look
-
-```{r, fig.height = 10, fig.width = 10}
-## Create a vector of two colours
-spine_cols <- c("white", "black")
-
-## Calculating the traits ancestral values
-traits <- body_size_values[match(tree$tip.label, rownames(spine_data$spine_data))]
-names(traits) <- tree$tip.label
-trait_map <- contMap(tree, traits, plot = FALSE)
-
-## Results plot
-par(mar = c(1,1,1,1))
-plot(trait_map, fsize = 0.001, type = "fan", lwd = 2)
-
-## Adding the spine colours
-tiplabels(pch = 21, cex = 0.7, col = "black")
-tiplabels(pch = 16, cex = 0.7,
-          col = spine_cols[armour_values[match(tree$tip.label, rownames(spine_data$spine_data))]+1])
-
-## Adding the node changes
-nodelabels(pch = 21, node = unlist(results_topol$node.changes), col = "black", bg = "magenta",
-           cex = 1.2)
-
-## Legends
-legend("topleft",legend = c("Not spiny", "Spiny", "Stage change"), pch = 21, col = "black",
-       pt.bg = c(spine_cols, "magenta"), bty = "n")
-legend("bottomleft",legend = paste(round(trait_map$lims, digit = 2), collapse = " Body length "),
-       bty = "n")
-
-```
-
-
-
-
-
 We can now visualise where do the group changes occur relative to their group size:
 
 ```{r, fig.width = 6, fig.height = 12}
@@ -176,56 +176,104 @@ plot.change(results_brlen$normal.val, results_brlen$change.val,
             main = "Topology and branch length", xlab = "Scaled log BL")
 ```
 
-We then need to test whether this difference is significant or not
+We then need to test whether this difference is significant or not.
 
 ## Testing the body size at time of appearance
 
-> To modify!
+For that we can use a kind of permutation test (here an exact bootstrap test).
+This checks whether a statistic observed in a subset of a distribution (here the median) is different from the same statistic measured in the overall distribution.
 
-For that we can use a kind of permutation test.
+If the results are out of the range from the statistics from the overall distribution ($p < 0.05$) then there is a different between the subset distribution (body size at time of appearance) and the rest of the distribution.
+
+The values compared are $median_bs - median_obs$, positive values indicate that the observed data is smaller
 
 ```{r}
 ## Running the test for the topology
 ## Adding the estimate ancestral values to the pooled distribution
-distribution <- c(unlist(results_topol$normal.val),
-                  unlist(results_topol$change.val))
+distribution_topol <- c(unlist(results_topol$normal.val),
+                        unlist(results_topol$change.val))
+
 ## The IDs to test are the last one in the distribution
-subset <- seq(from = length(results_topol$normal.val) + 1,
-              to = length(distribution))
+subset_topol <- seq(from = length(unlist(results_topol$normal.val)) + 1,
+                    to = length(distribution_topol))
 
 ## Applying the random test for the topology
-test_topol <- rand.test(distribution, subset, test = t.test,
-                           replicates = 1000, test.parameter = TRUE)
-
-
-
+test_topol <- bootstrap.test(distribution_topol, subset_topol, statistic = median, replicates = 500,
+                             rarefaction = TRUE)
 
 ## Running the test for the branch length
 ## Adding the estimate ancestral values to the pooled distribution
-distribution <- c(unlist(results_brlen$normal.val),
-                  unlist(results_brlen$change.val))
+distribution_brlen <- c(unlist(results_brlen$normal.val),
+                        unlist(results_brlen$change.val))
+
 ## The IDs to test are the last one in the distribution
-subset <- seq(from = length(results_brlen$normal.val) + 1,
-              to = length(distribution))
+subset_brlen <- seq(from = length(unlist(results_brlen$normal.val)) + 1,
+                    to = length(distribution_brlen))
 
 ## Applying the random test for the branch length
-test_brlen <- rand.test(distribution, subset, test = t.test,
-                           replicates = 1000, test.parameter = TRUE)
+test_brlen <- bootstrap.test(distribution_brlen, subset_brlen, statistic = median, replicates = 500,
+                             rarefaction = TRUE)
 ```
 
 ```{r, fig.width = 6, fig.height = 12}
 par(mfrow = c(2,1))
 ## Plotting the pooled data for every group
-plot(test_topol, main = "Topology", xlab = "Mean log body size")
+plot(test_topol, main = "Topology", xlab = "Median difference")
+add.rare.plot(test_topol)
 ## Add the text
 legend(ifelse(test_topol$obs < test_topol$expvar[2], "topleft", "topright"),
   paste0("p = ", round(test_topol$pvalue, 5), sep = "\n")  , bty = "n")
 
 
 ## Plotting the pooled data for every group
-plot(test_brlen, main = "Branch length", xlab = "Mean log body size")
+plot(test_brlen, main = "Branch length", xlab = "Median difference")
+add.rare.plot(test_brlen)
 ## Add the text
 legend(ifelse(test_brlen$obs < test_brlen$expvar[2], "topleft", "topright"),
   paste0("p = ", round(test_brlen$pvalue, 5), sep = "\n")  , bty = "n")
 ```
 
+These bootstraps tests show that the difference in median between the body length at the change in armourness is significantly smaller than the global median body lengths.
+This is true even when taking into account the number of events of changes in armourness (rarefaction).
+
+## Testing the whether this difference is linked to the biggest predator size
+
+Here we can perform exactly the same test but by scaling the results
+
+```{r}
+## Scaling the distributions
+sca_distribution_topol <- distribution_topol/max(distribution_topol)
+sca_distribution_brlen <- distribution_brlen/max(distribution_brlen)
+
+## Applying the random tests
+sca_test_topol <- bootstrap.test(sca_distribution_topol, subset_topol, statistic = median,
+                                 replicates = 500, rarefaction = TRUE)
+
+## Applying the random test for the branch length
+sca_test_brlen <- bootstrap.test(sca_distribution_brlen, subset_brlen, statistic = median,
+                                 replicates = 500, rarefaction = TRUE)
+```
+
+```{r, fig.width = 6, fig.height = 12}
+par(mfrow = c(2,1))
+## Plotting the pooled data for every group
+plot(sca_test_topol, main = "Topology (scaled)", xlab = "Median difference")
+add.rare.plot(sca_test_topol)
+## Add the text
+legend(ifelse(sca_test_topol$obs < sca_test_topol$expvar[2], "topleft", "topright"),
+  paste0("p = ", round(sca_test_topol$pvalue, 5), sep = "\n")  , bty = "n")
+
+
+## Plotting the pooled data for every group
+plot(sca_test_brlen, main = "Branch length (scaled)", xlab = "Median difference")
+add.rare.plot(sca_test_brlen)
+## Add the text
+legend(ifelse(sca_test_brlen$obs < sca_test_brlen$expvar[2], "topleft", "topright"),
+  paste0("p = ", round(sca_test_brlen$pvalue, 5), sep = "\n")  , bty = "n")
+```
+
+Unsurprisingly the results are not different.
+
+> Need to improve this test. Not sure if it's savy.
+
+> Need to correct the p-values.
