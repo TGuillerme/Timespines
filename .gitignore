@@ -4,3 +4,5 @@
 .Rapp.history
 *.html
 *.rda
+
+.DS*
