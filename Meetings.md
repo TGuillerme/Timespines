@@ -1,10 +1,13 @@
 ## 2018/05/29
 
-TOSORT:
-- Do biogeography estimates
-- Do body size estimates at the age of the transitions
-- Check spines: reserve them in chunks.
-- Write a more detailed methods.
+We will continue on "through timing" the project.
+
+ 1. First and foremost we need to collect the spininess data into the [timespines format](https://github.com/TGuillerme/Timespines/blob/master/Data/DataCollection.md).
+    Kevin has divided the data into chunks that are more manageable. It'll be great if every one takes a chunk and starts working on it.
+
+ 2. Thomas will refine the living taxa analysis by adding biogeography (crude) and body size estimates at the age of transitions to test the predator size hypothesis.
+
+ 3. We will slowly start compiling the methods in the draft.
 
 ## 2018/04/17
 
@@ -26,9 +29,9 @@ We will test the hypothesis in two ways:
 
  - [ ] differentiate the loss and gains of armour in the analysis and the plots. [Thomas]
 
- - [ ] pipeline the `threshBayes` test. [Thomas]
+ - [x] pipeline the `threshBayes` test. [Thomas]
 
- - [ ] pipeline the null test. [Thomas]
+ - [x] pipeline the null test. [Thomas]
 
  - [ ] linking the fossil trees together and to the living tree (if possible - the pruned tree is [here](https://github.com/TGuillerme/Timespines/tree/master/Data/Processed/342t_living.tre)). [Lauren?]
 
