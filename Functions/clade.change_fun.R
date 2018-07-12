@@ -88,11 +88,12 @@ extract.change <- function(list, what, inc.null = FALSE) {
 #'
 #' @description Plots the data change for a single group or a list of groups
 #'
-#' @param group.data A vector or a list
-#' @param change.data A vector or a list
+#' @param timespines The timespines data output from \code{run.timespines}
 #' @param histogram logical, whether to plot the histogram in the background (TRUE)
 #' @param scale.density logical, whether to scale the density (TRUE)
 #' @param change logical, whether to display the changes as an "hist" or "lines" or both (default)
+#' @param col.change a vector of colours for differentiating the changes (default is \code{c("orange", "blue")})
+#' @param legend logical, whether to display the legend for the changes colours
 #' @param ... Arguments to be passed to plot()
 #'
 #' @examples
@@ -102,8 +103,11 @@ extract.change <- function(list, what, inc.null = FALSE) {
 #' @author Thomas Guillerme
 #' @export
 
+plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE, change = c("hist", "lines"), col.change = c("orange", "blue"), legend = TRUE, ...) {
 
-plot.change <- function(group.data, change.data, histogram = TRUE, scale.density = TRUE, change = c("hist", "lines"), ...) {
+    group.data <- timespines.data$normal.val
+    change.data <- timespines.data$change.val
+    origin.data <- mapply(rep, as.list(timespines.data$node.origin+1), lapply(change.data, length))
 
     ## Function for one single plot
     plot.distribution <- function(group.data, histogram, scale.density, ...) {
@@ -159,7 +163,7 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
         }
     }
 
-    plot.change.occurence <- function(change.data, group.data, change, scale.density, ...) {
+    plot.change.occurence <- function(change.data, group.data, origin.data, change, scale.density, col.change, ...) {
         change_data <- as.numeric(change.data)
         group_data <- as.numeric(group.data)
 
@@ -179,7 +183,7 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
             density_change <- density(change_data, na.rm = TRUE)
             ## Plotting the histogram results
             plot(histogram_change, col = "lightgrey", border = "darkgrey", add = TRUE, ...)
-            lines(density_change, lty = 2)
+            # lines(density_change, lty = 2)
 
         } 
 
@@ -202,7 +206,7 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
             ## Add segments below the density line
             for(one_change in 1:length(change_data)) {
                 x_value <- narrow.down.x(change_data[one_change], density_data$x)
-                segments(x0 = density_data$x[x_value], y0 = 0, y1 = density_data$y[x_value], lwd = 1, lty = 3)
+                segments(x0 = density_data$x[x_value], y0 = 0, y1 = density_data$y[x_value], lwd = 1, lty = 3, col = col.change[origin.data[one_change]])
             }
 
         }
@@ -218,12 +222,20 @@ plot.change <- function(group.data, change.data, histogram = TRUE, scale.density
         ## Pooling the data
         change.data <- unlist(change.data)
     }
+    if(class(origin.data) == "list") {
+        ## Pooling the data
+        origin.data <- unlist(origin.data)
+    }
 
     ## Plot the overall distribution
     plot.distribution(group.data, histogram = histogram, scale.density = scale.density, ...)
 
     ## Add the changes
-    plot.change.occurence(change.data, group.data, change = change, scale.density = scale.density, ...)
+    plot.change.occurence(change.data, group.data, origin.data, change = change, scale.density = scale.density, col.change = col.change, ...)
+    if(legend) {
+        legend("topright", legend = c("gain", "loss"), col = col.change, lty = 3, lwd = 2, bty = "n")
+    }
+
 }
 
 
