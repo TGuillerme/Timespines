@@ -1,0 +1,251 @@
+
+## Ancestral geographic areas
+
+We can do something similar for the geographic area using B
+
+
+
+
+```{r}
+# Load the package (after installation, see above).
+library(optimx)         # You need to have some version of optimx available
+                        # as it is a BioGeoBEARS dependency; however, if you
+                        # don't want to use optimx, and use optim() (from R core) 
+                        # you can set:
+                        # BioGeoBEARS_run_object$use_optimx = FALSE
+                        # ...everything should work either way -- NJM 2014-01-08
+library(FD)       # for FD::maxent() (make sure this is up-to-date)
+library(snow)     # (if you want to use multicore functionality; some systems/R versions prefer library(parallel), try either)
+library(parallel)
+library(BioGeoBEARS)
+
+########################################################
+# TO GET THE OPTIMX/OPTIM FIX, AND THE UPPASS FIX, 
+# SOURCE THE REVISED FUNCTIONS WITH THESE COMMANDS
+#
+# CRUCIAL CRUCIAL CRUCIAL: 
+# YOU HAVE TO RUN THE SOURCE COMMANDS AFTER 
+# *EVERY TIME* YOU DO library(BioGeoBEARS). THE CHANGES ARE NOT "PERMANENT", 
+# THEY HAVE TO BE MADE EACH TIME.  IF YOU ARE GOING TO BE OFFLINE, 
+# YOU CAN DOWNLOAD EACH .R FILE TO YOUR HARD DRIVE AND REFER THE source()
+# COMMANDS TO THE FULL PATH AND FILENAME OF EACH FILE ON YOUR
+# LOCAL SYSTEM INSTEAD.
+########################################################
+library(BioGeoBEARS)
+source("http://phylo.wdfiles.com/local--files/biogeobears/cladoRcpp.R") # (needed now that traits model added; source FIRST!)
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_add_fossils_randomly_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_basics_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_calc_transition_matrices_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_classes_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_detection_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_DNA_cladogenesis_sim_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_extract_Qmat_COOmat_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_generics_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_models_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_on_multiple_trees_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_plots_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_readwrite_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_simulate_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_SSEsim_makePlots_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_SSEsim_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_stochastic_mapping_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_stratified_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_univ_model_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/calc_uppass_probs_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/calc_loglike_sp_v01.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/get_stratified_subbranch_top_downpass_likelihoods_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/runBSM_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/stochastic_map_given_inputs.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/summarize_BSM_tables_v1.R")
+source("http://phylo.wdfiles.com/local--files/biogeobears/BioGeoBEARS_traits_v1.R") # added traits model
+calc_loglike_sp = compiler::cmpfun(calc_loglike_sp_prebyte)    # crucial to fix bug in uppass calculations
+calc_independent_likelihoods_on_each_branch = compiler::cmpfun(calc_independent_likelihoods_on_each_branch_prebyte)
+    # slight speedup hopefully
+
+
+#######################################################
+
+
+## The tree ("tree" in the tutorial) 
+tree <- tree
+
+# This is the example geography file for Hawaiian JuliaDupin
+# (from Ree & Smith 2008)
+geogfn = np(paste(addslash(extdata_dir), "Psychotria_geog.data", sep=""))
+
+# Look at the raw geography text file:
+moref(geogfn)
+
+# Look at your geographic range data:
+tipranges = getranges_from_LagrangePHYLIP(lgdata_fn=geogfn)
+tipranges
+
+# Set the maximum number of areas any species may occupy; this cannot be larger 
+# than the number of areas you set up, but it can be smaller.
+max_range_size = 4
+
+#######################################################
+# Run DEC
+#######################################################
+
+BioGeoBEARS_run_object = define_BioGeoBEARS_run()
+BioGeoBEARS_run_object$force_sparse=FALSE    # sparse=FALSE causes pathology & isn't much faster at this scale
+BioGeoBEARS_run_object$speedup=TRUE          # shorcuts to speed ML search; use FALSE if worried (e.g. >3 params)
+BioGeoBEARS_run_object$use_optimx = TRUE
+BioGeoBEARS_run_object$calc_ancprobs=TRUE    # get ancestral states from optim run
+
+# Set up a time-stratified analysis 
+# (un-comment to use; see example files in extdata_dir, 
+#  and BioGeoBEARS google group posts for further hints)
+BioGeoBEARS_run_object$timesfn = np(slashslash(paste(extdata_dir2, "timeperiods.txt", sep="/")))
+BioGeoBEARS_run_object$dispersal_multipliers_fn = np(slashslash(paste(extdata_dir2, "dispersal_multipliers.txt", sep="/")))
+BioGeoBEARS_run_object$areas_allowed_fn = np(slashslash(paste(extdata_dir2, "areas_allowed.txt", sep="/")))
+#BioGeoBEARS_run_object$areas_adjacency_fn = "areas_adjacency.txt"
+#BioGeoBEARS_run_object$distsfn = "distances_matrix.txt"
+# See notes on the distances model on PhyloWiki's BioGeoBEARS updates page.
+
+# Input the maximum range size
+BioGeoBEARS_run_object$max_range_size = max_range_size
+
+# Multicore processing if desired
+BioGeoBEARS_run_object$num_cores_to_use=1
+# (use more cores to speed it up; this requires
+# library(parallel) and/or library(snow). The package "parallel" 
+# is now default on Macs in R 3.0+, but apparently still 
+# has to be typed on some Windows machines. Note: apparently 
+# parallel works on Mac command-line R, but not R.app.
+# BioGeoBEARS checks for this and resets to 1
+# core with R.app)
+
+# Sparse matrix exponentiation is an option for huge numbers of ranges/states (600+)
+# I have experimented with sparse matrix exponentiation in EXPOKIT/rexpokit,
+# but the results are imprecise and so I haven't explored it further.
+# In a Bayesian analysis, it might work OK, but the ML point estimates are
+# not identical.
+# Also, I have not implemented all functions to work with force_sparse=TRUE.
+# Volunteers are welcome to work on it!!
+BioGeoBEARS_run_object$force_sparse=FALSE
+
+# Give BioGeoBEARS the location of the geography text file
+BioGeoBEARS_run_object$geogfn = geogfn
+
+# Give BioGeoBEARS the location of the phylogeny Newick file
+BioGeoBEARS_run_object$tree = tree
+
+# This function loads the dispersal multiplier matrix etc. from the text files into the model object. Required for these to work!
+# (It also runs some checks on these inputs for certain errors.)
+BioGeoBEARS_run_object = readfiles_BioGeoBEARS_run(BioGeoBEARS_run_object)
+
+# Divide the tree up by timeperiods/strata (uncomment this for stratified analysis)
+BioGeoBEARS_run_object = section_the_tree(inputs=BioGeoBEARS_run_object, make_master_table=TRUE, plot_pieces=FALSE)
+# The stratified tree is described in this table:
+#BioGeoBEARS_run_object$master_table
+
+# Good default settings to get ancestral states
+BioGeoBEARS_run_object$return_condlikes_table = TRUE
+BioGeoBEARS_run_object$calc_TTL_loglike_from_condlikes_table = TRUE
+BioGeoBEARS_run_object$calc_ancprobs = TRUE
+
+# Set up DEC+J model
+
+# Add j as a free parameter
+BioGeoBEARS_run_object$BioGeoBEARS_model_object@params_table["j","type"] = "free"
+BioGeoBEARS_run_object$BioGeoBEARS_model_object@params_table["j","init"] = 0.001
+BioGeoBEARS_run_object$BioGeoBEARS_model_object@params_table["j","est"] = 0.001
+
+# Look at the BioGeoBEARS_run_object; it's just a list of settings etc.
+BioGeoBEARS_run_object
+
+# This contains the model object
+BioGeoBEARS_run_object$BioGeoBEARS_model_object
+
+# This table contains the parameters of the model 
+BioGeoBEARS_run_object$BioGeoBEARS_model_object@params_table
+
+# Run this to check inputs. Read the error messages if you get them!
+check_BioGeoBEARS_run(BioGeoBEARS_run_object)
+
+# For a slow analysis, run once, then set runslow=FALSE to just 
+# load the saved result.
+runslow = TRUE
+resfn = "Psychotria_DEC+J_M3b_strat_v1.Rdata"
+if (runslow)
+    {
+    res = bears_optim_run(BioGeoBEARS_run_object)
+    res    
+
+    save(res, file=resfn)
+    } else {
+    # Loads to "res"
+    load(resfn)
+    }
+
+###########################################
+# Pick your model name:
+###########################################
+model_name = "DEC+J_M3b_strat"
+# res = resDEC
+
+#######################################################
+# Plot ancestral states - DEC
+#######################################################
+pdffn = paste0("Psychotria_", model_name, "_v1.pdf")
+pdf(pdffn, width=6, height=6)
+
+analysis_titletxt = paste0(model_name, " on Psychotria")
+
+# Setup
+results_object = res
+scriptdir = np(system.file("extdata/a_scripts", package="BioGeoBEARS"))
+
+# States
+res2 = plot_BioGeoBEARS_results(results_object, analysis_titletxt, addl_params=list("j"), plotwhat="text", label.offset=0.45, tipcex=0.7, statecex=0.7, splitcex=0.6, titlecex=0.8, plotsplits=TRUE, cornercoords_loc=scriptdir, include_null_range=TRUE, tr=tr, tipranges=tipranges)
+
+# Pie chart
+plot_BioGeoBEARS_results(results_object, analysis_titletxt, addl_params=list("j"), plotwhat="pie", label.offset=0.45, tipcex=0.7, statecex=0.7, splitcex=0.6, titlecex=0.8, plotsplits=TRUE, cornercoords_loc=scriptdir, include_null_range=TRUE, tr=tr, tipranges=tipranges)
+
+dev.off()  # Turn off PDF
+cmdstr = paste("open ", pdffn, sep="")
+system(cmdstr) # Plot it
+
+```
+
+<!-- Here we can perform exactly the same test but by scaling the results -->
+
+```{r, eval = FALSE, echo = FALSE}
+## Scaling the distributions
+sca_distribution_topol <- distribution_topol/max(distribution_topol)
+sca_distribution_brlen <- distribution_brlen/max(distribution_brlen)
+
+## Applying the random tests
+sca_test_topol <- bootstrap.test(sca_distribution_topol, subset_topol, statistic = median,
+                                 replicates = 500, rarefaction = TRUE)
+
+## Applying the random test for the branch length
+sca_test_brlen <- bootstrap.test(sca_distribution_brlen, subset_brlen, statistic = median,
+                                 replicates = 500, rarefaction = TRUE)
+```
+
+```{r, eval = FALSE, echo = FALSE}
+par(mfrow = c(2,1))
+## Plotting the pooled data for every group
+plot(sca_test_topol, main = "Topology (scaled)", xlab = "Median difference")
+add.rare.plot(sca_test_topol)
+## Add the text
+legend(ifelse(sca_test_topol$obs < sca_test_topol$expvar[2], "topleft", "topright"),
+  paste0("p = ", round(sca_test_topol$pvalue, 5), sep = "\n")  , bty = "n")
+
+
+## Plotting the pooled data for every group
+plot(sca_test_brlen, main = "Branch length (scaled)", xlab = "Median difference")
+add.rare.plot(sca_test_brlen)
+## Add the text
+legend(ifelse(sca_test_brlen$obs < sca_test_brlen$expvar[2], "topleft", "topright"),
+  paste0("p = ", round(sca_test_brlen$pvalue, 5), sep = "\n")  , bty = "n")
+```
+
+<!-- Unsurprisingly the results are not different. -->
+
+<!-- > Need to improve this test. Not sure if it's savy. -->
+
+<!-- > Need to correct the p-values. -->

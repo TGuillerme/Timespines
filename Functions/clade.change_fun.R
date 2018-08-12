@@ -127,6 +127,7 @@ plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE,
             ## Plot the histogram
             plot(histogram_data, border = "grey", yaxt = "n", ...)
             # plot(histogram_data, border = "grey", yaxt = "n") ; warning("DEBUG")
+            # plot(histogram_data, border = col_border[1], yaxt = "n", xaxt = "n", xlab = "", ylab = "", main = "")
             ## Ticks on the y axis
             ticks <- axTicks(2)
             ## Labels on the y axis
@@ -156,6 +157,7 @@ plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE,
 
             ## Add the density
             lines(density_data)
+            # lines(density_data, col = col_border[1], lwd = 3)
         } else {
             ## Plot the density
             plot(density_data$x, density_data$y, type = "l", ...)
@@ -183,6 +185,7 @@ plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE,
             density_change <- density(change_data, na.rm = TRUE)
             ## Plotting the histogram results
             plot(histogram_change, col = "lightgrey", border = "darkgrey", add = TRUE, ...)
+            # plot(histogram_change, col = col_border[1], border = col_border[2], add = TRUE)
             # lines(density_change, lty = 2)
 
         } 
@@ -207,6 +210,7 @@ plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE,
             for(one_change in 1:length(change_data)) {
                 x_value <- narrow.down.x(change_data[one_change], density_data$x)
                 segments(x0 = density_data$x[x_value], y0 = 0, y1 = density_data$y[x_value], lwd = 1, lty = 3, col = col.change[origin.data[one_change]])
+                # segments(x0 = density_data$x[x_value], y0 = 0, y1 = density_data$y[x_value], lwd = 3, lty = 3, col = col.change[origin.data[one_change]])
             }
 
         }
