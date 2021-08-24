@@ -63,6 +63,18 @@ text(1, -0.25, paste0("Mean difference = ",
   "\np = ", round(armour_bs_test$p.value, digits = 3)))
 ```
 
+```{r, echo = FALSE, eval = FALSE}
+## Presentation figure
+par(bty = "n")
+boxplot(list(armour_body_sizes, nonarm_body_sizes),
+        ylab = "", xlab = "", xaxt = "n", yaxt = "n",
+        col = "#F7B27E", border = "#F65205")
+axis(2, col = cols["light"], col.axis = cols["light"], col.ticks = cols["light"], cex.axis = 1.3)
+
+```
+
+
+
 Nice.
 Something is happening.
 
@@ -82,6 +94,20 @@ load("../Data/Processed/MCMC_living_binary_1M.rda")
 ## The MCMC results
 mcm_binary_1M
 plot(mcm_binary_1M)
+```
+
+```{r, echo = FALSE, eval = FALSE}
+## Presentation figure
+plot(density)
+
+density <- density(mcm_binary_1M$par$r, bw = 0.05)
+par(bty = "n")
+plot(density, ylab = "", xlab = "", xaxt = "n", yaxt = "n", main = "", col = "#F7B27E")
+axis(1, col = cols["light"], col.axis = cols["light"], col.ticks = cols["light"], cex.axis = 1.3)
+axis(2, col = cols["light"], col.axis = cols["light"], col.ticks = cols["light"], cex.axis = 1.3)
+polygon(density, col = "#F7B27E", border = "#F65205")
+mean <- mean(mcm_binary_1M$par$r)
+lines(rep(mean,2),c(0,par()$usr[4]),col="#F65205",lty="dashed", lwd=2)
 ```
 
 Excellent: there is a negative correlation between body length and armourness: the smaller you get, the more likely you are to evolve have spines!
@@ -113,18 +139,58 @@ tiplabels(pch = 16, cex = 0.7,
           col = spine_cols[armour_values[match(tree$tip.label, rownames(spine_data$spine_data))]+1])
 
 ## Adding the node changes
-nodelabels(pch = 21, node = unlist(results_topol$node.changes), col = "black", bg = "magenta",
-           cex = 1.2)
+nodelabels(pch = 21, node = unlist(results_topol$node.changes), cex = 1.5, lwd = 3,
+           col = c("lightgrey", "darkgrey")[results_topol$node.origin+1],
+           bg = c("black", "white")[results_topol$node.origin+1])
 
 ## Legends
-legend("topleft",legend = c("Not spiny", "Spiny", "Stage change"), pch = 21, col = "black",
-       pt.bg = c(spine_cols, "magenta"), bty = "n")
+legend("topleft",legend = c("Not spiny", "Spiny", "Loss of spines", "Gain of spines"), pch = 21,
+       col = c("black", "black", "darkgrey", "lightgrey"), pt.bg = spine_cols, bty = "n",
+       lwd = c(rep(1,2), rep(3,2)), lty = 0, cex = 0.9, pt.cex = c(1, 1, 1.5, 1.5))
+
 legend("bottomleft",legend = paste(round(trait_map$lims, digit = 2), collapse = " Body length "),
        bty = "n")
 
 ```
 
-Now this is just a reconstruction of how the two traits (body size and armourness) coevolved but it doesn't allow to really distinguish whether there is an effect of body size when the armourness trait changes: this difference only tells us armoured fishes are smaller than the others.
+```{r, eval = FALSE, echo = FALSE}
+## Presentation plot
+## Results plot
+par(mar = c(1,1,1,1))
+plot(trait_map, fsize = 0.001, type = "fan", lwd = 2)
+
+spine_cols <- rev(c("#F65205", "#3E9CBA"))
+
+
+## Adding the spine colours
+tiplabels(pch = 16, cex = 0.7,
+          col = spine_cols[armour_values[match(tree$tip.label, rownames(spine_data$spine_data))]+1])
+
+## Adding the node changes
+nodelabels(pch = 21, node = unlist(results_topol$node.changes), cex = 1.5, lwd = 2,
+           col = "#1C1C1C",
+           bg = rev(spine_cols)[results_topol$node.origin+1])
+
+## Legends
+legend("topleft",legend = c("Not spiny", "Spiny", "Loss of spines", "Gain of spines"), pch = 21,
+       col = c("black", "black", "darkgrey", "lightgrey"), pt.bg = spine_cols, bty = "n",
+       lwd = c(rep(1,2), rep(3,2)), lty = 0, cex = 0.9, pt.cex = c(1, 1, 1.5, 1.5))
+
+legend("bottomleft",legend = paste(round(trait_map$lims, digit = 2), collapse = " Body length "),
+       bty = "n")
+```
+
+
+
+There.
+The hypotheses are then, first:
+
+ 1. Does gain of spine correspond to a decrease in body length? Alternatively, does the loss of spine correspond to an increase in body size? (entering/exiting the Danger Zone)
+
+And second:
+
+ 2. Is the body size at the time of the gain/loss of spines linked to the relative?
+
 
 # Is a difference in body size at the time armour appears/disappear in a phylogeny
 
@@ -169,11 +235,9 @@ We can now visualise where do the group changes occur relative to their group si
 ```{r, fig.width = 6, fig.height = 12}
 par(mfrow = c(2,1))
 ## Plotting the pooled data for every group
-plot.change(results_topol$normal.val, results_topol$change.val, 
-            main = "Topology", xlab = "Scaled log BL")
+plot.change(results_topol, main = "Topology", xlab = "Scaled log BL")
 ## Plotting the pooled data for every group
-plot.change(results_brlen$normal.val, results_brlen$change.val,
-            main = "Topology and branch length", xlab = "Scaled log BL")
+plot.change(results_brlen, main = "Topology and branch length", xlab = "Scaled log BL")
 ```
 
 We then need to test whether this difference is significant or not.
@@ -189,91 +253,89 @@ The values compared are $median_bs - median_obs$, positive values indicate that 
 
 ```{r}
 ## Running the test for the topology
-## Adding the estimate ancestral values to the pooled distribution
-distribution_topol <- c(unlist(results_topol$normal.val),
-                        unlist(results_topol$change.val))
-
-## The IDs to test are the last one in the distribution
-subset_topol <- seq(from = length(unlist(results_topol$normal.val)) + 1,
-                    to = length(distribution_topol))
-
-## Applying the random test for the topology
-test_topol <- bootstrap.test(distribution_topol, subset_topol, statistic = median, replicates = 500,
-                             rarefaction = TRUE)
+topology_gain <- run.bootstraps(results_topol, what = 0)
+topology_loss <- run.bootstraps(results_topol, what = 1)
 
 ## Running the test for the branch length
-## Adding the estimate ancestral values to the pooled distribution
-distribution_brlen <- c(unlist(results_brlen$normal.val),
-                        unlist(results_brlen$change.val))
-
-## The IDs to test are the last one in the distribution
-subset_brlen <- seq(from = length(unlist(results_brlen$normal.val)) + 1,
-                    to = length(distribution_brlen))
-
-## Applying the random test for the branch length
-test_brlen <- bootstrap.test(distribution_brlen, subset_brlen, statistic = median, replicates = 500,
-                             rarefaction = TRUE)
+brlength_gain <- run.bootstraps(results_brlen, what = 0)
+brlength_loss <- run.bootstraps(results_brlen, what = 1)
 ```
 
-```{r, fig.width = 6, fig.height = 12}
-par(mfrow = c(2,1))
-## Plotting the pooled data for every group
-plot(test_topol, main = "Topology", xlab = "Median difference")
-add.rare.plot(test_topol)
-## Add the text
-legend(ifelse(test_topol$obs < test_topol$expvar[2], "topleft", "topright"),
-  paste0("p = ", round(test_topol$pvalue, 5), sep = "\n")  , bty = "n")
-
-
-## Plotting the pooled data for every group
-plot(test_brlen, main = "Branch length", xlab = "Median difference")
-add.rare.plot(test_brlen)
-## Add the text
-legend(ifelse(test_brlen$obs < test_brlen$expvar[2], "topleft", "topright"),
-  paste0("p = ", round(test_brlen$pvalue, 5), sep = "\n")  , bty = "n")
+```{r, fig.width = 12, fig.height = 12}
+par(mfrow = c(2,2))
+## Plotting the results function
+bootstrap.test.plot <- function(test_result, main, n_test) {
+    ## Plotting the pooled data for every group
+    plot(test_result, main = main, xlab = "Median difference")
+    add.rare.plot(test_result)
+    ## Add the text
+    legend(ifelse(test_result$obs < test_result$expvar[2], "topleft", "topright"), bty = "n",
+      paste0("p = ", round(p.adjust(test_result$pvalue, "bonferroni", n = n_test), 5), sep = "\n"))
+}
+bootstrap.test.plot(topology_gain, main = "Topology - gain", n_test = 4)
+bootstrap.test.plot(topology_loss, main = "Topology - loss", n_test = 4)
+bootstrap.test.plot(brlength_gain, main = "Branch length - gain", n_test = 4)
+bootstrap.test.plot(brlength_loss, main = "Branch length - loss", n_test = 4)
 ```
 
-These bootstraps tests show that the difference in median between the body length at the change in armourness is significantly smaller than the global median body lengths.
-This is true even when taking into account the number of events of changes in armourness (rarefaction).
 
-## Testing the whether this difference is linked to the biggest predator size
+```{r, eval = FALSE, echo = FALSE}
+par(mfrow = c(2,2))
+## Plotting the results function
+bootstrap.test.plot <- function(test_result, n_test) {
+    ## Plotting the pooled data for every group
 
-Here we can perform exactly the same test but by scaling the results
+    hist <- test_result$plot$hist
+    class(hist) <- "histogram"
+
+    xlim <- range(hist$breaks)
+    ylim <- range(hist$counts)
+
+    ## Add the rarefaction to the limits
+    rarefied <- hist(unlist(test_result$observed), plot = FALSE)
+    xlim <- range(xlim, rarefied$breaks)
+    ylim <- range(ylim, rarefied$counts)
+
+
+    plot(hist, main = "", xlab = "", ylab = "", col = cols["lightblue"], border = cols["mediumblue"], axes = FALSE, xlim = xlim, ylim = ylim)
+    axis(1, col = cols["light"], col.axis = cols["light"], col.ticks = cols["light"], cex.axis = 1.3)
+    axis(2, col = cols["light"], col.axis = cols["light"], col.ticks = cols["light"], cex.axis = 1.3)
+
+    ## Add the rarefied groups results
+    plot(rarefied, add = TRUE, col = cols["lightorange"], border = cols["mediumorange"])
+
+    h0 <- test_result$plot$hist
+    y0 <- max(h0$counts)
+    lines(c(test_result$obs, test_result$obs), c(y0/2, 0), col = cols["fullorange"], lwd = 2)
+    points(test_result$obs, y0/2, pch = 18, cex = 3, , col = cols["fullorange"])
+}
+bootstrap.test.plot(topology_gain, n_test = 4)
+bootstrap.test.plot(topology_loss, n_test = 4)
+bootstrap.test.plot(brlength_gain, n_test = 4)
+bootstrap.test.plot(brlength_loss, n_test = 4)
+```
+
+
+So there seems to be evidence for evolving armour when entering the Danger Zone (median body mass when gaining armour is always low) but no evidence for loosing armour when leaving the Danger Zone (median body mass when loosing armour is not different).
+
+This could be interpreted as the armour being gained as a response to the predator prey arms race but once the armour is gained, it could serve other function (exaptations) and is subsequently no loosed when leaving the Danger Zone.
+
+
+# Is there an effect of predator size at the time of gain/loss of armour?
+
+To answer this question, we will need the body length of the fishes at the time of one clade's armour gain/loss and the geographic area.
+We can then check whether there is a relation with the body length of the fish gaining/loosing armour and the biggest fish at the time and the geographic area.
+
+## Ancestral body lengths
+
+We can use a simple ancestral nodes estimation for the body lengths following a normal Brownian model of evolution of body length.
 
 ```{r}
-## Scaling the distributions
-sca_distribution_topol <- distribution_topol/max(distribution_topol)
-sca_distribution_brlen <- distribution_brlen/max(distribution_brlen)
+## Ancestral states estimations for the body lengths
+ace_body_lengths <- ace(traits, tree)
 
-## Applying the random tests
-sca_test_topol <- bootstrap.test(sca_distribution_topol, subset_topol, statistic = median,
-                                 replicates = 500, rarefaction = TRUE)
-
-## Applying the random test for the branch length
-sca_test_brlen <- bootstrap.test(sca_distribution_brlen, subset_brlen, statistic = median,
-                                 replicates = 500, rarefaction = TRUE)
+## Combining all ancestral states into a data.frame
+body_length_data <- data.frame("BodyLength" = c(traits, ace_body_lengths$ace),
+                               "CI025" = c(traits, ace_body_lengths$CI95[,1]),
+                               "CI975" = c(traits, ace_body_lengths$CI95[,2]))
 ```
-
-```{r, fig.width = 6, fig.height = 12}
-par(mfrow = c(2,1))
-## Plotting the pooled data for every group
-plot(sca_test_topol, main = "Topology (scaled)", xlab = "Median difference")
-add.rare.plot(sca_test_topol)
-## Add the text
-legend(ifelse(sca_test_topol$obs < sca_test_topol$expvar[2], "topleft", "topright"),
-  paste0("p = ", round(sca_test_topol$pvalue, 5), sep = "\n")  , bty = "n")
-
-
-## Plotting the pooled data for every group
-plot(sca_test_brlen, main = "Branch length (scaled)", xlab = "Median difference")
-add.rare.plot(sca_test_brlen)
-## Add the text
-legend(ifelse(sca_test_brlen$obs < sca_test_brlen$expvar[2], "topleft", "topright"),
-  paste0("p = ", round(sca_test_brlen$pvalue, 5), sep = "\n")  , bty = "n")
-```
-
-Unsurprisingly the results are not different.
-
-> Need to improve this test. Not sure if it's savy.
-
-> Need to correct the p-values.
