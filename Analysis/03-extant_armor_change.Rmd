@@ -38,7 +38,7 @@ A simple t-test can be used here.
 ## The tree
 tree <- spine_data$tree
 
-## The body size values
+## The body size values
 body_size_values <- spine_data$spine_data[, 3]
 
 ## Armour values
@@ -48,11 +48,11 @@ armour_values <- spine_data$armour[,1]
 armour_body_sizes <- spine_data$spine_data[which(spine_data$armour[,1] == 1), 3]
 nonarm_body_sizes <- spine_data$spine_data[which(spine_data$armour[,1] == 0), 3]
 
-## Logging the data
+## Logging the data
 armour_body_sizes <- log(armour_body_sizes)
 nonarm_body_sizes <- log(nonarm_body_sizes)
 
-## Testing the differences
+## Testing the differences
 armour_bs_test <- t.test(armour_body_sizes, nonarm_body_sizes)
 
 ## Plotting this
@@ -219,12 +219,12 @@ The topology and topology+branch length method only differ in the way to measure
 See analysis 02 for discussion on the pros and cons of both methods.
 
 ```{r, fig.width = 6, fig.height = 6}
-## Running the results for topology
+## Running the results for topology
 results_topol <- run.timespines(body_size_values, armour_values, tree,
                                 method = "topol",
                                 taxa.names = rownames(spine_data$spine_data))
 
-## Running the results for topology and branch length
+## Running the results for topology and branch length
 results_brlen <- run.timespines(body_size_values, armour_values, tree,
                                 method = "brlen",
                                 taxa.names = rownames(spine_data$spine_data))

@@ -22,7 +22,7 @@ This step inputs the tree of living fishes from Rabosky et al 2013 and only keep
 The species were chosen based on alphabetical order for each family.
 
 ```{r}
-## Reading the tree
+## Reading the tree
 raw_tree <- read.any.tree("../Data/Raw/Trees/Rabosky.et.al~2013-Nat.Com.tre")
 
 ## Reading the list of species selected for each families
@@ -40,7 +40,7 @@ pruned_tree$tip.label <- list_sp[match(pruned_tree$tip.label, list_sp[,1]), 2]
 write.tree(pruned_tree, file = paste0("../Data/Processed/", Ntip(pruned_tree), "t_living.tre"))
 ```
 
-### Combining the tree and the spines/body mass data
+### Combining the tree and the spines/body mass data
 
 ```{r}
 ## Reading the spines data

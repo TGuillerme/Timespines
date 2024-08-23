@@ -85,7 +85,7 @@ armour_bias <- rep(0, nrow(body_size))
 armour_bias[taxa_dz] <- dz_armour
 armour_bias[taxa_non_dz] <- non_dz_armour
 
-## Combining the data
+## Combining the data
 body_size <- cbind(body_size, armour_random, armour_bias)
 colnames(body_size)[c(ncol(body_size)-1, ncol(body_size))] <- c("Random", "Biased")
 head(body_size)
