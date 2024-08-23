@@ -12,7 +12,7 @@ output:
 library(phytools)
 library(dispRity)
 library(Inapp) # home package
-library(landmarktest) # home package
+library(landvR) # home package
 source("../Functions/clade.change_fun.R")
 source("../Functions/utilities.R")
 set.seed(42)
@@ -73,8 +73,6 @@ axis(2, col = cols["light"], col.axis = cols["light"], col.ticks = cols["light"]
 
 ```
 
-
-
 Nice.
 Something is happening.
 
@@ -87,8 +85,8 @@ We can also measure the correlation between body length and armourness more prec
 trait_matrix <- cbind(spine_data$armour[, 1], body_size_values)
 
 ## Threshold model
-#mcm_binary_1M <- threshBayes(tree, trait_matrix, types = c("discrete","continuous"), ngen = 1000000)
-#save(mcm_binary_1M, file = "../Data/Processed/MCMC_living_binary_1M.rda")
+# mcm_binary_1M <- phytools::threshBayes(tree, trait_matrix, types = c("discrete","continuous"), ngen = 1000000)
+save(mcm_binary_1M, file = "../Data/Processed/MCMC_living_binary_1M.rda")
 load("../Data/Processed/MCMC_living_binary_1M.rda")
 
 ## The MCMC results
@@ -109,6 +107,7 @@ polygon(density, col = "#F7B27E", border = "#F65205")
 mean <- mean(mcm_binary_1M$par$r)
 lines(rep(mean,2),c(0,par()$usr[4]),col="#F65205",lty="dashed", lwd=2)
 ```
+
 
 Excellent: there is a negative correlation between body length and armourness: the smaller you get, the more likely you are to evolve have spines!
 

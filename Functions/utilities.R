@@ -52,7 +52,7 @@ run.timespines <- function(body.val, armour.val, tree, method = "topol", taxa.na
         change_values <- lapply(change_values, log)
     }
 
-    ##  Scale
+    ##  Scale
     if(do.scale){
         ## get the maximum of each group
         max_normal <- lapply(normal_values, max, na.rm = TRUE)
@@ -83,7 +83,7 @@ run.timespines <- function(body.val, armour.val, tree, method = "topol", taxa.na
 #@param replicates (default = 500)
 #@param rarefaction (default = TRUE)=
 
-run.bootstraps <- function(timespines.data, what, statistic = median, replicates = 500, rarefaction = TRUE) {
+run.bootstraps <- function(timespines.data, what, statistic = median, replicates = 100, rarefaction = TRUE) {
 
     ## Running the test for the topology
 
@@ -97,7 +97,6 @@ run.bootstraps <- function(timespines.data, what, statistic = median, replicates
     subset <- seq(from = length(unlist(timespines.data$normal.val)) + 1, to = length(distribution))
 
     ## Applying the random test for the topology
-    test_results <- bootstrap.test(distribution, subset, statistic = statistic, replicates = replicates, rarefaction = rarefaction)
-
+    test_results <- landvR::rarefy.stat(matrix(distribution[subset]), stat.fun  = statistic, replicates = replicates, rarefaction = NULL)
     return(test_results)
 }

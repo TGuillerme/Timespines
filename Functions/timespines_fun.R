@@ -55,7 +55,7 @@ get.armour <- function(data, body.part = 0, armour.type = 0) {
     ## Looping through the body parts
     for(part in 1:length(body.part)) {
         for(type in 1:length(armour.type)) {
-            ## Increment the counter
+            ## Increment the counter
             counter <- counter + 1
             ## Get the armoured things
             results[[counter]] <- unlist(lapply(as.list(1:nrow(data)), get.armour.fun, body.part[[part]], armour.type[[type]], data))
@@ -70,7 +70,7 @@ get.armour <- function(data, body.part = 0, armour.type = 0) {
         }
     } 
 
-    ## Selecting only the rows of interest
+    ## Selecting only the rows of interest
     output <- output & rows
 
     return(output)
@@ -192,7 +192,7 @@ plot.timespine <- function(site_measurements, display.armour = FALSE, xlab = "Bo
             ## Get the measurement of the armoured thing
             measure <- site_measurements$measure[which(site_measurements$armours)][one_BL]
             if(!is.na(measure)) {
-                ## Find the closest x
+                ## Find the closest x
                 x_value <- narrow.down.x(measure, density$density$x)
                 ## Plot the segment
                 segments(x0 = density$density$x[x_value], y0 = 0, y1 = density$density$y[x_value], lwd = 2)

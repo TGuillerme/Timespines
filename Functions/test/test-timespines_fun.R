@@ -30,7 +30,7 @@ test_that("get.armour works", {
         c(FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE) # Tail surface + projection
         )
 
-    ## Correct outputs
+    ## Correct outputs
     expect_true(all(get.armour(dummy_data) == expected[[1]]))
     expect_true(all(get.armour(dummy_data, 1, 1) == expected[[2]]))
     expect_true(all(get.armour(dummy_data, 1, 2) == expected[[3]]))

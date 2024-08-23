@@ -75,7 +75,6 @@ spine_data <- list("tree" = pruned_tree, "spine_data" = pruned_data, "armour" = 
 
 ## Saving the data
 save(spine_data, file = "../Data/Processed/extant.rda")
-
 ```
 
 

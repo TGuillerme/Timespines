@@ -29,7 +29,7 @@ taxonomy.change <- function(group, group.level, state, data, data.out = 0) {
     ## Getting the members of the group in the data
     group_taxa <- which(data[, group.level] == group)
 
-    ## Getting the average group state
+    ## Getting the average group state
     state_origin <- dispRity::mode.val(state[group_taxa])
 
     ## Getting the taxa that have not the state_origin
@@ -70,7 +70,7 @@ taxonomy.change <- function(group, group.level, state, data, data.out = 0) {
 
 extract.change <- function(list, what, inc.null = FALSE) {
 
-    ## Output list
+    ## Output list
     list_out <- lapply(list, function(X, what) return(X[[what]]), what = what)
 
     if(inc.null) {
@@ -124,7 +124,7 @@ plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE,
         }
 
         if(histogram) {
-            ## Plot the histogram
+            ## Plot the histogram
             plot(histogram_data, border = "grey", yaxt = "n", ...)
             # plot(histogram_data, border = "grey", yaxt = "n") ; warning("DEBUG")
             # plot(histogram_data, border = col_border[1], yaxt = "n", xaxt = "n", xlab = "", ylab = "", main = "")
@@ -149,7 +149,7 @@ plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE,
             } else {
                 ticks_labels <- ticks
             }
-            ## Labels on the y axis
+            ## Labels on the y axis
             axis(2, labels = ticks_labels, at = ticks)
 
             ## Scaling the density line
@@ -183,7 +183,7 @@ plot.change <- function(timespines.data, histogram = TRUE, scale.density = TRUE,
             ## Getting the histogram data
             histogram_change <- hist(change_data, plot = FALSE)
             density_change <- density(change_data, na.rm = TRUE)
-            ## Plotting the histogram results
+            ## Plotting the histogram results
             plot(histogram_change, col = "lightgrey", border = "darkgrey", add = TRUE, ...)
             # plot(histogram_change, col = col_border[1], border = col_border[2], add = TRUE)
             # lines(density_change, lty = 2)
@@ -277,7 +277,7 @@ topology.change <- function(group, data, state, data.out = 0) {
         group_taxa <- match(group$tip.label, data)
     }
 
-    ## Getting the average group state
+    ## Getting the average group state
     state_origin <- dispRity::mode.val(state[group_taxa])
 
     ## Getting the taxa that have not the state_origin
@@ -288,7 +288,7 @@ topology.change <- function(group, data, state, data.out = 0) {
     }
 
     ## Getting the values out
-    if(data.out == 0 && class(data) == "data.frame") {
+    if(all(data.out == 0) && class(data) == "data.frame") {
         if(class(data) == "data.frame"){
             data_out <- rownames(data)[group_taxa]
         } else {
